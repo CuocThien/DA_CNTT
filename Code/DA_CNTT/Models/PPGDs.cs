@@ -8,22 +8,17 @@ using System.Threading.Tasks;
 
 namespace DA_CNTT.Models
 {
-    public class Chapters
+    public class PPGDs
     {
         public ObjectId _id { get; set; }
-        
-        [JsonProperty("Chapter")]
-        public List<Chapter> Chapter { get; set; }
 
+        [JsonProperty("PPGD")]
+        public List<PPGD> PPGD { get; set; }
     }
-    public class Chapter
+    public class PPGD
     {
-
         [JsonProperty("ID")]
         public string ID { get; set; }
-
-        [JsonProperty("Name")]
-        public string Name { get; set; }
 
         [JsonProperty("Detail")]
         public List<string> Detail { get; set; }

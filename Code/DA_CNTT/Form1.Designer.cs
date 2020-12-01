@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.pnl_Title = new Guna.UI.WinForms.GunaPanel();
+            this.pb_logo = new Guna.UI.WinForms.GunaPictureBox();
             this.pb_Title = new Guna.UI.WinForms.GunaPictureBox();
             this.pnl_Container = new Guna.UI.WinForms.GunaPanel();
+            this.pnl_content = new Guna.UI.WinForms.GunaPanel();
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
             this.ms_Menu = new System.Windows.Forms.MenuStrip();
             this.btn_Gioithieu = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,14 +59,14 @@
             this.sAUK18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroGroup = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroProj = new System.Windows.Forms.ToolStripMenuItem();
-            this.pb_logo = new Guna.UI.WinForms.GunaPictureBox();
-            this.pnl_content = new Guna.UI.WinForms.GunaPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnl_Title.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).BeginInit();
             this.pnl_Container.SuspendLayout();
+            this.pnl_content.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.ms_Menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Title
@@ -77,6 +79,16 @@
             this.pnl_Title.Name = "pnl_Title";
             this.pnl_Title.Size = new System.Drawing.Size(2374, 200);
             this.pnl_Title.TabIndex = 0;
+            // 
+            // pb_logo
+            // 
+            this.pb_logo.BaseColor = System.Drawing.Color.White;
+            this.pb_logo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pb_logo.Location = new System.Drawing.Point(2092, 0);
+            this.pb_logo.Name = "pb_logo";
+            this.pb_logo.Size = new System.Drawing.Size(282, 200);
+            this.pb_logo.TabIndex = 1;
+            this.pb_logo.TabStop = false;
             // 
             // pb_Title
             // 
@@ -99,6 +111,15 @@
             this.pnl_Container.Name = "pnl_Container";
             this.pnl_Container.Size = new System.Drawing.Size(2374, 1075);
             this.pnl_Container.TabIndex = 1;
+            // 
+            // pnl_content
+            // 
+            this.pnl_content.Controls.Add(this.button1);
+            this.pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_content.Location = new System.Drawing.Point(0, 76);
+            this.pnl_content.Name = "pnl_content";
+            this.pnl_content.Size = new System.Drawing.Size(2374, 999);
+            this.pnl_content.TabIndex = 1;
             // 
             // pnl_Menu
             // 
@@ -134,7 +155,7 @@
             this.btn_Gioithieu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Gioithieu.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btn_Gioithieu.Name = "btn_Gioithieu";
-            this.btn_Gioithieu.Size = new System.Drawing.Size(176, 72);
+            this.btn_Gioithieu.Size = new System.Drawing.Size(176, 68);
             this.btn_Gioithieu.Text = "GIỚI THIỆU";
             // 
             // btn_IntroG
@@ -161,7 +182,7 @@
             this.btn_afterUni});
             this.btn_ctdt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ctdt.Name = "btn_ctdt";
-            this.btn_ctdt.Size = new System.Drawing.Size(367, 72);
+            this.btn_ctdt.Size = new System.Drawing.Size(367, 68);
             this.btn_ctdt.Text = "CHƯƠNG TRÌNH ĐÀO TẠO";
             // 
             // btn_inUni
@@ -172,7 +193,7 @@
             this.btn_Ktdl,
             this.btn_Spcntt});
             this.btn_inUni.Name = "btn_inUni";
-            this.btn_inUni.Size = new System.Drawing.Size(359, 46);
+            this.btn_inUni.Size = new System.Drawing.Size(321, 46);
             this.btn_inUni.Text = "ĐẠI HỌC";
             // 
             // btn_Cntt
@@ -190,7 +211,7 @@
             // 
             this.btn_CnttBefore18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_CnttBefore18.Name = "btn_CnttBefore18";
-            this.btn_CnttBefore18.Size = new System.Drawing.Size(359, 46);
+            this.btn_CnttBefore18.Size = new System.Drawing.Size(293, 46);
             this.btn_CnttBefore18.Text = "TRƯỚC K18";
             this.btn_CnttBefore18.Click += new System.EventHandler(this.btn_CnttBefore18_Click);
             // 
@@ -278,7 +299,7 @@
             this.btn_afterUni.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_khmt});
             this.btn_afterUni.Name = "btn_afterUni";
-            this.btn_afterUni.Size = new System.Drawing.Size(359, 46);
+            this.btn_afterUni.Size = new System.Drawing.Size(321, 46);
             this.btn_afterUni.Text = "SAU ĐẠI HỌC";
             // 
             // btn_khmt
@@ -318,23 +339,15 @@
             this.btn_IntroProj.Size = new System.Drawing.Size(327, 44);
             this.btn_IntroProj.Text = "Giới thiệu Đề tài";
             // 
-            // pb_logo
+            // button1
             // 
-            this.pb_logo.BaseColor = System.Drawing.Color.White;
-            this.pb_logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_logo.Location = new System.Drawing.Point(2092, 0);
-            this.pb_logo.Name = "pb_logo";
-            this.pb_logo.Size = new System.Drawing.Size(282, 200);
-            this.pb_logo.TabIndex = 1;
-            this.pb_logo.TabStop = false;
-            // 
-            // pnl_content
-            // 
-            this.pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_content.Location = new System.Drawing.Point(0, 76);
-            this.pnl_content.Name = "pnl_content";
-            this.pnl_content.Size = new System.Drawing.Size(2374, 999);
-            this.pnl_content.TabIndex = 1;
+            this.button1.Location = new System.Drawing.Point(917, 105);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(514, 262);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -348,12 +361,13 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnl_Title.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).EndInit();
             this.pnl_Container.ResumeLayout(false);
+            this.pnl_content.ResumeLayout(false);
             this.pnl_Menu.ResumeLayout(false);
             this.ms_Menu.ResumeLayout(false);
             this.ms_Menu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -391,6 +405,7 @@
         private System.Windows.Forms.ToolStripMenuItem btn_IntroPro;
         private Guna.UI.WinForms.GunaPictureBox pb_logo;
         private Guna.UI.WinForms.GunaPanel pnl_content;
+        private System.Windows.Forms.Button button1;
     }
 }
 
