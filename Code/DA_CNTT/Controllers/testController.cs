@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DA_CNTT.Class;
+using DA_CNTT.Models;
 using MongoDB.Bson;
 
 namespace DA_CNTT.Controllers
@@ -31,9 +32,9 @@ namespace DA_CNTT.Controllers
         public void chap()
         {
             var id = new ObjectId("5fc509436184428b8096c1d5");
-
-            //this.chapter.findfromsubject(id);
-            this.chapter.Update();
+            var id_CourseGoal = new ObjectId("5fc509cf6184428b8096c206");
+            this.subject.findAll();
+            //this.course.findFromSubject(id_CourseGoal);
             //this.detail.Update();
             //this.course.findAll();
             //this.subject.findAll();
@@ -42,6 +43,16 @@ namespace DA_CNTT.Controllers
             //this.exam.delete();
             //this.ppgd.delete();
             //this.selfstudy.findAll();
+        }
+        public List<Subjects> loadsubjects()
+        {
+            var result = this.subject.findAll();
+            return result;
+        }
+        public Chapters loadchapters(string id)
+        {
+            var result = this.chapter.findfromsubject(id);
+            return result;
         }
     }
 }

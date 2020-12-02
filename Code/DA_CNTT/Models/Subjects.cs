@@ -34,7 +34,7 @@ namespace DA_CNTT.Models
         public string DetailOutline_ID { get; set; }
 
         [JsonProperty("Exam_ID")]
-        public string ExamID { get; set; }
+        public string Exam_ID { get; set; }
 
         [JsonProperty("PPGD_ID")]
         public string PPGD_ID { get; set; }

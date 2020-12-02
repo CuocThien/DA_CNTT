@@ -20,6 +20,11 @@ namespace DA_CNTT.Class
             var result = this.mongo.Read<CourseGoals>("CourseGoals");
             return result;
         }
+        public CourseGoals findFromSubject(ObjectId id)
+        {
+            var result = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", id);
+            return result;
+        }
         //truyền ob_ID từ controllers
         public void delete()
         {

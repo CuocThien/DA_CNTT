@@ -17,7 +17,7 @@ namespace DA_CNTT.Class
         }
         public List<Subjects> findAll()
         {
-            var result = this.mongo.Read<Subjects>("Subject");
+            var result = this.mongo.Read<Subjects>("Subjects");
             return result;
         }
         //truyền ob_ID từ controllers

@@ -21,9 +21,13 @@ namespace DA_CNTT.Class
             var result = this.mongo.Read<Chapters>("Chapters");
             return result;
         }
-        public Chapters findfromsubject(ObjectId id)
+        public Chapters findfromsubject(string id)
         {
-            var result = this.mongo.ReadByObjectId<Chapters>("Chapters", id);
+            CSubject cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub_id = subs.Where(s => s.Course_Code.Equals(id)).SingleOrDefault();
+            var chapter_id = new ObjectId(sub_id.Chapter_ID.ToString());
+            var result = this.mongo.ReadByObjectId<Chapters>("Chapters", chapter_id);
             return result;
         }
         //truyền ob_ID từ controllers
@@ -42,13 +46,10 @@ namespace DA_CNTT.Class
         public void Update()
         {
             var id = new ObjectId("5fc509436184428b8096c1d5");
-            var Id = "Chương 2";
-            string ID = "Chương 2 2";
+            var Id = "Chương 2 2";
+            string ID = "Chương 2";
             var a = this.mongo.ReadByObjectId<Chapters>("Chapters", id);
-            var b = a.Chapter.Where(c => c.ID == Id).SingleOrDefault();
-            a.Chapter.Remove(b);
-            b.ID = ID;
-            a.Chapter.Add(b);
+            a.Chapter.Where(c => c.ID == Id).SingleOrDefault().ID=ID;
             this.mongo.Update<Chapters>("Chapters", id, a);
         }
         //

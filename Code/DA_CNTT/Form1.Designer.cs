@@ -33,6 +33,7 @@
             this.pb_Title = new Guna.UI.WinForms.GunaPictureBox();
             this.pnl_Container = new Guna.UI.WinForms.GunaPanel();
             this.pnl_content = new Guna.UI.WinForms.GunaPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
             this.ms_Menu = new System.Windows.Forms.MenuStrip();
             this.btn_Gioithieu = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,12 +60,10 @@
             this.sAUK18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroGroup = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroProj = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnl_Title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).BeginInit();
             this.pnl_Container.SuspendLayout();
-            this.pnl_content.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.ms_Menu.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +71,7 @@
             // pnl_Title
             // 
             this.pnl_Title.BackColor = System.Drawing.Color.White;
+            this.pnl_Title.Controls.Add(this.button1);
             this.pnl_Title.Controls.Add(this.pb_logo);
             this.pnl_Title.Controls.Add(this.pb_Title);
             this.pnl_Title.Dock = System.Windows.Forms.DockStyle.Top;
@@ -114,12 +114,21 @@
             // 
             // pnl_content
             // 
-            this.pnl_content.Controls.Add(this.button1);
             this.pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_content.Location = new System.Drawing.Point(0, 76);
             this.pnl_content.Name = "pnl_content";
             this.pnl_content.Size = new System.Drawing.Size(2374, 999);
             this.pnl_content.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(974, 33);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(444, 118);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnl_Menu
             // 
@@ -155,7 +164,7 @@
             this.btn_Gioithieu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Gioithieu.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btn_Gioithieu.Name = "btn_Gioithieu";
-            this.btn_Gioithieu.Size = new System.Drawing.Size(176, 68);
+            this.btn_Gioithieu.Size = new System.Drawing.Size(176, 72);
             this.btn_Gioithieu.Text = "GIỚI THIỆU";
             // 
             // btn_IntroG
@@ -182,7 +191,7 @@
             this.btn_afterUni});
             this.btn_ctdt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ctdt.Name = "btn_ctdt";
-            this.btn_ctdt.Size = new System.Drawing.Size(367, 68);
+            this.btn_ctdt.Size = new System.Drawing.Size(367, 72);
             this.btn_ctdt.Text = "CHƯƠNG TRÌNH ĐÀO TẠO";
             // 
             // btn_inUni
@@ -339,16 +348,6 @@
             this.btn_IntroProj.Size = new System.Drawing.Size(327, 44);
             this.btn_IntroProj.Text = "Giới thiệu Đề tài";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(917, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(514, 262);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -359,12 +358,12 @@
             this.MainMenuStrip = this.ms_Menu;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnl_Title.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).EndInit();
             this.pnl_Container.ResumeLayout(false);
-            this.pnl_content.ResumeLayout(false);
             this.pnl_Menu.ResumeLayout(false);
             this.ms_Menu.ResumeLayout(false);
             this.ms_Menu.PerformLayout();

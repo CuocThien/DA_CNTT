@@ -32,7 +32,7 @@ namespace DA_CNTT.Class
             var id = new ObjectId("5fbbd7fc889853cc7e570d3d");
             string Date = "Tuần 22";
             var a = this.mongo.ReadByObjectId<Exams>("Exam", id);
-            a.Date = Date;
+            //a.Date = Date;
             this.mongo.Update<Exams>("Exam", id, a);
         }
     }

@@ -32,7 +32,7 @@ namespace DA_CNTT.Class
             var id = new ObjectId("5fbe04bc87949980dedc76dd");
             string ID = "WEPR440479";
             var a = this.mongo.ReadByObjectId<DetailedOutlines>("DetailedOutline", id);
-            a.Course_Code = ID;
+            //a.Course_Code = ID;
             this.mongo.Update<DetailedOutlines>("DetailedOutline", id, a);
         }
     }
