@@ -117,10 +117,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UCChapters.cs">
+    <Compile Include="UCChaptersAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCChapters.Designer.cs">
+    <Compile Include="UCChaptersAdd.Designer.cs">
+      <DependentUpon>UCChaptersAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Chapters\UCChapters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Chapters\UCChapters.Designer.cs">
       <DependentUpon>UCChapters.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\CChapters.cs" />
@@ -139,10 +145,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCManageSubjects.cs">
+    <Compile Include="UserControl\UCManageSubjects.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCManageSubjects.Designer.cs">
+    <Compile Include="UserControl\UCManageSubjects.Designer.cs">
       <DependentUpon>UCManageSubjects.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Chapters.cs" />
@@ -173,13 +179,16 @@
     <Compile Include="UserControl\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UCChapters.resx">
+    <EmbeddedResource Include="UCChaptersAdd.resx">
+      <DependentUpon>UCChaptersAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Chapters\UCChapters.resx">
       <DependentUpon>UCChapters.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCManageSubjects.resx">
+    <EmbeddedResource Include="UserControl\UCManageSubjects.resx">
       <DependentUpon>UCManageSubjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

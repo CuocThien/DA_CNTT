@@ -21,6 +21,11 @@ namespace DA_CNTT.Class
             var collection = this.db.GetCollection<T>(table);
             return collection.Find(new BsonDocument()).ToList();
         }
+        public void InsertRecord<T>(string table, T record)
+        {
+            var collection = db.GetCollection<T>(table);
+            collection.InsertOne(record);
+        }    
         public T ReadByObjectId<T>(string table, ObjectId id)
         {
             var collection = this.db.GetCollection<T>(table);

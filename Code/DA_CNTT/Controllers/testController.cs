@@ -33,7 +33,7 @@ namespace DA_CNTT.Controllers
         {
             var id = new ObjectId("5fc509436184428b8096c1d5");
             var id_CourseGoal = new ObjectId("5fc509cf6184428b8096c206");
-            this.subject.findAll();
+            //this.chapter.addChapter();
             //this.course.findFromSubject(id_CourseGoal);
             //this.detail.Update();
             //this.course.findAll();
