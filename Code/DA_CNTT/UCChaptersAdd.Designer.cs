@@ -81,7 +81,7 @@
             this.btn_Add.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Add.Image = null;
             this.btn_Add.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add.Location = new System.Drawing.Point(1591, 699);
+            this.btn_Add.Location = new System.Drawing.Point(1591, 840);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_Add.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -100,7 +100,7 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel1.Location = new System.Drawing.Point(34, 166);
+            this.gunaLabel1.Location = new System.Drawing.Point(34, 216);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(180, 50);
             this.gunaLabel1.TabIndex = 5;
@@ -111,7 +111,7 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel2.Location = new System.Drawing.Point(34, 365);
+            this.gunaLabel2.Location = new System.Drawing.Point(34, 499);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(236, 50);
             this.gunaLabel2.TabIndex = 5;
@@ -122,7 +122,7 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel3.Location = new System.Drawing.Point(930, 166);
+            this.gunaLabel3.Location = new System.Drawing.Point(930, 216);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(157, 50);
             this.gunaLabel3.TabIndex = 5;
@@ -139,7 +139,7 @@
             this.txt_ChapterID.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_ChapterID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_ChapterID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ChapterID.Location = new System.Drawing.Point(43, 249);
+            this.txt_ChapterID.Location = new System.Drawing.Point(43, 299);
             this.txt_ChapterID.Name = "txt_ChapterID";
             this.txt_ChapterID.PasswordChar = '\0';
             this.txt_ChapterID.Radius = 15;
@@ -158,7 +158,7 @@
             this.txt_ChapterName.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_ChapterName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_ChapterName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ChapterName.Location = new System.Drawing.Point(43, 457);
+            this.txt_ChapterName.Location = new System.Drawing.Point(43, 591);
             this.txt_ChapterName.Name = "txt_ChapterName";
             this.txt_ChapterName.PasswordChar = '\0';
             this.txt_ChapterName.Radius = 15;
@@ -177,7 +177,7 @@
             this.txt_Detail.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_Detail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Detail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Detail.Location = new System.Drawing.Point(939, 249);
+            this.txt_Detail.Location = new System.Drawing.Point(939, 299);
             this.txt_Detail.Name = "txt_Detail";
             this.txt_Detail.PasswordChar = '\0';
             this.txt_Detail.Radius = 15;
@@ -199,7 +199,7 @@
             this.btn_AddDetail.ForeColor = System.Drawing.Color.Magenta;
             this.btn_AddDetail.Image = null;
             this.btn_AddDetail.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_AddDetail.Location = new System.Drawing.Point(939, 699);
+            this.btn_AddDetail.Location = new System.Drawing.Point(939, 840);
             this.btn_AddDetail.Name = "btn_AddDetail";
             this.btn_AddDetail.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_AddDetail.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -228,7 +228,7 @@
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_Back);
             this.Name = "UCChaptersAdd";
-            this.Size = new System.Drawing.Size(2000, 825);
+            this.Size = new System.Drawing.Size(2000, 999);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -46,7 +46,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCChapters uCChapters = new UCChapters(sub_id);
+            UCChapters uCChapters = new UCChapters(pnl_container, sub_id);
             this.Dispose();
             cMain.loadUC(pnl_container, uCChapters);
         }

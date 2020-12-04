@@ -73,26 +73,31 @@ namespace DA_CNTT.Class
             }
         }
         //truyền ob_ID từ controllers
-        public void Delete()
+        public void Delete(string subid, string chapterId)
         {
-            var id = new ObjectId("5fc509436184428b8096c1d5");
-            var ID = "Chương 1";
-            var x = this.mongo.ReadByObjectId<Chapters>("Chapters", id);
-            var y = x.Chapter.Where(c => c.ID == ID).SingleOrDefault();
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", new ObjectId(subs.Where(s => s.Course_Code == subid).SingleOrDefault()._id.ToString()));
+            var ObId_chap = new ObjectId(sub.Chapter_ID.ToString());
+            var chapter = this.mongo.ReadByObjectId<Chapters>("Chapters", ObId_chap);
+            var chapterDel = chapter.Chapter.Where(c => c.ID == chapterId).SingleOrDefault();
             
-            x.Chapter.Remove(y);
-            this.mongo.Update<Chapters>("Chapters", id, x);
+            chapter.Chapter.Remove(chapterDel);
+            this.mongo.Update<Chapters>("Chapters", ObId_chap, chapter);
         }
         
         //Truyền record từ controllers
-        public void Update()
+        public void Update(string subid,string chapterId,Chapter chapter)
         {
-            var id = new ObjectId("5fc509436184428b8096c1d5");
-            var Id = "Chương 2 2";
-            string ID = "Chương 2";
-            var a = this.mongo.ReadByObjectId<Chapters>("Chapters", id);
-            a.Chapter.Where(c => c.ID == Id).SingleOrDefault().ID=ID;
-            this.mongo.Update<Chapters>("Chapters", id, a);
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", new ObjectId(subs.Where(s=>s.Course_Code==subid).SingleOrDefault()._id.ToString()));
+            var ObId_chap = new ObjectId(sub.Chapter_ID.ToString());
+            var chapterExist = this.mongo.ReadByObjectId<Chapters>("Chapters", ObId_chap);
+            chapterExist.Chapter.Where(c => c.ID == chapterId).SingleOrDefault().Name = chapter.Name;
+            chapterExist.Chapter.Where(c => c.ID == chapterId).SingleOrDefault().Detail = chapter.Detail;
+            chapterExist.Chapter.Where(c => c.ID == chapterId).SingleOrDefault().ID=chapter.ID;
+            this.mongo.Update<Chapters>("Chapters", ObId_chap, chapterExist);
         }
         //
     }

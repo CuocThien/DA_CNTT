@@ -22,7 +22,7 @@ namespace DA_CNTT
 
         private void btn_Chapter_Click(object sender, EventArgs e)
         {
-            UCChapters uCChapters = new UCChapters(Sub_id);
+            UCChapters uCChapters = new UCChapters(pnl_container, Sub_id);
             cMain.loadUC(pnl_container, uCChapters);
         }
     }

@@ -123,6 +123,12 @@
     <Compile Include="UCChaptersAdd.Designer.cs">
       <DependentUpon>UCChaptersAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCChaptersEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCChaptersEdit.Designer.cs">
+      <DependentUpon>UCChaptersEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Chapters\UCChapters.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </Compile>
     <EmbeddedResource Include="UCChaptersAdd.resx">
       <DependentUpon>UCChaptersAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCChaptersEdit.resx">
+      <DependentUpon>UCChaptersEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Chapters\UCChapters.resx">
       <DependentUpon>UCChapters.cs</DependentUpon>
