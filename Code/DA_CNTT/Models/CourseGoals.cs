@@ -10,7 +10,7 @@ namespace DA_CNTT.Models
 {
     public class CourseGoals
     {
-        public ObjectId id { get; set; }
+        public ObjectId _id { get; set; }
 
         [JsonProperty("Course_Goal")]
         public List<CourseGoal> Course_Goal { get; set; }

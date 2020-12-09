@@ -33,7 +33,7 @@
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.btn_CourseGoals = new Guna.UI.WinForms.GunaButton();
             this.btn_Chapter = new Guna.UI.WinForms.GunaButton();
             this.pnl_container = new Guna.UI.WinForms.GunaPanel();
             this.pnl_Menu.SuspendLayout();
@@ -46,7 +46,7 @@
             this.pnl_Menu.Controls.Add(this.gunaButton5);
             this.pnl_Menu.Controls.Add(this.gunaButton4);
             this.pnl_Menu.Controls.Add(this.gunaButton3);
-            this.pnl_Menu.Controls.Add(this.gunaButton2);
+            this.pnl_Menu.Controls.Add(this.btn_CourseGoals);
             this.pnl_Menu.Controls.Add(this.btn_Chapter);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
@@ -162,32 +162,33 @@
             this.gunaButton3.Text = "ĐỀ CƯƠNG";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaButton2
+            // btn_CourseGoals
             // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton2.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.gunaButton2.BorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton2.BorderSize = 3;
-            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton2.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaButton2.Image = null;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(25, 184);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Radius = 10;
-            this.gunaButton2.Size = new System.Drawing.Size(330, 84);
-            this.gunaButton2.TabIndex = 0;
-            this.gunaButton2.Text = "MỤC TIÊU";
-            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_CourseGoals.AnimationHoverSpeed = 0.07F;
+            this.btn_CourseGoals.AnimationSpeed = 0.03F;
+            this.btn_CourseGoals.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CourseGoals.BaseColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_CourseGoals.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_CourseGoals.BorderSize = 3;
+            this.btn_CourseGoals.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_CourseGoals.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_CourseGoals.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CourseGoals.ForeColor = System.Drawing.Color.Magenta;
+            this.btn_CourseGoals.Image = null;
+            this.btn_CourseGoals.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_CourseGoals.Location = new System.Drawing.Point(25, 184);
+            this.btn_CourseGoals.Name = "btn_CourseGoals";
+            this.btn_CourseGoals.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_CourseGoals.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_CourseGoals.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_CourseGoals.OnHoverImage = null;
+            this.btn_CourseGoals.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_CourseGoals.Radius = 10;
+            this.btn_CourseGoals.Size = new System.Drawing.Size(330, 84);
+            this.btn_CourseGoals.TabIndex = 0;
+            this.btn_CourseGoals.Text = "MỤC TIÊU";
+            this.btn_CourseGoals.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_CourseGoals.Click += new System.EventHandler(this.btn_CourseGoals_Click);
             // 
             // btn_Chapter
             // 
@@ -248,6 +249,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton5;
         private Guna.UI.WinForms.GunaButton gunaButton4;
         private Guna.UI.WinForms.GunaButton gunaButton3;
-        private Guna.UI.WinForms.GunaButton gunaButton2;
+        private Guna.UI.WinForms.GunaButton btn_CourseGoals;
     }
 }

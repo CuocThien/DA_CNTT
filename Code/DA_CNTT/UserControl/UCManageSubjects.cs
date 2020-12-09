@@ -25,5 +25,11 @@ namespace DA_CNTT
             UCChapters uCChapters = new UCChapters(pnl_container, Sub_id);
             cMain.loadUC(pnl_container, uCChapters);
         }
+
+        private void btn_CourseGoals_Click(object sender, EventArgs e)
+        {
+            UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, Sub_id);
+            cMain.loadUC(pnl_container, uCCourseGoals);
+        }
     }
 }

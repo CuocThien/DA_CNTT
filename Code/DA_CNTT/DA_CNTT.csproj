@@ -117,16 +117,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UCChaptersAdd.cs">
+    <Compile Include="UCCourseGoalsEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCChaptersAdd.Designer.cs">
+    <Compile Include="UCCourseGoalsEdit.Designer.cs">
+      <DependentUpon>UCCourseGoalsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CourseGoals\UCCourseGoalsAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\CourseGoals\UCCourseGoalsAdd.Designer.cs">
+      <DependentUpon>UCCourseGoalsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CourseGoals\UCCourseGoals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\CourseGoals\UCCourseGoals.Designer.cs">
+      <DependentUpon>UCCourseGoals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Chapters\UCChaptersAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Chapters\UCChaptersAdd.Designer.cs">
       <DependentUpon>UCChaptersAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCChaptersEdit.cs">
+    <Compile Include="UserControl\Chapters\UCChaptersEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCChaptersEdit.Designer.cs">
+    <Compile Include="UserControl\Chapters\UCChaptersEdit.Designer.cs">
       <DependentUpon>UCChaptersEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Chapters\UCChapters.cs">
@@ -185,10 +203,19 @@
     <Compile Include="UserControl\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UCChaptersAdd.resx">
+    <EmbeddedResource Include="UCCourseGoalsEdit.resx">
+      <DependentUpon>UCCourseGoalsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\CourseGoals\UCCourseGoalsAdd.resx">
+      <DependentUpon>UCCourseGoalsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\CourseGoals\UCCourseGoals.resx">
+      <DependentUpon>UCCourseGoals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Chapters\UCChaptersAdd.resx">
       <DependentUpon>UCChaptersAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCChaptersEdit.resx">
+    <EmbeddedResource Include="UserControl\Chapters\UCChaptersEdit.resx">
       <DependentUpon>UCChaptersEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Chapters\UCChapters.resx">

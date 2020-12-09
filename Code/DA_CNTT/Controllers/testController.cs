@@ -54,5 +54,10 @@ namespace DA_CNTT.Controllers
             var result = this.chapter.findfromsubject(id);
             return result;
         }
+        public CourseGoals loadCourseGoals(string id)
+        {
+            var result = this.course.findFromSubject(id);
+            return result;
+        }
     }
 }

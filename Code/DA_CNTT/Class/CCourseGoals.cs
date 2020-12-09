@@ -10,6 +10,7 @@ namespace DA_CNTT.Class
 {
     public class CCourseGoals
     {
+        private CSubject cSub;
         private CMongoCRUD mongo;
         public CCourseGoals()
         {
@@ -20,25 +21,77 @@ namespace DA_CNTT.Class
             var result = this.mongo.Read<CourseGoals>("CourseGoals");
             return result;
         }
-        public CourseGoals findFromSubject(ObjectId id)
+        public CourseGoals findFromSubject(string id)
         {
-            var result = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", id);
-            return result;
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub_id = subs.Where(s => s.Course_Code.Equals(id)).SingleOrDefault();
+            if (sub_id.Goal_ID.ToString() != "")
+            {
+                var coursegoal_id = new ObjectId(sub_id.Goal_ID.ToString());
+                var result = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", coursegoal_id);
+                return result;
+            }
+            else return null;
+        }
+        public void addCourseGoal(string id, CourseGoal courseGoal)
+        {
+            var obId = ObjectId.GenerateNewId();
+            CCourseGoals cCourseGoals = new CCourseGoals();
+            var courseGoalsExist = cCourseGoals.findFromSubject(id);
+            if (!(courseGoalsExist is null))
+            {
+                var coursegoalnew = new CourseGoal();
+                coursegoalnew = courseGoal;
+                courseGoalsExist.Course_Goal.Add(coursegoalnew);
+                this.mongo.Update<CourseGoals>("CourseGoals", courseGoalsExist._id, courseGoalsExist);
+            }
+            else
+            {
+                var courseGoalsnew = new CourseGoals();
+                courseGoalsnew._id = obId;
+                this.mongo.InsertRecord<CourseGoals>("CourseGoals", courseGoalsnew);
+                var coursegoal = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", obId);
+                var result = new List<CourseGoal>();
+                var coursegoalnew = new CourseGoal();
+                coursegoalnew = courseGoal;
+                result.Add(coursegoalnew);
+                coursegoal.Course_Goal = result;
+                this.mongo.Update<CourseGoals>("CourseGoals", obId, coursegoal);
+                cSub = new CSubject();
+                var subs = cSub.findAll();
+                var subID = new ObjectId(subs.Where(s => s.Course_Code == id).SingleOrDefault()._id.ToString());
+                var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", subID);
+                sub.Goal_ID = obId.ToString();
+                this.mongo.Update<Subjects>("Subjects", subID, sub);
+            }
         }
         //truyền ob_ID từ controllers
-        public void delete()
+        public void Delete(string subid, string coursegoalId)
         {
-            var id = new ObjectId("5fbbcadb889853cc7e570d30");
-            this.mongo.DeleteByObjectId<CourseGoals>("CourseGoals", id);
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", new ObjectId(subs.Where(s => s.Course_Code == subid).SingleOrDefault()._id.ToString()));
+            var ObId_coursegoal = new ObjectId(sub.Goal_ID.ToString());
+            var coursegoal = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", ObId_coursegoal);
+            var coursegoaldel = coursegoal.Course_Goal.Where(c => c.ID_Goal == coursegoalId).SingleOrDefault();
+
+            coursegoal.Course_Goal.Remove(coursegoaldel);
+            this.mongo.Update<CourseGoals>("CourseGoals", ObId_coursegoal, coursegoal);
         }
         //Truyền record từ controllers
-        public void Update()
+        public void Update(string subid, string coursegoalId, CourseGoal courseGoal)
         {
-            var id = new ObjectId("5fbbcadb889853cc7e570d30");
-            string ID_Goal = "G2";
-            var a = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", id);
-            //a.ID_Goal = ID_Goal;
-            this.mongo.Update<CourseGoals>("CourseGoals", id, a);
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", new ObjectId(subs.Where(s => s.Course_Code == subid).SingleOrDefault()._id.ToString()));
+            var ObId_coursegoal = new ObjectId(sub.Goal_ID.ToString());
+            var coursegoalExist = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", ObId_coursegoal);
+            coursegoalExist.Course_Goal.Where(c => c.ID_Goal == coursegoalId).SingleOrDefault().Description_Goal = courseGoal.Description_Goal;
+            coursegoalExist.Course_Goal.Where(c => c.ID_Goal == coursegoalId).SingleOrDefault().ID_CDR = courseGoal.ID_CDR;
+            coursegoalExist.Course_Goal.Where(c => c.ID_Goal == coursegoalId).SingleOrDefault().ID_CTDT = courseGoal.ID_CTDT;
+            coursegoalExist.Course_Goal.Where(c => c.ID_Goal == coursegoalId).SingleOrDefault().ID_Goal = courseGoal.ID_Goal;
+            this.mongo.Update<CourseGoals>("CourseGoals", ObId_coursegoal, coursegoalExist);
         }
     }
 }
