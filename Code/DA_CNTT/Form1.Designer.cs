@@ -33,7 +33,6 @@
             this.pb_Title = new Guna.UI.WinForms.GunaPictureBox();
             this.pnl_Container = new Guna.UI.WinForms.GunaPanel();
             this.pnl_content = new Guna.UI.WinForms.GunaPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
             this.ms_Menu = new System.Windows.Forms.MenuStrip();
             this.btn_Gioithieu = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +70,6 @@
             // pnl_Title
             // 
             this.pnl_Title.BackColor = System.Drawing.Color.White;
-            this.pnl_Title.Controls.Add(this.button1);
             this.pnl_Title.Controls.Add(this.pb_logo);
             this.pnl_Title.Controls.Add(this.pb_Title);
             this.pnl_Title.Dock = System.Windows.Forms.DockStyle.Top;
@@ -119,16 +117,6 @@
             this.pnl_content.Name = "pnl_content";
             this.pnl_content.Size = new System.Drawing.Size(2374, 999);
             this.pnl_content.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(974, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(444, 118);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnl_Menu
             // 
@@ -404,7 +392,6 @@
         private System.Windows.Forms.ToolStripMenuItem btn_IntroPro;
         private Guna.UI.WinForms.GunaPictureBox pb_logo;
         private Guna.UI.WinForms.GunaPanel pnl_content;
-        private System.Windows.Forms.Button button1;
     }
 }
 

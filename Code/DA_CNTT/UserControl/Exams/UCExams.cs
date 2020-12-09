@@ -25,7 +25,7 @@ namespace DA_CNTT
             this.dgv_Exams.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             this.dgv_Exams.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Khaki;
             this.dgv_Exams.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Red;
-            var controller = new testController();
+            var controller = new MainController();
             var load = controller.loadExams(sub_id);
             this.pnl_contain = pnl_container;
             if (!(load is null))

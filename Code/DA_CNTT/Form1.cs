@@ -49,12 +49,5 @@ namespace DA_CNTT
             UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18();
             cMain.loadUC(this.pnl_content, uCCnttBefore18);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var a = new testController();
-            a.chap();
-            var b = 1;
-        }
     }
 }

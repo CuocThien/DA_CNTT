@@ -9,7 +9,7 @@ using MongoDB.Bson;
 
 namespace DA_CNTT.Controllers
 {
-    public class testController
+    public class MainController
     {
         private CChapters chapter;
         private CDetailedOutline detail;
@@ -19,7 +19,7 @@ namespace DA_CNTT.Controllers
         private CPPGD ppgd;
         private CSelfStudy selfstudy;
 
-        public testController()
+        public MainController()
         {
             this.chapter = new CChapters();
             this.detail = new CDetailedOutline();
@@ -28,21 +28,6 @@ namespace DA_CNTT.Controllers
             this.exam = new CExam();
             this.ppgd = new CPPGD();
             this.selfstudy = new CSelfStudy();
-        }
-        public void chap()
-        {
-            var id = new ObjectId("5fc509436184428b8096c1d5");
-            var id_CourseGoal = new ObjectId("5fc509cf6184428b8096c206");
-            //this.chapter.addChapter();
-            //this.course.findFromSubject(id_CourseGoal);
-            //this.detail.Update();
-            //this.course.findAll();
-            //this.subject.findAll();
-            //this.subject.Update();
-            //this.exam.findAll();
-            //this.exam.delete();
-            //this.ppgd.delete();
-            //this.selfstudy.findAll();
         }
         public List<Subjects> loadsubjects()
         {

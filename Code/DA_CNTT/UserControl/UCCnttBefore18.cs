@@ -20,7 +20,7 @@ namespace DA_CNTT
             this.dgv_Content.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             this.dgv_Content.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Khaki;
             this.dgv_Content.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Red;
-            var controller = new testController();
+            var controller = new MainController();
             var sub = controller.loadsubjects();
             foreach (var item in sub)
             {
@@ -33,7 +33,7 @@ namespace DA_CNTT
 
         private void txt_Search_TextChanged_1(object sender, EventArgs e)
         {
-            var controller = new testController();
+            var controller = new MainController();
             var sub = controller.loadsubjects();
             var subs = sub.Where(item => item.Course_Code.ToLower().Contains(this.txt_Search.Text.ToLower())
               || item.Course_Name.ToLower().Contains(this.txt_Search.Text.ToLower())).ToList();

@@ -180,7 +180,7 @@
     <Compile Include="Class\CSelfStudy.cs" />
     <Compile Include="Class\CSubject.cs" />
     <Compile Include="Controllers\cMain.cs" />
-    <Compile Include="Controllers\testController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
