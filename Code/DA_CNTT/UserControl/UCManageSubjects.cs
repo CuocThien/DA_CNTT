@@ -31,5 +31,11 @@ namespace DA_CNTT
             UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, Sub_id);
             cMain.loadUC(pnl_container, uCCourseGoals);
         }
+
+        private void btn_exams_Click(object sender, EventArgs e)
+        {
+            UCExams uCExams = new UCExams(pnl_container, Sub_id);
+            cMain.loadUC(pnl_container, uCExams);
+        }
     }
 }

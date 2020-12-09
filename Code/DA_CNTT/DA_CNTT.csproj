@@ -117,10 +117,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UCCourseGoalsEdit.cs">
+    <Compile Include="UserControl\Exams\UCExams.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCCourseGoalsEdit.Designer.cs">
+    <Compile Include="UserControl\Exams\UCExams.Designer.cs">
+      <DependentUpon>UCExams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Exams\UCExamsAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Exams\UCExamsAdd.Designer.cs">
+      <DependentUpon>UCExamsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Exams\UCExamsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Exams\UCExamsEdit.Designer.cs">
+      <DependentUpon>UCExamsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CourseGoals\UCCourseGoalsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\CourseGoals\UCCourseGoalsEdit.Designer.cs">
       <DependentUpon>UCCourseGoalsEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\CourseGoals\UCCourseGoalsAdd.cs">
@@ -203,7 +221,16 @@
     <Compile Include="UserControl\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UCCourseGoalsEdit.resx">
+    <EmbeddedResource Include="UserControl\Exams\UCExams.resx">
+      <DependentUpon>UCExams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Exams\UCExamsAdd.resx">
+      <DependentUpon>UCExamsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Exams\UCExamsEdit.resx">
+      <DependentUpon>UCExamsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\CourseGoals\UCCourseGoalsEdit.resx">
       <DependentUpon>UCCourseGoalsEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\CourseGoals\UCCourseGoalsAdd.resx">
@@ -266,6 +293,7 @@
     <Content Include="img\cntt.png" />
     <Content Include="img\spkt.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

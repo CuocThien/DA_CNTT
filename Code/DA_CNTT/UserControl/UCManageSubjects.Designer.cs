@@ -30,7 +30,7 @@
         {
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
+            this.btn_exams = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.btn_CourseGoals = new Guna.UI.WinForms.GunaButton();
@@ -43,7 +43,7 @@
             // 
             this.pnl_Menu.BackColor = System.Drawing.Color.LightCyan;
             this.pnl_Menu.Controls.Add(this.gunaButton6);
-            this.pnl_Menu.Controls.Add(this.gunaButton5);
+            this.pnl_Menu.Controls.Add(this.btn_exams);
             this.pnl_Menu.Controls.Add(this.gunaButton4);
             this.pnl_Menu.Controls.Add(this.gunaButton3);
             this.pnl_Menu.Controls.Add(this.btn_CourseGoals);
@@ -81,32 +81,33 @@
             this.gunaButton6.Text = "TỰ HỌC";
             this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaButton5
+            // btn_exams
             // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.gunaButton5.BorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton5.BorderSize = 3;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton5.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaButton5.Image = null;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(25, 561);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Radius = 10;
-            this.gunaButton5.Size = new System.Drawing.Size(330, 84);
-            this.gunaButton5.TabIndex = 0;
-            this.gunaButton5.Text = "TỰ HỌC";
-            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_exams.AnimationHoverSpeed = 0.07F;
+            this.btn_exams.AnimationSpeed = 0.03F;
+            this.btn_exams.BackColor = System.Drawing.Color.Transparent;
+            this.btn_exams.BaseColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_exams.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_exams.BorderSize = 3;
+            this.btn_exams.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_exams.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_exams.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exams.ForeColor = System.Drawing.Color.Magenta;
+            this.btn_exams.Image = null;
+            this.btn_exams.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_exams.Location = new System.Drawing.Point(25, 561);
+            this.btn_exams.Name = "btn_exams";
+            this.btn_exams.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_exams.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_exams.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_exams.OnHoverImage = null;
+            this.btn_exams.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_exams.Radius = 10;
+            this.btn_exams.Size = new System.Drawing.Size(330, 84);
+            this.btn_exams.TabIndex = 0;
+            this.btn_exams.Text = "BÀI TẬP";
+            this.btn_exams.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_exams.Click += new System.EventHandler(this.btn_exams_Click);
             // 
             // gunaButton4
             // 
@@ -246,7 +247,7 @@
         private Guna.UI.WinForms.GunaButton btn_Chapter;
         private Guna.UI.WinForms.GunaPanel pnl_container;
         private Guna.UI.WinForms.GunaButton gunaButton6;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
+        private Guna.UI.WinForms.GunaButton btn_exams;
         private Guna.UI.WinForms.GunaButton gunaButton4;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton btn_CourseGoals;

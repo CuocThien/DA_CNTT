@@ -59,5 +59,10 @@ namespace DA_CNTT.Controllers
             var result = this.course.findFromSubject(id);
             return result;
         }
+        public Exams loadExams(string id)
+        {
+            var result = this.exam.findfromsubject(id);
+            return result;
+        }
     }
 }
