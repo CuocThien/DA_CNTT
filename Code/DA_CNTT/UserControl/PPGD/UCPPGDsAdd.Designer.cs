@@ -1,6 +1,6 @@
 ﻿namespace DA_CNTT
 {
-    partial class UCPPGDAdd
+    partial class UCPPGDsAdd
     {
         /// <summary> 
         /// Required designer variable.

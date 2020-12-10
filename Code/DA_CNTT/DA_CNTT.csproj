@@ -117,17 +117,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UCPPGDAdd.cs">
+    <Compile Include="UserControl\PPGD\UCPPGDsAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCPPGDAdd.Designer.cs">
-      <DependentUpon>UCPPGDAdd.cs</DependentUpon>
+    <Compile Include="UserControl\PPGD\UCPPGDsAdd.Designer.cs">
+      <DependentUpon>UCPPGDsAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCPPGDs.cs">
+    <Compile Include="UserControl\PPGD\UCPPGDs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCPPGDs.Designer.cs">
+    <Compile Include="UserControl\PPGD\UCPPGDs.Designer.cs">
       <DependentUpon>UCPPGDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\PPGD\UCPPGDsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\PPGD\UCPPGDsEdit.Designer.cs">
+      <DependentUpon>UCPPGDsEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Exams\UCExams.cs">
       <SubType>UserControl</SubType>
@@ -233,11 +239,14 @@
     <Compile Include="UserControl\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UCPPGDAdd.resx">
-      <DependentUpon>UCPPGDAdd.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\PPGD\UCPPGDsAdd.resx">
+      <DependentUpon>UCPPGDsAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCPPGDs.resx">
+    <EmbeddedResource Include="UserControl\PPGD\UCPPGDs.resx">
       <DependentUpon>UCPPGDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\PPGD\UCPPGDsEdit.resx">
+      <DependentUpon>UCPPGDsEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Exams\UCExams.resx">
       <DependentUpon>UCExams.cs</DependentUpon>
@@ -311,9 +320,7 @@
     <Content Include="img\cntt.png" />
     <Content Include="img\spkt.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UserControl\PPGD\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -44,6 +44,8 @@
             this.btn_editctdt = new Guna.UI.WinForms.GunaButton();
             this.btn_ctdtprevious = new Guna.UI.WinForms.GunaButton();
             this.btn_ctdtnext = new Guna.UI.WinForms.GunaButton();
+            this.lbl_countHP = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_countCTDT = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // txt_Description
@@ -390,6 +392,28 @@
             this.btn_ctdtnext.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_ctdtnext.Click += new System.EventHandler(this.btn_ctdtnext_Click);
             // 
+            // lbl_countHP
+            // 
+            this.lbl_countHP.AutoSize = true;
+            this.lbl_countHP.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_countHP.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_countHP.Location = new System.Drawing.Point(474, 520);
+            this.lbl_countHP.Name = "lbl_countHP";
+            this.lbl_countHP.Size = new System.Drawing.Size(43, 50);
+            this.lbl_countHP.TabIndex = 20;
+            this.lbl_countHP.Text = "1";
+            // 
+            // lbl_countCTDT
+            // 
+            this.lbl_countCTDT.AutoSize = true;
+            this.lbl_countCTDT.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_countCTDT.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_countCTDT.Location = new System.Drawing.Point(1308, 520);
+            this.lbl_countCTDT.Name = "lbl_countCTDT";
+            this.lbl_countCTDT.Size = new System.Drawing.Size(43, 50);
+            this.lbl_countCTDT.TabIndex = 20;
+            this.lbl_countCTDT.Text = "1";
+            // 
             // UCCourseGoalsEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -401,6 +425,8 @@
             this.Controls.Add(this.btn_hpprevious);
             this.Controls.Add(this.txt_Description);
             this.Controls.Add(this.txt_GoalID);
+            this.Controls.Add(this.lbl_countCTDT);
+            this.Controls.Add(this.lbl_countHP);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel2);
@@ -413,6 +439,7 @@
             this.Controls.Add(this.txt_CDRCTDT);
             this.Name = "UCCourseGoalsEdit";
             this.Size = new System.Drawing.Size(2000, 999);
+            this.Load += new System.EventHandler(this.UCCourseGoalsEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,5 +463,7 @@
         private Guna.UI.WinForms.GunaButton btn_editctdt;
         private Guna.UI.WinForms.GunaButton btn_ctdtprevious;
         private Guna.UI.WinForms.GunaButton btn_ctdtnext;
+        private Guna.UI.WinForms.GunaLabel lbl_countHP;
+        private Guna.UI.WinForms.GunaLabel lbl_countCTDT;
     }
 }

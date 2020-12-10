@@ -62,6 +62,7 @@ namespace DA_CNTT
             {
                 this.txt_CDRHP.Text = coursegoal.ID_CDR[count_hp - 1];
                 count_hp--;
+                lbl_countHP.Text = (count_hp + 1).ToString();
             }
             else
                 this.txt_CDRHP.Text = coursegoal.ID_CDR[0];
@@ -73,6 +74,7 @@ namespace DA_CNTT
             {
                 this.txt_CDRHP.Text = coursegoal.ID_CDR[count_hp + 1];
                 count_hp++;
+                lbl_countHP.Text = (count_hp + 1).ToString();
             }
             else
                 this.txt_CDRHP.Text = coursegoal.ID_CDR[max_hp - 1];
@@ -84,6 +86,7 @@ namespace DA_CNTT
             {
                 this.txt_CDRCTDT.Text = coursegoal.ID_CTDT[count_ctdt - 1];
                 count_hp--;
+                lbl_countCTDT.Text = (count_ctdt + 1).ToString();
             }
             else
                 this.txt_CDRCTDT.Text = coursegoal.ID_CTDT[0];
@@ -95,6 +98,8 @@ namespace DA_CNTT
             {
                 this.txt_CDRCTDT.Text = coursegoal.ID_CTDT[count_ctdt + 1];
                 count_hp++;
+                lbl_countCTDT.Text = (count_ctdt + 1).ToString();
+
             }
             else
                 this.txt_CDRCTDT.Text = coursegoal.ID_CTDT[max_ctdt - 1];
@@ -102,14 +107,31 @@ namespace DA_CNTT
 
         private void btn_edithp_Click(object sender, EventArgs e)
         {
-            CDRs[count_hp] = this.txt_CDRHP.Text;
-            MessageBox.Show("Thành công");
+            if (txt_CDRHP.Text != "")
+            {
+                CDRs[count_hp] = this.txt_CDRHP.Text;
+                MessageBox.Show("Sửa chi tiết CDR học phần thành công");
+            }
+            else
+            {
+                MessageBox.Show("Không để trống!!!");
+                this.txt_CDRHP.Text = CDRs[count_hp];
+            }
         }
 
         private void btn_editctdt_Click(object sender, EventArgs e)
         {
-            CTDTs[count_ctdt] = this.txt_CDRCTDT.Text;
-            MessageBox.Show("Thành công");
+            if (txt_CDRCTDT.Text != "")
+            {
+                CTDTs[count_ctdt] = this.txt_CDRCTDT.Text;
+                MessageBox.Show("Sửa chi tiết CĐR CTĐT thành công");
+            }
+            else
+            {
+                MessageBox.Show("Không để trống!!!");
+                this.txt_CDRCTDT.Text = CTDTs[count_ctdt];
+
+            }
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
@@ -121,12 +143,24 @@ namespace DA_CNTT
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            coursegoal.ID_Goal = this.txt_GoalID.Text;
-            coursegoal.Description_Goal = this.txt_Description.Text;
-            coursegoal.ID_CDR = CDRs;
-            coursegoal.ID_CTDT = CTDTs;
-            cCourseGoals.Update(subId, coursegoalId, coursegoal);
-            MessageBox.Show("Thành công");
+            if (txt_GoalID.Text != "" && txt_Description.Text != "")
+            {
+                coursegoal.ID_Goal = this.txt_GoalID.Text;
+                coursegoal.Description_Goal = this.txt_Description.Text;
+                coursegoal.ID_CDR = CDRs;
+                coursegoal.ID_CTDT = CTDTs;
+                cCourseGoals.Update(subId, coursegoalId, coursegoal);
+                MessageBox.Show("Sửa thông tin thành công");
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đủ thông tin");
+            }
+        }
+
+        private void UCCourseGoalsEdit_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

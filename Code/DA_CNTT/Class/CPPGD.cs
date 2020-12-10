@@ -63,18 +63,28 @@ namespace DA_CNTT.Class
                 this.mongo.Update<Subjects>("Subjects", subID, sub);
             }
         }
-        public void delete()
+        public void delete(string subid, string ppgdId)
         {
-            var id = new ObjectId("5fbe2cdf87949980dedc7d40");
-            this.mongo.DeleteByObjectId<PPGDs>("PPGD", id);
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", new ObjectId(subs.Where(s => s.Course_Code == subid).SingleOrDefault()._id.ToString()));
+            var ObId_ppgd = new ObjectId(sub.PPGD_ID.ToString());
+            var ppgd = this.mongo.ReadByObjectId<PPGDs>("PPGDs", ObId_ppgd);
+            var ppgdDel = ppgd.PPGD.Where(c => c.ID == ppgdId).SingleOrDefault();
+
+            ppgd.PPGD.Remove(ppgdDel);
+            this.mongo.Update<PPGDs>("PPGDs", ObId_ppgd, ppgd);
         }
-        public void Update()
+        public void Update(string subid, string ppgdId, PPGD ppgd)
         {
-            var id = new ObjectId("5fbe2cdf87949980dedc7d40");
-            string ID = "PPGD!!";
-            var a = this.mongo.ReadByObjectId<PPGDs>("PPGD", id);
-           // a.ID = ID;
-            this.mongo.Update<PPGDs>("PPGD", id, a);
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", new ObjectId(subs.Where(s => s.Course_Code == subid).SingleOrDefault()._id.ToString()));
+            var ObId_ppgd = new ObjectId(sub.PPGD_ID.ToString());
+            var ppgdExist = this.mongo.ReadByObjectId<PPGDs>("PPGDs", ObId_ppgd);
+            ppgdExist.PPGD.Where(c => c.ID == ppgdId).SingleOrDefault().Detail = ppgd.Detail;
+            ppgdExist.PPGD.Where(c => c.ID == ppgdId).SingleOrDefault().ID = ppgd.ID;
+            this.mongo.Update<PPGDs>("PPGDs", ObId_ppgd, ppgdExist);
         }
     }
 }

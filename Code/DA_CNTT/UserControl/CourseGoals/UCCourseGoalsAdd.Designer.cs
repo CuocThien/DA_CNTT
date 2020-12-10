@@ -40,6 +40,8 @@
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.txt_CDRCTDT = new Guna.UI.WinForms.GunaTextBox();
             this.btn_CDRHP = new Guna.UI.WinForms.GunaButton();
+            this.lbl_CDRHP = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_CDRCTDT = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // txt_CDRHP
@@ -274,6 +276,28 @@
             this.btn_CDRHP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_CDRHP.Click += new System.EventHandler(this.btn_CDRHP_Click);
             // 
+            // lbl_CDRHP
+            // 
+            this.lbl_CDRHP.AutoSize = true;
+            this.lbl_CDRHP.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CDRHP.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_CDRHP.Location = new System.Drawing.Point(479, 520);
+            this.lbl_CDRHP.Name = "lbl_CDRHP";
+            this.lbl_CDRHP.Size = new System.Drawing.Size(43, 50);
+            this.lbl_CDRHP.TabIndex = 10;
+            this.lbl_CDRHP.Text = "0";
+            // 
+            // lbl_CDRCTDT
+            // 
+            this.lbl_CDRCTDT.AutoSize = true;
+            this.lbl_CDRCTDT.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CDRCTDT.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_CDRCTDT.Location = new System.Drawing.Point(1302, 520);
+            this.lbl_CDRCTDT.Name = "lbl_CDRCTDT";
+            this.lbl_CDRCTDT.Size = new System.Drawing.Size(43, 50);
+            this.lbl_CDRCTDT.TabIndex = 10;
+            this.lbl_CDRCTDT.Text = "0";
+            // 
             // UCCousrseGoalAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -281,6 +305,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.txt_Description);
             this.Controls.Add(this.txt_GoalID);
+            this.Controls.Add(this.lbl_CDRCTDT);
+            this.Controls.Add(this.lbl_CDRHP);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel2);
@@ -312,5 +338,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaTextBox txt_CDRCTDT;
         private Guna.UI.WinForms.GunaButton btn_CDRHP;
+        private Guna.UI.WinForms.GunaLabel lbl_CDRHP;
+        private Guna.UI.WinForms.GunaLabel lbl_CDRCTDT;
     }
 }

@@ -48,6 +48,7 @@ namespace DA_CNTT
             {
                 this.txt_Detail.Text = chapter.Detail[count - 1];
                 count--;
+                lbl_count.Text = (count+1).ToString();
             }
             else
                 this.txt_Detail.Text = chapter.Detail[0];
@@ -60,6 +61,7 @@ namespace DA_CNTT
             {
                 this.txt_Detail.Text = chapter.Detail[count + 1];
                 count++;
+                lbl_count.Text = (count+1).ToString();
             }
             else
                 this.txt_Detail.Text = chapter.Detail[max - 1];
@@ -68,17 +70,30 @@ namespace DA_CNTT
 
         private void btn_EditDetail_Click(object sender, EventArgs e)
         {
-            details[count] = this.txt_Detail.Text;
-            MessageBox.Show("Thành công");
+            if (txt_Detail.Text != "")
+            {
+                details[count] = this.txt_Detail.Text;
+                MessageBox.Show("Sửa chi tiết thành công");
+            }
+            else
+            {
+                MessageBox.Show("Không để trống!!!");
+                this.txt_Detail.Text = details[count];
+            }
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            chapter.ID = this.txt_ChapterID.Text;
-            chapter.Name = this.txt_ChapterName.Text;
-            chapter.Detail = details;
-            cChapters.Update(subId, chapterId,chapter);
-            MessageBox.Show("Thành công");
+            if (txt_ChapterID.Text != "" && txt_ChapterName.Text != "")
+            {
+                chapter.ID = this.txt_ChapterID.Text;
+                chapter.Name = this.txt_ChapterName.Text;
+                chapter.Detail = details;
+                cChapters.Update(subId, chapterId, chapter);
+                MessageBox.Show("Sửa thông tin thành công");
+            }
+            else
+                MessageBox.Show("Nhập đủ thông tin");
 
         }
 

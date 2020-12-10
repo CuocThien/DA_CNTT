@@ -45,6 +45,7 @@
             this.btn_next = new Guna.UI.WinForms.GunaButton();
             this.btn_previous = new Guna.UI.WinForms.GunaButton();
             this.btn_editcdr = new Guna.UI.WinForms.GunaButton();
+            this.lbl_countHP = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // txt_percentage
@@ -367,6 +368,17 @@
             this.btn_editcdr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_editcdr.Click += new System.EventHandler(this.btn_editcdr_Click);
             // 
+            // lbl_countHP
+            // 
+            this.lbl_countHP.AutoSize = true;
+            this.lbl_countHP.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_countHP.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_countHP.Location = new System.Drawing.Point(1467, 439);
+            this.lbl_countHP.Name = "lbl_countHP";
+            this.lbl_countHP.Size = new System.Drawing.Size(43, 50);
+            this.lbl_countHP.TabIndex = 24;
+            this.lbl_countHP.Text = "1";
+            // 
             // UCExamsEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -386,6 +398,7 @@
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.lbl_countHP);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_Back);
@@ -415,5 +428,6 @@
         private Guna.UI.WinForms.GunaButton btn_next;
         private Guna.UI.WinForms.GunaButton btn_previous;
         private Guna.UI.WinForms.GunaButton btn_editcdr;
+        private Guna.UI.WinForms.GunaLabel lbl_countHP;
     }
 }
