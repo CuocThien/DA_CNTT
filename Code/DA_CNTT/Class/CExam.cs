@@ -42,9 +42,7 @@ namespace DA_CNTT.Class
             var examExist = cExam.findfromsubject(id);
             if (!(examExist is null))
             {
-                var examNew = new Exam();
-                examNew = exam;
-                examExist.Exam.Add(examNew);
+                examExist.Exam.Add(exam);
                 this.mongo.Update<Exams>("Exams", examExist._id, examExist);
             }
             else
@@ -54,8 +52,6 @@ namespace DA_CNTT.Class
                 this.mongo.InsertRecord<Exams>("Exams", examsNew);
                 var exams = this.mongo.ReadByObjectId<Exams>("Exams", obId);
                 var result = new List<Exam>();
-                //var examNew = new Exam();
-                //examNew = exam;
                 result.Add(exam);
                 examsNew.Exam = result;
                 this.mongo.Update<Exams>("Exams", obId, examsNew);
@@ -67,7 +63,6 @@ namespace DA_CNTT.Class
                 this.mongo.Update<Subjects>("Subjects", subID, sub);
             }
         }
-        //truyền ob_ID từ controllers
         public void Delete(string subid, string examId)
         {
             cSub = new CSubject();
@@ -80,7 +75,6 @@ namespace DA_CNTT.Class
             exam.Exam.Remove(examDel);
             this.mongo.Update<Exams>("Exams", ObId_exam, exam);
         }
-        //Truyền record từ controllers
         public void Update(string subid, string examId, Exam exam)
         {
             cSub = new CSubject();

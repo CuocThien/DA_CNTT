@@ -41,9 +41,7 @@ namespace DA_CNTT.Class
             var courseGoalsExist = cCourseGoals.findFromSubject(id);
             if (!(courseGoalsExist is null))
             {
-                var coursegoalnew = new CourseGoal();
-                coursegoalnew = courseGoal;
-                courseGoalsExist.Course_Goal.Add(coursegoalnew);
+                courseGoalsExist.Course_Goal.Add(courseGoal);
                 this.mongo.Update<CourseGoals>("CourseGoals", courseGoalsExist._id, courseGoalsExist);
             }
             else
@@ -53,9 +51,7 @@ namespace DA_CNTT.Class
                 this.mongo.InsertRecord<CourseGoals>("CourseGoals", courseGoalsnew);
                 var coursegoal = this.mongo.ReadByObjectId<CourseGoals>("CourseGoals", obId);
                 var result = new List<CourseGoal>();
-                var coursegoalnew = new CourseGoal();
-                coursegoalnew = courseGoal;
-                result.Add(coursegoalnew);
+                result.Add(courseGoal);
                 coursegoal.Course_Goal = result;
                 this.mongo.Update<CourseGoals>("CourseGoals", obId, coursegoal);
                 cSub = new CSubject();
@@ -66,7 +62,6 @@ namespace DA_CNTT.Class
                 this.mongo.Update<Subjects>("Subjects", subID, sub);
             }
         }
-        //truyền ob_ID từ controllers
         public void Delete(string subid, string coursegoalId)
         {
             cSub = new CSubject();
@@ -79,7 +74,6 @@ namespace DA_CNTT.Class
             coursegoal.Course_Goal.Remove(coursegoaldel);
             this.mongo.Update<CourseGoals>("CourseGoals", ObId_coursegoal, coursegoal);
         }
-        //Truyền record từ controllers
         public void Update(string subid, string coursegoalId, CourseGoal courseGoal)
         {
             cSub = new CSubject();

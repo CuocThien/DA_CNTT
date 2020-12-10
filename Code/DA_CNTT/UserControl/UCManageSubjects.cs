@@ -37,5 +37,11 @@ namespace DA_CNTT
             UCExams uCExams = new UCExams(pnl_container, Sub_id);
             cMain.loadUC(pnl_container, uCExams);
         }
+
+        private void btn_ppgd_Click(object sender, EventArgs e)
+        {
+            UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, Sub_id);
+            cMain.loadUC(pnl_container, uCPPGDs);
+        }
     }
 }

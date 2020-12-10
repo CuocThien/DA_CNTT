@@ -49,5 +49,10 @@ namespace DA_CNTT.Controllers
             var result = this.exam.findfromsubject(id);
             return result;
         }
+        public PPGDs loadPPGDs(string id)
+        {
+            var result = this.ppgd.findfromsubject(id);
+            return result;
+        }
     }
 }

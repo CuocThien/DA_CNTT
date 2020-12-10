@@ -27,7 +27,6 @@ namespace DA_CNTT.Class
             cSub = new CSubject();
             var subs = cSub.findAll();
             var sub_id = subs.Where(s => s.Course_Code.Equals(id)).SingleOrDefault();
-            //var x = sub_id.Chapter_ID.ToString();
             if (sub_id.Chapter_ID.ToString() != "")
             {     
                 var chapter_id = new ObjectId(sub_id.Chapter_ID.ToString());
@@ -72,7 +71,6 @@ namespace DA_CNTT.Class
                 this.mongo.Update<Subjects>("Subjects", subID, sub);
             }
         }
-        //truyền ob_ID từ controllers
         public void Delete(string subid, string chapterId)
         {
             cSub = new CSubject();
@@ -85,8 +83,6 @@ namespace DA_CNTT.Class
             chapter.Chapter.Remove(chapterDel);
             this.mongo.Update<Chapters>("Chapters", ObId_chap, chapter);
         }
-        
-        //Truyền record từ controllers
         public void Update(string subid,string chapterId,Chapter chapter)
         {
             cSub = new CSubject();

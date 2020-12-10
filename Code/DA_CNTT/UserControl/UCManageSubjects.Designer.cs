@@ -36,12 +36,14 @@
             this.btn_CourseGoals = new Guna.UI.WinForms.GunaButton();
             this.btn_Chapter = new Guna.UI.WinForms.GunaButton();
             this.pnl_container = new Guna.UI.WinForms.GunaPanel();
+            this.btn_ppgd = new Guna.UI.WinForms.GunaButton();
             this.pnl_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Menu
             // 
             this.pnl_Menu.BackColor = System.Drawing.Color.LightCyan;
+            this.pnl_Menu.Controls.Add(this.btn_ppgd);
             this.pnl_Menu.Controls.Add(this.gunaButton6);
             this.pnl_Menu.Controls.Add(this.btn_exams);
             this.pnl_Menu.Controls.Add(this.gunaButton4);
@@ -227,6 +229,34 @@
             this.pnl_container.Size = new System.Drawing.Size(2000, 999);
             this.pnl_container.TabIndex = 1;
             // 
+            // btn_ppgd
+            // 
+            this.btn_ppgd.AnimationHoverSpeed = 0.07F;
+            this.btn_ppgd.AnimationSpeed = 0.03F;
+            this.btn_ppgd.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ppgd.BaseColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_ppgd.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_ppgd.BorderSize = 3;
+            this.btn_ppgd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_ppgd.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_ppgd.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ppgd.ForeColor = System.Drawing.Color.Magenta;
+            this.btn_ppgd.Image = null;
+            this.btn_ppgd.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_ppgd.Location = new System.Drawing.Point(25, 827);
+            this.btn_ppgd.Name = "btn_ppgd";
+            this.btn_ppgd.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_ppgd.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_ppgd.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_ppgd.OnHoverImage = null;
+            this.btn_ppgd.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_ppgd.Radius = 10;
+            this.btn_ppgd.Size = new System.Drawing.Size(330, 84);
+            this.btn_ppgd.TabIndex = 0;
+            this.btn_ppgd.Text = "PPGD";
+            this.btn_ppgd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_ppgd.Click += new System.EventHandler(this.btn_ppgd_Click);
+            // 
             // UCManageSubjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -251,5 +281,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton4;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton btn_CourseGoals;
+        private Guna.UI.WinForms.GunaButton btn_ppgd;
     }
 }
