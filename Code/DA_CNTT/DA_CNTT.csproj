@@ -117,6 +117,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\CProgramOutStandards.cs" />
+    <Compile Include="UserControl\ProgramOutStandards\UCProgramOutStandards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ProgramOutStandards\UCProgramOutStandards.Designer.cs">
+      <DependentUpon>UCProgramOutStandards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ProgramOutStandards\UCProgramOutStandardsAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ProgramOutStandards\UCProgramOutStandardsAdd.Designer.cs">
+      <DependentUpon>UCProgramOutStandardsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ProgramOutStandards\UCProgramOutStandardsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ProgramOutStandards\UCProgramOutStandardsEdit.Designer.cs">
+      <DependentUpon>UCProgramOutStandardsEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\PPGD\UCPPGDsAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,6 +258,15 @@
     <Compile Include="UserControl\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl\ProgramOutStandards\UCProgramOutStandards.resx">
+      <DependentUpon>UCProgramOutStandards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ProgramOutStandards\UCProgramOutStandardsAdd.resx">
+      <DependentUpon>UCProgramOutStandardsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ProgramOutStandards\UCProgramOutStandardsEdit.resx">
+      <DependentUpon>UCProgramOutStandardsEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\PPGD\UCPPGDsAdd.resx">
       <DependentUpon>UCPPGDsAdd.cs</DependentUpon>
     </EmbeddedResource>

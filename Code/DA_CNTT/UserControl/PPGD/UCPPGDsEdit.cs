@@ -42,10 +42,6 @@ namespace DA_CNTT
                 min = 0;
         }
 
-        private void btn_AddDetail_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_hpprevious_Click(object sender, EventArgs e)
         {
@@ -101,6 +97,8 @@ namespace DA_CNTT
                 ppgd.Detail = details;
                 cPPGD.Update(subId, PPGDId, ppgd);
                 MessageBox.Show("Sửa thông tin thành công");
+                UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, subId);
+                cMain.loadUC(pnl_container, uCPPGDs);
             }
             else
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin");

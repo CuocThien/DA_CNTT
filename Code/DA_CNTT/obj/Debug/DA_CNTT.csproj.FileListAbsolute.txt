@@ -92,3 +92,6 @@ C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCEx
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCPPGDs.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCPPGDsAdd.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCPPGDsEdit.resources
+C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCProgramOutStandards.resources
+C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCProgramOutStandardsAdd.resources
+C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCProgramOutStandardsEdit.resources

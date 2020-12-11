@@ -91,6 +91,8 @@ namespace DA_CNTT
                 chapter.Detail = details;
                 cChapters.Update(subId, chapterId, chapter);
                 MessageBox.Show("Sửa thông tin thành công");
+                UCChapters uCChapters = new UCChapters(pnl_container, subId);
+                cMain.loadUC(pnl_container, uCChapters);
             }
             else
                 MessageBox.Show("Nhập đủ thông tin");

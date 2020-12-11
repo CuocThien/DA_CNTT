@@ -32,7 +32,6 @@
             this.lbl_count = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.btn_AddDetail = new Guna.UI.WinForms.GunaButton();
             this.btn_Edit = new Guna.UI.WinForms.GunaButton();
             this.btn_Back = new Guna.UI.WinForms.GunaButton();
             this.txt_Detail = new Guna.UI.WinForms.GunaTextBox();
@@ -92,34 +91,6 @@
             this.gunaLabel1.Size = new System.Drawing.Size(206, 50);
             this.gunaLabel1.TabIndex = 21;
             this.gunaLabel1.Text = "Mã PPGD: ";
-            // 
-            // btn_AddDetail
-            // 
-            this.btn_AddDetail.AnimationHoverSpeed = 0.07F;
-            this.btn_AddDetail.AnimationSpeed = 0.03F;
-            this.btn_AddDetail.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddDetail.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_AddDetail.BorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_AddDetail.BorderSize = 3;
-            this.btn_AddDetail.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_AddDetail.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_AddDetail.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AddDetail.ForeColor = System.Drawing.Color.Magenta;
-            this.btn_AddDetail.Image = null;
-            this.btn_AddDetail.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_AddDetail.Location = new System.Drawing.Point(1860, 400);
-            this.btn_AddDetail.Name = "btn_AddDetail";
-            this.btn_AddDetail.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_AddDetail.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_AddDetail.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.btn_AddDetail.OnHoverImage = null;
-            this.btn_AddDetail.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_AddDetail.Radius = 10;
-            this.btn_AddDetail.Size = new System.Drawing.Size(84, 84);
-            this.btn_AddDetail.TabIndex = 17;
-            this.btn_AddDetail.Text = "+";
-            this.btn_AddDetail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_AddDetail.Click += new System.EventHandler(this.btn_AddDetail_Click);
             // 
             // btn_Edit
             // 
@@ -292,7 +263,6 @@
             this.Controls.Add(this.lbl_count);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.btn_AddDetail);
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.txt_Detail);
@@ -309,7 +279,6 @@
         private Guna.UI.WinForms.GunaLabel lbl_count;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaButton btn_AddDetail;
         private Guna.UI.WinForms.GunaButton btn_Edit;
         private Guna.UI.WinForms.GunaButton btn_Back;
         private Guna.UI.WinForms.GunaTextBox txt_Detail;

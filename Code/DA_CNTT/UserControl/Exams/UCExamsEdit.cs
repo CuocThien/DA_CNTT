@@ -103,6 +103,8 @@ namespace DA_CNTT
                 exam.Percentage = this.txt_percentage.Text;
                 cExam.Update(subId, examId, exam);
                 MessageBox.Show("Sửa thông tin thành công");
+                UCExams uCExams = new UCExams(pnl_container,subId);
+                cMain.loadUC(pnl_container, uCExams);
             }
             else
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin");

@@ -18,6 +18,7 @@ namespace DA_CNTT.Controllers
         private CExam exam;
         private CPPGD ppgd;
         private CSelfStudy selfstudy;
+        private CProgramOutStandards standards;
 
         public MainController()
         {
@@ -28,6 +29,7 @@ namespace DA_CNTT.Controllers
             this.exam = new CExam();
             this.ppgd = new CPPGD();
             this.selfstudy = new CSelfStudy();
+            this.standards = new CProgramOutStandards();
         }
         public List<Subjects> loadsubjects()
         {
@@ -52,6 +54,11 @@ namespace DA_CNTT.Controllers
         public PPGDs loadPPGDs(string id)
         {
             var result = this.ppgd.findfromsubject(id);
+            return result;
+        }
+        public ProgramOutStandards loadPOS(string id)
+        {
+            var result = this.standards.findfromsubject(id);
             return result;
         }
     }

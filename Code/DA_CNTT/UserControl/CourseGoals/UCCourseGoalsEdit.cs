@@ -151,6 +151,8 @@ namespace DA_CNTT
                 coursegoal.ID_CTDT = CTDTs;
                 cCourseGoals.Update(subId, coursegoalId, coursegoal);
                 MessageBox.Show("Sửa thông tin thành công");
+                UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, subId);
+                cMain.loadUC(pnl_container, uCCourseGoals);
             }
             else
             {

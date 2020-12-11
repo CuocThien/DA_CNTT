@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
+            this.btn_ppgd = new Guna.UI.WinForms.GunaButton();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.btn_exams = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
+            this.btn_CDR = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.btn_CourseGoals = new Guna.UI.WinForms.GunaButton();
             this.btn_Chapter = new Guna.UI.WinForms.GunaButton();
             this.pnl_container = new Guna.UI.WinForms.GunaPanel();
-            this.btn_ppgd = new Guna.UI.WinForms.GunaButton();
             this.pnl_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.pnl_Menu.Controls.Add(this.btn_ppgd);
             this.pnl_Menu.Controls.Add(this.gunaButton6);
             this.pnl_Menu.Controls.Add(this.btn_exams);
-            this.pnl_Menu.Controls.Add(this.gunaButton4);
+            this.pnl_Menu.Controls.Add(this.btn_CDR);
             this.pnl_Menu.Controls.Add(this.gunaButton3);
             this.pnl_Menu.Controls.Add(this.btn_CourseGoals);
             this.pnl_Menu.Controls.Add(this.btn_Chapter);
@@ -55,6 +55,34 @@
             this.pnl_Menu.Name = "pnl_Menu";
             this.pnl_Menu.Size = new System.Drawing.Size(374, 999);
             this.pnl_Menu.TabIndex = 0;
+            // 
+            // btn_ppgd
+            // 
+            this.btn_ppgd.AnimationHoverSpeed = 0.07F;
+            this.btn_ppgd.AnimationSpeed = 0.03F;
+            this.btn_ppgd.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ppgd.BaseColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_ppgd.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_ppgd.BorderSize = 3;
+            this.btn_ppgd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_ppgd.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_ppgd.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ppgd.ForeColor = System.Drawing.Color.Magenta;
+            this.btn_ppgd.Image = null;
+            this.btn_ppgd.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_ppgd.Location = new System.Drawing.Point(25, 827);
+            this.btn_ppgd.Name = "btn_ppgd";
+            this.btn_ppgd.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_ppgd.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_ppgd.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_ppgd.OnHoverImage = null;
+            this.btn_ppgd.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_ppgd.Radius = 10;
+            this.btn_ppgd.Size = new System.Drawing.Size(330, 84);
+            this.btn_ppgd.TabIndex = 0;
+            this.btn_ppgd.Text = "PPGD";
+            this.btn_ppgd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_ppgd.Click += new System.EventHandler(this.btn_ppgd_Click);
             // 
             // gunaButton6
             // 
@@ -111,32 +139,33 @@
             this.btn_exams.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_exams.Click += new System.EventHandler(this.btn_exams_Click);
             // 
-            // gunaButton4
+            // btn_CDR
             // 
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.gunaButton4.BorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton4.BorderSize = 3;
-            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton4.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaButton4.Image = null;
-            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(25, 434);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Radius = 10;
-            this.gunaButton4.Size = new System.Drawing.Size(330, 84);
-            this.gunaButton4.TabIndex = 0;
-            this.gunaButton4.Text = "CHUẨN ĐẦU RA";
-            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_CDR.AnimationHoverSpeed = 0.07F;
+            this.btn_CDR.AnimationSpeed = 0.03F;
+            this.btn_CDR.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CDR.BaseColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_CDR.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_CDR.BorderSize = 3;
+            this.btn_CDR.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_CDR.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_CDR.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CDR.ForeColor = System.Drawing.Color.Magenta;
+            this.btn_CDR.Image = null;
+            this.btn_CDR.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_CDR.Location = new System.Drawing.Point(25, 434);
+            this.btn_CDR.Name = "btn_CDR";
+            this.btn_CDR.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_CDR.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_CDR.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_CDR.OnHoverImage = null;
+            this.btn_CDR.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_CDR.Radius = 10;
+            this.btn_CDR.Size = new System.Drawing.Size(330, 84);
+            this.btn_CDR.TabIndex = 0;
+            this.btn_CDR.Text = "CHUẨN ĐẦU RA";
+            this.btn_CDR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_CDR.Click += new System.EventHandler(this.btn_CDR_Click);
             // 
             // gunaButton3
             // 
@@ -229,34 +258,6 @@
             this.pnl_container.Size = new System.Drawing.Size(2000, 999);
             this.pnl_container.TabIndex = 1;
             // 
-            // btn_ppgd
-            // 
-            this.btn_ppgd.AnimationHoverSpeed = 0.07F;
-            this.btn_ppgd.AnimationSpeed = 0.03F;
-            this.btn_ppgd.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ppgd.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_ppgd.BorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_ppgd.BorderSize = 3;
-            this.btn_ppgd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_ppgd.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_ppgd.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ppgd.ForeColor = System.Drawing.Color.Magenta;
-            this.btn_ppgd.Image = null;
-            this.btn_ppgd.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_ppgd.Location = new System.Drawing.Point(25, 827);
-            this.btn_ppgd.Name = "btn_ppgd";
-            this.btn_ppgd.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_ppgd.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_ppgd.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.btn_ppgd.OnHoverImage = null;
-            this.btn_ppgd.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_ppgd.Radius = 10;
-            this.btn_ppgd.Size = new System.Drawing.Size(330, 84);
-            this.btn_ppgd.TabIndex = 0;
-            this.btn_ppgd.Text = "PPGD";
-            this.btn_ppgd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_ppgd.Click += new System.EventHandler(this.btn_ppgd_Click);
-            // 
             // UCManageSubjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -278,7 +279,7 @@
         private Guna.UI.WinForms.GunaPanel pnl_container;
         private Guna.UI.WinForms.GunaButton gunaButton6;
         private Guna.UI.WinForms.GunaButton btn_exams;
-        private Guna.UI.WinForms.GunaButton gunaButton4;
+        private Guna.UI.WinForms.GunaButton btn_CDR;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton btn_CourseGoals;
         private Guna.UI.WinForms.GunaButton btn_ppgd;

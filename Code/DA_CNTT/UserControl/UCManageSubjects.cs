@@ -43,5 +43,11 @@ namespace DA_CNTT
             UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, Sub_id);
             cMain.loadUC(pnl_container, uCPPGDs);
         }
+
+        private void btn_CDR_Click(object sender, EventArgs e)
+        {
+            UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container, Sub_id);
+            cMain.loadUC(pnl_container, uCProgramOutStandards);
+        }
     }
 }
