@@ -22,7 +22,7 @@ namespace DA_CNTT.Models
         public string ID { get; set; }
 
         [JsonProperty("Details")]
-        public List<Detail> Details { get; set; }
+        public List<Details> Details { get; set; }
 
         [JsonProperty("Request")]
         public List<string> Request { get; set; }

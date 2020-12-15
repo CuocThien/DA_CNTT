@@ -49,5 +49,11 @@ namespace DA_CNTT
             UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container, Sub_id);
             cMain.loadUC(pnl_container, uCProgramOutStandards);
         }
+
+        private void btn_SelfStudies_Click(object sender, EventArgs e)
+        {
+            UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container, Sub_id);
+            cMain.loadUC(pnl_container, uCSelfStudies);
+        }
     }
 }

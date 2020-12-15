@@ -35,7 +35,7 @@ namespace DA_CNTT.Class
             }
             else return null;
         }
-        public void addExam(string id, OutCome outcome)
+        public void addOutcome(string id, OutCome outcome)
         {
             var obId = ObjectId.GenerateNewId();
             CProgramOutStandards cStandard = new CProgramOutStandards();

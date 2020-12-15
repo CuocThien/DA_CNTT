@@ -118,6 +118,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\CProgramOutStandards.cs" />
+    <Compile Include="UserControl\SelfStudies\UCSelfStudies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\SelfStudies\UCSelfStudies.Designer.cs">
+      <DependentUpon>UCSelfStudies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\SelfStudies\UCSelfStudiesAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\SelfStudies\UCSelfStudiesAdd.Designer.cs">
+      <DependentUpon>UCSelfStudiesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\SelfStudies\UCSelfStudiesEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\SelfStudies\UCSelfStudiesEdit.Designer.cs">
+      <DependentUpon>UCSelfStudiesEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ProgramOutStandards\UCProgramOutStandards.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -258,6 +276,15 @@
     <Compile Include="UserControl\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl\SelfStudies\UCSelfStudies.resx">
+      <DependentUpon>UCSelfStudies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\SelfStudies\UCSelfStudiesAdd.resx">
+      <DependentUpon>UCSelfStudiesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\SelfStudies\UCSelfStudiesEdit.resx">
+      <DependentUpon>UCSelfStudiesEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ProgramOutStandards\UCProgramOutStandards.resx">
       <DependentUpon>UCProgramOutStandards.cs</DependentUpon>
     </EmbeddedResource>

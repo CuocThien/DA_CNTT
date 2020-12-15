@@ -57,7 +57,7 @@ namespace DA_CNTT
                 outcome.ID_CDR = this.txt_CDRID.Text;
                 outcome.Description_CDR = this.txt_Description.Text;
                 outcome.ID_CDIO = CDIOs;
-                cProgramOutStandards.addExam(sub_id, outcome);
+                cProgramOutStandards.addOutcome(sub_id, outcome);
                 this.txt_CDRID.Text = "";
                 this.txt_Description.Text = "";
                 MessageBox.Show("Thành Công");

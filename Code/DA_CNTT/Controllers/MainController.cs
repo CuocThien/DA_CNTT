@@ -61,5 +61,10 @@ namespace DA_CNTT.Controllers
             var result = this.standards.findfromsubject(id);
             return result;
         }
+        public SelfStudies loadSS(string id)
+        {
+            var result = this.selfstudy.findfromsubject(id);
+            return result;
+        }
     }
 }

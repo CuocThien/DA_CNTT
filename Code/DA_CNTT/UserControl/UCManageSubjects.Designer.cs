@@ -30,7 +30,7 @@
         {
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
             this.btn_ppgd = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
+            this.btn_SelfStudies = new Guna.UI.WinForms.GunaButton();
             this.btn_exams = new Guna.UI.WinForms.GunaButton();
             this.btn_CDR = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
@@ -44,7 +44,7 @@
             // 
             this.pnl_Menu.BackColor = System.Drawing.Color.LightCyan;
             this.pnl_Menu.Controls.Add(this.btn_ppgd);
-            this.pnl_Menu.Controls.Add(this.gunaButton6);
+            this.pnl_Menu.Controls.Add(this.btn_SelfStudies);
             this.pnl_Menu.Controls.Add(this.btn_exams);
             this.pnl_Menu.Controls.Add(this.btn_CDR);
             this.pnl_Menu.Controls.Add(this.gunaButton3);
@@ -84,32 +84,33 @@
             this.btn_ppgd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_ppgd.Click += new System.EventHandler(this.btn_ppgd_Click);
             // 
-            // gunaButton6
+            // btn_SelfStudies
             // 
-            this.gunaButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaButton6.AnimationSpeed = 0.03F;
-            this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.gunaButton6.BorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton6.BorderSize = 3;
-            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton6.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton6.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaButton6.Image = null;
-            this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton6.Location = new System.Drawing.Point(25, 694);
-            this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.gunaButton6.OnHoverImage = null;
-            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton6.Radius = 10;
-            this.gunaButton6.Size = new System.Drawing.Size(330, 84);
-            this.gunaButton6.TabIndex = 0;
-            this.gunaButton6.Text = "TỰ HỌC";
-            this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_SelfStudies.AnimationHoverSpeed = 0.07F;
+            this.btn_SelfStudies.AnimationSpeed = 0.03F;
+            this.btn_SelfStudies.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelfStudies.BaseColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_SelfStudies.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_SelfStudies.BorderSize = 3;
+            this.btn_SelfStudies.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_SelfStudies.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_SelfStudies.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SelfStudies.ForeColor = System.Drawing.Color.Magenta;
+            this.btn_SelfStudies.Image = null;
+            this.btn_SelfStudies.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_SelfStudies.Location = new System.Drawing.Point(25, 694);
+            this.btn_SelfStudies.Name = "btn_SelfStudies";
+            this.btn_SelfStudies.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_SelfStudies.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_SelfStudies.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_SelfStudies.OnHoverImage = null;
+            this.btn_SelfStudies.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_SelfStudies.Radius = 10;
+            this.btn_SelfStudies.Size = new System.Drawing.Size(330, 84);
+            this.btn_SelfStudies.TabIndex = 0;
+            this.btn_SelfStudies.Text = "TỰ HỌC";
+            this.btn_SelfStudies.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_SelfStudies.Click += new System.EventHandler(this.btn_SelfStudies_Click);
             // 
             // btn_exams
             // 
@@ -277,7 +278,7 @@
         private Guna.UI.WinForms.GunaPanel pnl_Menu;
         private Guna.UI.WinForms.GunaButton btn_Chapter;
         private Guna.UI.WinForms.GunaPanel pnl_container;
-        private Guna.UI.WinForms.GunaButton gunaButton6;
+        private Guna.UI.WinForms.GunaButton btn_SelfStudies;
         private Guna.UI.WinForms.GunaButton btn_exams;
         private Guna.UI.WinForms.GunaButton btn_CDR;
         private Guna.UI.WinForms.GunaButton gunaButton3;
