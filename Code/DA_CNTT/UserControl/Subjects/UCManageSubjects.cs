@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DA_CNTT.Class;
 
 namespace DA_CNTT
 {
     public partial class UCManageSubjects : UserControl
     {
         private string Sub_id;
-        public UCManageSubjects(string Subject_ID)
+        private Panel pnl_contain;
+        public UCManageSubjects(Panel pnl_contain, string Subject_ID)
 
         {
             InitializeComponent();
             Sub_id = Subject_ID;
+            this.pnl_contain = pnl_contain;
         }
 
         private void btn_Chapter_Click(object sender, EventArgs e)
@@ -54,6 +57,29 @@ namespace DA_CNTT
         {
             UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container, Sub_id);
             cMain.loadUC(pnl_container, uCSelfStudies);
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            UCSubjectsEdit uCSubjectsEdit = new UCSubjectsEdit(pnl_contain, Sub_id);
+            cMain.loadUC(pnl_container, uCSubjectsEdit);
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            CSubject cSubject = new CSubject();
+            cSubject.delete(Sub_id);
+            MessageBox.Show("Xóa môn học thành công");
+            this.Dispose();
+            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18();
+            cMain.loadUC(pnl_contain, uCCnttBefore18);
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18();
+            cMain.loadUC(pnl_contain, uCCnttBefore18);
         }
     }
 }

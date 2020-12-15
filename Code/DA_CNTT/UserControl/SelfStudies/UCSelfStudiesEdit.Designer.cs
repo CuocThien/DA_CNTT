@@ -292,7 +292,7 @@
             this.btn_nextRequest.ForeColor = System.Drawing.Color.Magenta;
             this.btn_nextRequest.Image = null;
             this.btn_nextRequest.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_nextRequest.Location = new System.Drawing.Point(768, 522);
+            this.btn_nextRequest.Location = new System.Drawing.Point(768, 611);
             this.btn_nextRequest.Name = "btn_nextRequest";
             this.btn_nextRequest.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_nextRequest.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -320,7 +320,7 @@
             this.btn_previousRequest.ForeColor = System.Drawing.Color.Magenta;
             this.btn_previousRequest.Image = null;
             this.btn_previousRequest.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_previousRequest.Location = new System.Drawing.Point(55, 522);
+            this.btn_previousRequest.Location = new System.Drawing.Point(55, 611);
             this.btn_previousRequest.Name = "btn_previousRequest";
             this.btn_previousRequest.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_previousRequest.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -404,7 +404,7 @@
             this.btn_previousChapter.ForeColor = System.Drawing.Color.Magenta;
             this.btn_previousChapter.Image = null;
             this.btn_previousChapter.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_previousChapter.Location = new System.Drawing.Point(1059, 522);
+            this.btn_previousChapter.Location = new System.Drawing.Point(1059, 611);
             this.btn_previousChapter.Name = "btn_previousChapter";
             this.btn_previousChapter.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_previousChapter.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -432,7 +432,7 @@
             this.btn_nextChapter.ForeColor = System.Drawing.Color.Magenta;
             this.btn_nextChapter.Image = null;
             this.btn_nextChapter.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_nextChapter.Location = new System.Drawing.Point(1772, 522);
+            this.btn_nextChapter.Location = new System.Drawing.Point(1772, 611);
             this.btn_nextChapter.Name = "btn_nextChapter";
             this.btn_nextChapter.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_nextChapter.OnHoverBorderColor = System.Drawing.Color.DarkOrange;

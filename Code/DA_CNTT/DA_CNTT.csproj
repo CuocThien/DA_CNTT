@@ -118,6 +118,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\CProgramOutStandards.cs" />
+    <Compile Include="UserControl\Subjects\UCSubjectsAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Subjects\UCSubjectsAdd.Designer.cs">
+      <DependentUpon>UCSubjectsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Subjects\UCSubjectsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Subjects\UCSubjectsEdit.Designer.cs">
+      <DependentUpon>UCSubjectsEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\SelfStudies\UCSelfStudies.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,10 +254,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCManageSubjects.cs">
+    <Compile Include="UserControl\Subjects\UCManageSubjects.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCManageSubjects.Designer.cs">
+    <Compile Include="UserControl\Subjects\UCManageSubjects.Designer.cs">
       <DependentUpon>UCManageSubjects.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Chapters.cs" />
@@ -276,6 +288,12 @@
     <Compile Include="UserControl\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl\Subjects\UCSubjectsAdd.resx">
+      <DependentUpon>UCSubjectsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Subjects\UCSubjectsEdit.resx">
+      <DependentUpon>UCSubjectsEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\SelfStudies\UCSelfStudies.resx">
       <DependentUpon>UCSelfStudies.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,7 +351,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCManageSubjects.resx">
+    <EmbeddedResource Include="UserControl\Subjects\UCManageSubjects.resx">
       <DependentUpon>UCManageSubjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -47,9 +47,16 @@ namespace DA_CNTT
         private void dgv_Content_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var row = dgv_Content.Rows[e.RowIndex].Cells[0].Value.ToString();
-            UCManageSubjects uCManageSubjects = new UCManageSubjects(row);
+            UCManageSubjects uCManageSubjects = new UCManageSubjects(pnl_container,row);
             cMain.loadUC(pnl_container, uCManageSubjects);
             //MessageBox.Show(row);
         }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            UCSubjectsAdd uCSubjectsAdd = new UCSubjectsAdd(pnl_container);
+            cMain.loadUC(pnl_container, uCSubjectsAdd);
+        }
+
     }
 }

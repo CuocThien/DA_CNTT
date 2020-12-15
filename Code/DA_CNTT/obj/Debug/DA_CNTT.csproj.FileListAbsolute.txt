@@ -98,3 +98,5 @@ C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCPr
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCSelfStudies.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCSelfStudiesAdd.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCSelfStudiesEdit.resources
+C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCSubjectsAdd.resources
+C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCSubjectsEdit.resources

@@ -11,6 +11,8 @@ namespace DA_CNTT.Class
     public class CSubject
     {
         private CMongoCRUD mongo;
+        private CSubject cSub;
+
         public CSubject()
         {
             mongo = new CMongoCRUD("QLCTDT");
@@ -20,20 +22,31 @@ namespace DA_CNTT.Class
             var result = this.mongo.Read<Subjects>("Subjects");
             return result;
         }
-        //truyền ob_ID từ controllers
-        public void delete()
+        public void addSubject(Subjects subjects)
         {
-            var id = new ObjectId("5fbddaf687949980dedc7178");
-            this.mongo.DeleteByObjectId<Subjects>("Subject", id);
+            var obId = ObjectId.GenerateNewId();
+            subjects._id = obId;
+            this.mongo.InsertRecord<Subjects>("Subjects", subjects);
+
+        }
+        //truyền ob_ID từ controllers
+        public void delete(string id)
+        {
+            CSubject cSubject = new CSubject();
+            var sub = cSubject.findAll().Where(i => i.Course_Code == id).SingleOrDefault();
+            this.mongo.DeleteByObjectId<Subjects>("Subjects", sub._id);
         }
         //Truyền record từ controllers
-        public void Update()
+        public void Update(string subId,Subjects subjects)
         {
-            var id = new ObjectId("5fbde3f287949980dedc724b");
-            string Credits = "8";
-            var a = this.mongo.ReadByObjectId<Subjects>("Subject", id);
-            a.Credits = Credits;
-            this.mongo.Update<Subjects>("Subject", id, a);
+            cSub = new CSubject();
+            var subs = cSub.findAll();
+            var sub = this.mongo.ReadByObjectId<Subjects>("Subjects", new ObjectId(subs.Where(s => s.Course_Code == subId).SingleOrDefault()._id.ToString()));
+            sub.Prerequisite = subjects.Prerequisite;
+            sub.Course_Name = subjects.Course_Name;
+            sub.Credits = subjects.Credits;
+            sub.Course_Code = subjects.Course_Code;
+            this.mongo.Update<Subjects>("Subjects", sub._id, sub);
         }
     }
 }
