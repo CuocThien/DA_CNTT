@@ -259,6 +259,8 @@ namespace DA_CNTT
                 cDetailedOutline.Update(sub_id, detailed);
                 MessageBox.Show("Sửa thông tin thành công");
                 this.Dispose();
+                UCDetailedOutline uCDetailedOutline = new UCDetailedOutline(pnl_container,sub_id,isAdmin);
+                cMain.loadUC(pnl_container, uCDetailedOutline);
             }
             else
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin");

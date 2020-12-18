@@ -58,11 +58,16 @@ namespace DA_CNTT
                 }    
                 this.dgv_DetailedOutline.Rows.Add(description,  sd, lm, se);
             }
+            
             if (isAdmin == "True")
             {
                 btn_Add.Visible = true;
                 btn_delete.Visible = true;
                 btn_edit.Visible = true;
+                if(dgv_DetailedOutline.Rows[0].Cells[0].Value.ToString() !="")
+                {
+                    btn_Add.Visible = false;
+                }
             }
             else
             {
