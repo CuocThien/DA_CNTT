@@ -149,6 +149,7 @@
             this.Controls.Add(this.txt_Password);
             this.Name = "Main";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

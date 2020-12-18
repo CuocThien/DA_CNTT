@@ -17,11 +17,11 @@ namespace DA_CNTT
     public partial class Form1 : Form
     {
         private string isAdmin;
-        public Form1(string isAdmin)
+        public Form1(string isAdmin,string name)
         {
             this.isAdmin = isAdmin;
             InitializeComponent();
-            
+            this.lbl_name.Text = name;
 
         }
 
@@ -47,7 +47,7 @@ namespace DA_CNTT
 
         private void btn_Cntt_Click(object sender, EventArgs e)
         {
-            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin);
+            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin, lbl_SubName);
             cMain.loadUC(this.pnl_content, uCCnttBefore18);
         }
     }

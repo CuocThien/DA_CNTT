@@ -102,3 +102,5 @@ C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCSu
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCSubjectsEdit.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.Main.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCDetailedOutline.resources
+C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCDetailedOutlineAdd.resources
+C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCDetailedOutlineEdit.resources

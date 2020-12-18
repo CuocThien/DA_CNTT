@@ -119,6 +119,18 @@
   <ItemGroup>
     <Compile Include="Class\CProgramOutStandards.cs" />
     <Compile Include="Class\CUsers.cs" />
+    <Compile Include="UserControl\DetailedOutline\UCDetailedOutlineAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\DetailedOutline\UCDetailedOutlineAdd.Designer.cs">
+      <DependentUpon>UCDetailedOutlineAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DetailedOutline\UCDetailedOutlineEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\DetailedOutline\UCDetailedOutlineEdit.Designer.cs">
+      <DependentUpon>UCDetailedOutlineEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Main\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,10 +138,10 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Users.cs" />
-    <Compile Include="UserControl\Main\UCDetailedOutline.cs">
+    <Compile Include="UserControl\DetailedOutline\UCDetailedOutline.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\Main\UCDetailedOutline.Designer.cs">
+    <Compile Include="UserControl\DetailedOutline\UCDetailedOutline.Designer.cs">
       <DependentUpon>UCDetailedOutline.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Subjects\UCSubjectsAdd.cs">
@@ -302,10 +314,16 @@
     <Compile Include="UserControl\Main\UCIntroGroup.Designer.cs">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl\DetailedOutline\UCDetailedOutlineAdd.resx">
+      <DependentUpon>UCDetailedOutlineAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\DetailedOutline\UCDetailedOutlineEdit.resx">
+      <DependentUpon>UCDetailedOutlineEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Main\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Main\UCDetailedOutline.resx">
+    <EmbeddedResource Include="UserControl\DetailedOutline\UCDetailedOutline.resx">
       <DependentUpon>UCDetailedOutline.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Subjects\UCSubjectsAdd.resx">

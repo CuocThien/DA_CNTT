@@ -16,13 +16,18 @@ namespace DA_CNTT
         private string Sub_id;
         private Panel pnl_contain;
         private string isAdmin;
-        public UCManageSubjects(Panel pnl_contain, string Subject_ID,string isAdmin)
+        private Label lbl_subname;
+
+        public UCManageSubjects(Panel pnl_contain, string Subject_ID,string isAdmin,Label lbl_subname)
 
         {
             InitializeComponent();
             Sub_id = Subject_ID;
+            this.lbl_subname = lbl_subname;
             this.pnl_contain = pnl_contain;
             this.isAdmin = isAdmin;
+            CSubject cSubject = new CSubject();
+            lbl_subname.Text=cSubject.findAll().Where(s => s.Course_Code == Sub_id).SingleOrDefault().Course_Name;
             if(isAdmin=="True")
             {
                 btn_delete.Visible = true;
@@ -33,6 +38,7 @@ namespace DA_CNTT
                 btn_edit.Visible = false;
                 btn_delete.Visible = false;
             }
+            
         }
 
         private void btn_Chapter_Click(object sender, EventArgs e)
@@ -73,7 +79,7 @@ namespace DA_CNTT
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            UCSubjectsEdit uCSubjectsEdit = new UCSubjectsEdit(pnl_contain, Sub_id,isAdmin);
+            UCSubjectsEdit uCSubjectsEdit = new UCSubjectsEdit(pnl_contain, Sub_id,isAdmin,lbl_subname);
             cMain.loadUC(pnl_container, uCSubjectsEdit);
         }
 
@@ -83,15 +89,22 @@ namespace DA_CNTT
             cSubject.delete(Sub_id);
             MessageBox.Show("Xóa môn học thành công");
             this.Dispose();
-            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin);
+            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin,lbl_subname);
             cMain.loadUC(pnl_contain, uCCnttBefore18);
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin);
+            lbl_subname.Text = "";
+            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin,lbl_subname);
             cMain.loadUC(pnl_contain, uCCnttBefore18);
+        }
+
+        private void btn_detailedOutline_Click(object sender, EventArgs e)
+        {
+            UCDetailedOutline uCDetailedOutline = new UCDetailedOutline(pnl_container, Sub_id, isAdmin);
+            cMain.loadUC(pnl_container, uCDetailedOutline);
         }
     }
 }

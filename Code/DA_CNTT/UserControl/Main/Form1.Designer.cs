@@ -33,8 +33,8 @@
             this.pnl_Title = new Guna.UI.WinForms.GunaPanel();
             this.pb_logo = new Guna.UI.WinForms.GunaPictureBox();
             this.pnl_Container = new Guna.UI.WinForms.GunaPanel();
-            this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
             this.pnl_content = new Guna.UI.WinForms.GunaPanel();
+            this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
             this.ms_Menu = new System.Windows.Forms.MenuStrip();
             this.btn_Gioithieu = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroG = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +46,8 @@
             this.k18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.sAUK18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroProj = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_name = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_SubName = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).BeginInit();
             this.pnl_Title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
@@ -103,15 +105,6 @@
             this.pnl_Container.Size = new System.Drawing.Size(2374, 1075);
             this.pnl_Container.TabIndex = 1;
             // 
-            // pnl_Menu
-            // 
-            this.pnl_Menu.Controls.Add(this.ms_Menu);
-            this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Size = new System.Drawing.Size(2374, 76);
-            this.pnl_Menu.TabIndex = 0;
-            // 
             // pnl_content
             // 
             this.pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -119,6 +112,17 @@
             this.pnl_content.Name = "pnl_content";
             this.pnl_content.Size = new System.Drawing.Size(2374, 999);
             this.pnl_content.TabIndex = 1;
+            // 
+            // pnl_Menu
+            // 
+            this.pnl_Menu.Controls.Add(this.lbl_SubName);
+            this.pnl_Menu.Controls.Add(this.lbl_name);
+            this.pnl_Menu.Controls.Add(this.ms_Menu);
+            this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Menu.Name = "pnl_Menu";
+            this.pnl_Menu.Size = new System.Drawing.Size(2374, 76);
+            this.pnl_Menu.TabIndex = 0;
             // 
             // ms_Menu
             // 
@@ -215,6 +219,29 @@
             this.btn_IntroProj.Size = new System.Drawing.Size(327, 44);
             this.btn_IntroProj.Text = "Giới thiệu Đề tài";
             // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_name.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_name.Location = new System.Drawing.Point(1728, 13);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(0, 50);
+            this.lbl_name.TabIndex = 45;
+            // 
+            // lbl_SubName
+            // 
+            this.lbl_SubName.AutoSize = true;
+            this.lbl_SubName.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_SubName.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SubName.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_SubName.Location = new System.Drawing.Point(979, 13);
+            this.lbl_SubName.Name = "lbl_SubName";
+            this.lbl_SubName.Size = new System.Drawing.Size(132, 50);
+            this.lbl_SubName.TabIndex = 46;
+            this.lbl_SubName.Text = "           ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -232,6 +259,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.pnl_Container.ResumeLayout(false);
             this.pnl_Menu.ResumeLayout(false);
+            this.pnl_Menu.PerformLayout();
             this.ms_Menu.ResumeLayout(false);
             this.ms_Menu.PerformLayout();
             this.ResumeLayout(false);
@@ -258,6 +286,8 @@
         private System.Windows.Forms.ToolStripMenuItem k18ToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem sAUK18ToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem btn_IntroProj;
+        private Guna.UI.WinForms.GunaLabel lbl_name;
+        private Guna.UI.WinForms.GunaLabel lbl_SubName;
     }
 }
 

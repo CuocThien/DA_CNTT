@@ -27,9 +27,10 @@ namespace DA_CNTT
             {
                 
                 var isAdmin = user.isAdmin;
+                var name = user.Name;
                 MessageBox.Show("Đăng nhập thành công");
                 this.Hide();
-                Form1 frm = new Form1(isAdmin);
+                Form1 frm = new Form1(isAdmin,name);
                 frm.Show();
 
             }    
@@ -37,6 +38,11 @@ namespace DA_CNTT
             {
                 MessageBox.Show("Đăng nhập thất bại!");
             }    
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

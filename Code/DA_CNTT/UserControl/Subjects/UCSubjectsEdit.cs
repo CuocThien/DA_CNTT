@@ -23,11 +23,13 @@ namespace DA_CNTT
         private int count;
         private int min;
         private int max;
-        public UCSubjectsEdit(Panel pnl_container,string subid,string isAdmin)
+        private Label lbl_subname;
+        public UCSubjectsEdit(Panel pnl_container,string subid,string isAdmin,Label lbl_subname)
         {
             InitializeComponent();
             this.isAdmin = isAdmin;
             this.sub_id = subid;
+            this.lbl_subname = lbl_subname;
             this.pnl_container = pnl_container;
             count = 0;
             subs = cSubject.findAll().Where(i => i.Course_Code == sub_id).SingleOrDefault();
@@ -46,7 +48,7 @@ namespace DA_CNTT
         private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            UCManageSubjects uC = new UCManageSubjects(pnl_container, sub_id,isAdmin);
+            UCManageSubjects uC = new UCManageSubjects(pnl_container, sub_id,isAdmin,lbl_subname);
             cMain.loadUC(pnl_container, uC);
         }
 

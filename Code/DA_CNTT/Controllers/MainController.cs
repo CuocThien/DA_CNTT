@@ -66,5 +66,10 @@ namespace DA_CNTT.Controllers
             var result = this.selfstudy.findfromsubject(id);
             return result;
         }
+        public DetailedOutlines loadDO(string id)
+        {
+            var result = this.detail.findfromsubject(id);
+            return result;
+        }
     }
 }

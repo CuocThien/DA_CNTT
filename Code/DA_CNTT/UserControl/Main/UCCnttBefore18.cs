@@ -14,10 +14,12 @@ namespace DA_CNTT
     public partial class UCCnttBefore18 : UserControl
     {
         private string isAdmin;
-        public UCCnttBefore18(string isAdmin)
+        private Label lbl_subname;
+        public UCCnttBefore18(string isAdmin, Label lbl_subname)
         {
             InitializeComponent();
             this.isAdmin = isAdmin;
+            this.lbl_subname = lbl_subname;
             this.dgv_Content.ColumnHeadersDefaultCellStyle.BackColor = Color.LemonChiffon;
             this.dgv_Content.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             this.dgv_Content.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Khaki;
@@ -54,14 +56,14 @@ namespace DA_CNTT
         private void dgv_Content_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var row = dgv_Content.Rows[e.RowIndex].Cells[0].Value.ToString();
-            UCManageSubjects uCManageSubjects = new UCManageSubjects(pnl_container,row,isAdmin);
+            UCManageSubjects uCManageSubjects = new UCManageSubjects(pnl_container,row,isAdmin,lbl_subname);
             cMain.loadUC(pnl_container, uCManageSubjects);
             //MessageBox.Show(row);
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            UCSubjectsAdd uCSubjectsAdd = new UCSubjectsAdd(pnl_container,isAdmin);
+            UCSubjectsAdd uCSubjectsAdd = new UCSubjectsAdd(pnl_container,isAdmin,lbl_subname);
             cMain.loadUC(pnl_container, uCSubjectsAdd);
         }
 

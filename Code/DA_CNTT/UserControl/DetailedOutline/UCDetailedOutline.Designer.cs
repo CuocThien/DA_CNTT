@@ -38,25 +38,20 @@
             this.btn_Add = new Guna.UI.WinForms.GunaButton();
             this.btn_edit = new Guna.UI.WinForms.GunaButton();
             this.pnl_content = new Guna.UI.WinForms.GunaPanel();
-            this.pnl_container = new Guna.UI.WinForms.GunaPanel();
-            this.dgv_ProgramOutStandards = new Guna.UI.WinForms.GunaDataGridView();
+            this.dgv_DetailedOutline = new Guna.UI.WinForms.GunaDataGridView();
             this.col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_GoalId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_Student_Duties = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_Learning_Materials = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_Scientific_Ethics = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Detail = new Guna.UI.WinForms.GunaButton();
-            this.btn_Test = new Guna.UI.WinForms.GunaButton();
+            this.pnl_container = new Guna.UI.WinForms.GunaPanel();
             this.pnl_Control.SuspendLayout();
             this.pnl_content.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DetailedOutline)).BeginInit();
             this.pnl_container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ProgramOutStandards)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Control
             // 
-            this.pnl_Control.Controls.Add(this.btn_Test);
-            this.pnl_Control.Controls.Add(this.btn_Detail);
             this.pnl_Control.Controls.Add(this.btn_delete);
             this.pnl_Control.Controls.Add(this.btn_Add);
             this.pnl_Control.Controls.Add(this.btn_edit);
@@ -81,7 +76,7 @@
             this.btn_delete.ForeColor = System.Drawing.Color.Magenta;
             this.btn_delete.Image = null;
             this.btn_delete.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_delete.Location = new System.Drawing.Point(802, 45);
+            this.btn_delete.Location = new System.Drawing.Point(1572, 35);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_delete.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -93,6 +88,7 @@
             this.btn_delete.TabIndex = 3;
             this.btn_delete.Text = "XÓA";
             this.btn_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_Add
             // 
@@ -108,7 +104,7 @@
             this.btn_Add.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Add.Image = null;
             this.btn_Add.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add.Location = new System.Drawing.Point(37, 45);
+            this.btn_Add.Location = new System.Drawing.Point(275, 35);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_Add.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -120,6 +116,7 @@
             this.btn_Add.TabIndex = 2;
             this.btn_Add.Text = "THÊM";
             this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_edit
             // 
@@ -136,7 +133,7 @@
             this.btn_edit.ForeColor = System.Drawing.Color.Magenta;
             this.btn_edit.Image = null;
             this.btn_edit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_edit.Location = new System.Drawing.Point(413, 45);
+            this.btn_edit.Location = new System.Drawing.Point(895, 35);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_edit.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -148,36 +145,27 @@
             this.btn_edit.TabIndex = 1;
             this.btn_edit.Text = "SỬA";
             this.btn_edit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // pnl_content
             // 
-            this.pnl_content.Controls.Add(this.dgv_ProgramOutStandards);
+            this.pnl_content.Controls.Add(this.dgv_DetailedOutline);
             this.pnl_content.Location = new System.Drawing.Point(3, 159);
             this.pnl_content.Name = "pnl_content";
             this.pnl_content.Size = new System.Drawing.Size(1997, 840);
             this.pnl_content.TabIndex = 1;
             // 
-            // pnl_container
-            // 
-            this.pnl_container.Controls.Add(this.pnl_Control);
-            this.pnl_container.Controls.Add(this.pnl_content);
-            this.pnl_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_container.Location = new System.Drawing.Point(0, 0);
-            this.pnl_container.Name = "pnl_container";
-            this.pnl_container.Size = new System.Drawing.Size(2000, 999);
-            this.pnl_container.TabIndex = 3;
-            // 
-            // dgv_ProgramOutStandards
+            // dgv_DetailedOutline
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_ProgramOutStandards.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_ProgramOutStandards.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_ProgramOutStandards.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_ProgramOutStandards.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_ProgramOutStandards.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_ProgramOutStandards.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_ProgramOutStandards.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgv_DetailedOutline.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_DetailedOutline.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_DetailedOutline.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv_DetailedOutline.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_DetailedOutline.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_DetailedOutline.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_DetailedOutline.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -185,11 +173,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Khaki;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ProgramOutStandards.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_ProgramOutStandards.ColumnHeadersHeight = 42;
-            this.dgv_ProgramOutStandards.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_DetailedOutline.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_DetailedOutline.ColumnHeadersHeight = 42;
+            this.dgv_DetailedOutline.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_Description,
-            this.col_GoalId,
             this.col_Student_Duties,
             this.col_Learning_Materials,
             this.col_Scientific_Ethics});
@@ -200,11 +187,11 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ProgramOutStandards.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_ProgramOutStandards.EnableHeadersVisualStyles = false;
-            this.dgv_ProgramOutStandards.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_ProgramOutStandards.Location = new System.Drawing.Point(0, 0);
-            this.dgv_ProgramOutStandards.Name = "dgv_ProgramOutStandards";
+            this.dgv_DetailedOutline.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_DetailedOutline.EnableHeadersVisualStyles = false;
+            this.dgv_DetailedOutline.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_DetailedOutline.Location = new System.Drawing.Point(0, 0);
+            this.dgv_DetailedOutline.Name = "dgv_DetailedOutline";
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Info;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,35 +199,36 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ProgramOutStandards.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_ProgramOutStandards.RowHeadersVisible = false;
-            this.dgv_ProgramOutStandards.RowHeadersWidth = 82;
-            this.dgv_ProgramOutStandards.RowTemplate.Height = 33;
-            this.dgv_ProgramOutStandards.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ProgramOutStandards.Size = new System.Drawing.Size(1997, 840);
-            this.dgv_ProgramOutStandards.TabIndex = 1;
-            this.dgv_ProgramOutStandards.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.dgv_ProgramOutStandards.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_ProgramOutStandards.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_ProgramOutStandards.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_ProgramOutStandards.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_ProgramOutStandards.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_ProgramOutStandards.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_ProgramOutStandards.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_ProgramOutStandards.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgv_ProgramOutStandards.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgv_ProgramOutStandards.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_ProgramOutStandards.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_ProgramOutStandards.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_ProgramOutStandards.ThemeStyle.HeaderStyle.Height = 42;
-            this.dgv_ProgramOutStandards.ThemeStyle.ReadOnly = false;
-            this.dgv_ProgramOutStandards.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_ProgramOutStandards.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_ProgramOutStandards.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_ProgramOutStandards.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_ProgramOutStandards.ThemeStyle.RowsStyle.Height = 33;
-            this.dgv_ProgramOutStandards.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_ProgramOutStandards.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_DetailedOutline.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_DetailedOutline.RowHeadersVisible = false;
+            this.dgv_DetailedOutline.RowHeadersWidth = 82;
+            this.dgv_DetailedOutline.RowTemplate.Height = 33;
+            this.dgv_DetailedOutline.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_DetailedOutline.Size = new System.Drawing.Size(1997, 840);
+            this.dgv_DetailedOutline.TabIndex = 1;
+            this.dgv_DetailedOutline.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dgv_DetailedOutline.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_DetailedOutline.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_DetailedOutline.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_DetailedOutline.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_DetailedOutline.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_DetailedOutline.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_DetailedOutline.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_DetailedOutline.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgv_DetailedOutline.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgv_DetailedOutline.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_DetailedOutline.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_DetailedOutline.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_DetailedOutline.ThemeStyle.HeaderStyle.Height = 42;
+            this.dgv_DetailedOutline.ThemeStyle.ReadOnly = false;
+            this.dgv_DetailedOutline.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_DetailedOutline.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_DetailedOutline.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_DetailedOutline.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_DetailedOutline.ThemeStyle.RowsStyle.Height = 33;
+            this.dgv_DetailedOutline.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_DetailedOutline.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_DetailedOutline.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DetailedOutline_CellClick);
             // 
             // col_Description
             // 
@@ -249,18 +237,11 @@
             this.col_Description.MinimumWidth = 40;
             this.col_Description.Name = "col_Description";
             // 
-            // col_GoalId
-            // 
-            this.col_GoalId.FillWeight = 10F;
-            this.col_GoalId.HeaderText = "Mục tiêu môn học";
-            this.col_GoalId.MinimumWidth = 10;
-            this.col_GoalId.Name = "col_GoalId";
-            // 
             // col_Student_Duties
             // 
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.col_Student_Duties.DefaultCellStyle = dataGridViewCellStyle3;
-            this.col_Student_Duties.FillWeight = 20F;
+            this.col_Student_Duties.FillWeight = 25F;
             this.col_Student_Duties.HeaderText = "Nhiệm vụ của SV";
             this.col_Student_Duties.MinimumWidth = 10;
             this.col_Student_Duties.Name = "col_Student_Duties";
@@ -274,66 +255,20 @@
             // 
             // col_Scientific_Ethics
             // 
-            this.col_Scientific_Ethics.FillWeight = 20F;
+            this.col_Scientific_Ethics.FillWeight = 25F;
             this.col_Scientific_Ethics.HeaderText = "Đạo đức khoa học";
             this.col_Scientific_Ethics.MinimumWidth = 10;
             this.col_Scientific_Ethics.Name = "col_Scientific_Ethics";
             // 
-            // btn_Detail
+            // pnl_container
             // 
-            this.btn_Detail.AnimationHoverSpeed = 0.07F;
-            this.btn_Detail.AnimationSpeed = 0.03F;
-            this.btn_Detail.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Detail.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Detail.BorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Detail.BorderSize = 3;
-            this.btn_Detail.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_Detail.Enabled = false;
-            this.btn_Detail.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_Detail.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Detail.ForeColor = System.Drawing.Color.Magenta;
-            this.btn_Detail.Image = null;
-            this.btn_Detail.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Detail.Location = new System.Drawing.Point(1655, 45);
-            this.btn_Detail.Name = "btn_Detail";
-            this.btn_Detail.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Detail.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Detail.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.btn_Detail.OnHoverImage = null;
-            this.btn_Detail.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Detail.Radius = 10;
-            this.btn_Detail.Size = new System.Drawing.Size(330, 84);
-            this.btn_Detail.TabIndex = 3;
-            this.btn_Detail.Text = "DETAIL";
-            this.btn_Detail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btn_Test
-            // 
-            this.btn_Test.AnimationHoverSpeed = 0.07F;
-            this.btn_Test.AnimationSpeed = 0.03F;
-            this.btn_Test.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Test.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Test.BorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Test.BorderSize = 3;
-            this.btn_Test.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_Test.Enabled = false;
-            this.btn_Test.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_Test.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Test.ForeColor = System.Drawing.Color.Magenta;
-            this.btn_Test.Image = null;
-            this.btn_Test.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Test.Location = new System.Drawing.Point(1287, 45);
-            this.btn_Test.Name = "btn_Test";
-            this.btn_Test.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Test.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Test.OnHoverForeColor = System.Drawing.Color.DeepPink;
-            this.btn_Test.OnHoverImage = null;
-            this.btn_Test.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Test.Radius = 10;
-            this.btn_Test.Size = new System.Drawing.Size(330, 84);
-            this.btn_Test.TabIndex = 3;
-            this.btn_Test.Text = "TEST";
-            this.btn_Test.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pnl_container.Controls.Add(this.pnl_Control);
+            this.pnl_container.Controls.Add(this.pnl_content);
+            this.pnl_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_container.Location = new System.Drawing.Point(0, 0);
+            this.pnl_container.Name = "pnl_container";
+            this.pnl_container.Size = new System.Drawing.Size(2000, 999);
+            this.pnl_container.TabIndex = 3;
             // 
             // UCDetailedOutline
             // 
@@ -345,8 +280,8 @@
             this.Size = new System.Drawing.Size(2000, 999);
             this.pnl_Control.ResumeLayout(false);
             this.pnl_content.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DetailedOutline)).EndInit();
             this.pnl_container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ProgramOutStandards)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,18 +289,15 @@
         #endregion
 
         private Guna.UI.WinForms.GunaPanel pnl_Control;
-        private Guna.UI.WinForms.GunaButton btn_Test;
-        private Guna.UI.WinForms.GunaButton btn_Detail;
         private Guna.UI.WinForms.GunaButton btn_delete;
         private Guna.UI.WinForms.GunaButton btn_Add;
         private Guna.UI.WinForms.GunaButton btn_edit;
         private Guna.UI.WinForms.GunaPanel pnl_content;
-        private Guna.UI.WinForms.GunaDataGridView dgv_ProgramOutStandards;
+        private Guna.UI.WinForms.GunaDataGridView dgv_DetailedOutline;
+        private Guna.UI.WinForms.GunaPanel pnl_container;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_GoalId;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Student_Duties;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Learning_Materials;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_Scientific_Ethics;
-        private Guna.UI.WinForms.GunaPanel pnl_container;
     }
 }

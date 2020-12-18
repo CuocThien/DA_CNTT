@@ -21,17 +21,19 @@ namespace DA_CNTT
         private Panel pnl_container;
         private Subjects subs = new Subjects();
         private int count;
-        public UCSubjectsAdd(Panel pnl_container,string isAdmin)
+        private Label lbl_subname;
+        public UCSubjectsAdd(Panel pnl_container,string isAdmin, Label lbl_subname)
         {
             InitializeComponent();
             this.pnl_container = pnl_container;
             count = 0;
             this.isAdmin = isAdmin;
+            this.lbl_subname = lbl_subname;
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin);
+            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin,lbl_subname);
             this.Dispose();
             cMain.loadUC(pnl_container, uCCnttBefore18);
         }
@@ -76,7 +78,7 @@ namespace DA_CNTT
 
 
                 this.Dispose();
-                UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin);
+                UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin,lbl_subname);
                 cMain.loadUC(pnl_container, uCCnttBefore18);
             }
             else
