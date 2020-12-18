@@ -17,10 +17,12 @@ namespace DA_CNTT
         private string subId;
         private string ppgdId;
         private Panel pnl_contain;
-        public UCPPGDs(Panel pnl_container, string sub_id)
+        private string isAdmin;
+        public UCPPGDs(Panel pnl_container, string sub_id,string isAdmin)
         {
             InitializeComponent();
             subId = sub_id;
+            this.isAdmin = isAdmin;
             this.dgv_PPGDs.ColumnHeadersDefaultCellStyle.BackColor = Color.LemonChiffon;
             this.dgv_PPGDs.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             this.dgv_PPGDs.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Khaki;
@@ -42,17 +44,29 @@ namespace DA_CNTT
                     this.dgv_PPGDs.Rows.Add(c.ID, details);
                 }
             }
+            if (isAdmin == "True")
+            {
+                btn_Add.Visible = true;
+                btn_delete.Visible = true;
+                btn_edit.Visible = true;
+            }
+            else
+            {
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+                btn_Add.Visible = false;
+            }
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            UCPPGDsAdd uCPPGDAdd = new UCPPGDsAdd(subId,pnl_contain);
+            UCPPGDsAdd uCPPGDAdd = new UCPPGDsAdd(subId,pnl_contain,isAdmin);
             cMain.loadUC(pnl_contain, uCPPGDAdd);
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            UCPPGDsEdit uCPPGDsEdit = new UCPPGDsEdit(subId, ppgdId, pnl_contain);
+            UCPPGDsEdit uCPPGDsEdit = new UCPPGDsEdit(subId, ppgdId, pnl_contain,isAdmin);
             cMain.loadUC(pnl_contain, uCPPGDsEdit);
         }
 
@@ -63,7 +77,7 @@ namespace DA_CNTT
             if (result == DialogResult.OK)
                 cPPGD.delete(subId, ppgdId);
             this.Dispose();
-            UCPPGDs uCPPGDs = new UCPPGDs(pnl_contain, subId);
+            UCPPGDs uCPPGDs = new UCPPGDs(pnl_contain, subId,isAdmin);
             cMain.loadUC(pnl_contain, uCPPGDs);
         }
 

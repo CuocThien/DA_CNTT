@@ -14,6 +14,7 @@ namespace DA_CNTT
 {
     public partial class UCSelfStudiesAdd : UserControl
     {
+        private string isAdmin;
         private CSelfStudy cSelfStudy = new CSelfStudy();
         private List<string> chapters = new List<string>();
         private List<string> requests = new List<string>();
@@ -24,13 +25,14 @@ namespace DA_CNTT
         private int countRequests;
         List<Details> details = new List<Details>();
         private Details detail = new Details();
-        public UCSelfStudiesAdd(string id, Panel pnl_container)
+        public UCSelfStudiesAdd(string id, Panel pnl_container, string isAdmin)
         {
             InitializeComponent();
             sub_id = id;
             this.pnl_container = pnl_container;
             countChapters = 0;
             countRequests = 0;
+            this.isAdmin = isAdmin;
         }
 
         private void btn_showDetail_Click(object sender, EventArgs e)
@@ -120,7 +122,7 @@ namespace DA_CNTT
                 MessageBox.Show("Thành Công");
 
                 this.Dispose();
-                UCSelfStudiesAdd uCSelfStudiesAdd = new UCSelfStudiesAdd(sub_id, pnl_container);
+                UCSelfStudiesAdd uCSelfStudiesAdd = new UCSelfStudiesAdd(sub_id, pnl_container,isAdmin);
                 cMain.loadUC(pnl_container, uCSelfStudiesAdd);
             }
             else
@@ -131,7 +133,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container,sub_id);
+            UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container,sub_id,isAdmin);
             cMain.loadUC(pnl_container, uCSelfStudies);
         }
     }

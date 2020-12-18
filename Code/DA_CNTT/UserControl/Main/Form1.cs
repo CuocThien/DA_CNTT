@@ -16,9 +16,10 @@ namespace DA_CNTT
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private string isAdmin;
+        public Form1(string isAdmin)
         {
-            
+            this.isAdmin = isAdmin;
             InitializeComponent();
             
 
@@ -44,9 +45,9 @@ namespace DA_CNTT
             cMain.loadUC(this.pnl_content, uCIntroPro);
         }
 
-        private void btn_CnttBefore18_Click(object sender, EventArgs e)
+        private void btn_Cntt_Click(object sender, EventArgs e)
         {
-            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18();
+            UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin);
             cMain.loadUC(this.pnl_content, uCCnttBefore18);
         }
     }

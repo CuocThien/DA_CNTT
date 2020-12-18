@@ -15,6 +15,7 @@ namespace DA_CNTT
     public partial class UCProgramOutStandardsEdit : UserControl
     {
         private string subId;
+        private string isAdmin;
         private Panel pnl_container;
         private CProgramOutStandards cPOS = new CProgramOutStandards();
         private string POSId;
@@ -23,10 +24,11 @@ namespace DA_CNTT
         private int max;
         private OutCome outcome;
         private List<string> CDIOs = new List<string>();
-        public UCProgramOutStandardsEdit(string subId, string POSId, Panel pnl_container)
+        public UCProgramOutStandardsEdit(string subId, string POSId, Panel pnl_container, string isAdmin)
         {
             InitializeComponent();
             count = 0;
+            this.isAdmin = isAdmin;
             this.subId = subId;
             this.POSId = POSId;
             this.pnl_container = pnl_container;
@@ -45,7 +47,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container, subId);
+            UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container, subId,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCProgramOutStandards);
         }
@@ -97,7 +99,7 @@ namespace DA_CNTT
                 outcome.ID_CDIO = CDIOs;
                 cPOS.Update(subId, POSId, outcome);
                 MessageBox.Show("Sửa thông tin thành công");
-                UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container,subId);
+                UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container,subId,isAdmin);
                 cMain.loadUC(pnl_container, uCProgramOutStandards);
             }
             else

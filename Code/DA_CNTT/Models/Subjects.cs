@@ -44,5 +44,7 @@ namespace DA_CNTT.Models
 
         [JsonProperty("SelfStudy_ID")]
         public string SelfStudy_ID { get; set; }
+        [JsonProperty("Semester")]
+        public string Semester { get; set; }
     }
 }

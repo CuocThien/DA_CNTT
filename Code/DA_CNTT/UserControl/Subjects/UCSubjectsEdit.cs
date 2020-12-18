@@ -14,6 +14,7 @@ namespace DA_CNTT
 {
     public partial class UCSubjectsEdit : UserControl
     {
+        private string isAdmin;
         private CSubject cSubject = new CSubject();
         private List<string> Prerequisite = new List<string>();
         private Panel pnl_container;
@@ -22,9 +23,10 @@ namespace DA_CNTT
         private int count;
         private int min;
         private int max;
-        public UCSubjectsEdit(Panel pnl_container,string subid)
+        public UCSubjectsEdit(Panel pnl_container,string subid,string isAdmin)
         {
             InitializeComponent();
+            this.isAdmin = isAdmin;
             this.sub_id = subid;
             this.pnl_container = pnl_container;
             count = 0;
@@ -44,7 +46,7 @@ namespace DA_CNTT
         private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            UCManageSubjects uC = new UCManageSubjects(pnl_container, sub_id);
+            UCManageSubjects uC = new UCManageSubjects(pnl_container, sub_id,isAdmin);
             cMain.loadUC(pnl_container, uC);
         }
 
@@ -88,12 +90,13 @@ namespace DA_CNTT
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            if (txt_SubjectID.Text != "" && txt_SubjectName.Text !="" && txt_Credits.Text != "")
+            if (txt_SubjectID.Text != "" && txt_SubjectName.Text !="" && txt_Credits.Text != "" && txt_Semester.Text!="")
             {
                 subs.Course_Code = this.txt_SubjectID.Text;
                 subs.Course_Name = this.txt_SubjectName.Text;
                 subs.Credits = this.txt_Credits.Text;
                 subs.Prerequisite = Prerequisite;
+                subs.Semester = txt_Semester.Text;
                 cSubject.Update(sub_id, subs);
                 MessageBox.Show("Sửa thông tin thành công");
                 this.Dispose();

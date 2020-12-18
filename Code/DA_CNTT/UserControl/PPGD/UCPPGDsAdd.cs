@@ -20,17 +20,19 @@ namespace DA_CNTT
         private PPGD ppgd = new PPGD();
         private Panel pnl_container;
         private int count;
-        public UCPPGDsAdd(string id, Panel pnl_container)
+        private string isAdmin;
+        public UCPPGDsAdd(string id, Panel pnl_container, string isAdmin)
         {
             InitializeComponent();
             sub_id = id;
             this.pnl_container = pnl_container;
             count = 0;
+            this.isAdmin = isAdmin;
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, sub_id);
+            UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, sub_id,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCPPGDs);
         }
@@ -60,7 +62,7 @@ namespace DA_CNTT
                 MessageBox.Show("Thành Công");
 
                 this.Dispose();
-                UCPPGDsAdd uCPPGDsAdd = new UCPPGDsAdd(sub_id, pnl_container);
+                UCPPGDsAdd uCPPGDsAdd = new UCPPGDsAdd(sub_id, pnl_container,isAdmin);
                 cMain.loadUC(pnl_container, uCPPGDsAdd);
 
                 this.txt_PPGDID.Text = "";

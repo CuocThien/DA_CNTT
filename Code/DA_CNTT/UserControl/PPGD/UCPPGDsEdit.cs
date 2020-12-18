@@ -15,6 +15,7 @@ namespace DA_CNTT
     public partial class UCPPGDsEdit : UserControl
     {
         private string subId;
+        private string isAdmin;
         private Panel pnl_container;
         private CPPGD cPPGD = new CPPGD();
         private string PPGDId;
@@ -23,10 +24,11 @@ namespace DA_CNTT
         private int max;
         private PPGD ppgd;
         private List<string> details = new List<string>();
-        public UCPPGDsEdit(string subId, string PPGDId, Panel pnl_container)
+        public UCPPGDsEdit(string subId, string PPGDId, Panel pnl_container, string isAdmin)
         {
             InitializeComponent();
             count = 0;
+            this.isAdmin = isAdmin;
             this.subId = subId;
             this.PPGDId = PPGDId;
             this.pnl_container = pnl_container;
@@ -84,7 +86,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, subId);
+            UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, subId,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCPPGDs);
         }
@@ -97,7 +99,7 @@ namespace DA_CNTT
                 ppgd.Detail = details;
                 cPPGD.Update(subId, PPGDId, ppgd);
                 MessageBox.Show("Sửa thông tin thành công");
-                UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, subId);
+                UCPPGDs uCPPGDs = new UCPPGDs(pnl_container, subId,isAdmin);
                 cMain.loadUC(pnl_container, uCPPGDs);
             }
             else

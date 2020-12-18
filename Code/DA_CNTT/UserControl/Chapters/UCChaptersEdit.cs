@@ -14,6 +14,7 @@ namespace DA_CNTT
 {
     public partial class UCChaptersEdit : UserControl
     {
+        private string isAdmin;
         private string subId;
         private Panel pnl_container;
         private CChapters cChapters = new CChapters();
@@ -23,10 +24,11 @@ namespace DA_CNTT
         private int max;
         private Chapter chapter;
         private List<string> details=new List<string>();
-        public UCChaptersEdit(string subId, string chapterId, Panel pnl_container)
+        public UCChaptersEdit(string subId, string chapterId, Panel pnl_container,string isAdmin)
         {
             count = 0;
             InitializeComponent();
+            this.isAdmin = isAdmin;
             this.subId = subId;
             this.pnl_container = pnl_container;
             chapter = cChapters.findfromsubject(subId).Chapter.Where(c=>c.ID==chapterId).SingleOrDefault();
@@ -91,7 +93,7 @@ namespace DA_CNTT
                 chapter.Detail = details;
                 cChapters.Update(subId, chapterId, chapter);
                 MessageBox.Show("Sửa thông tin thành công");
-                UCChapters uCChapters = new UCChapters(pnl_container, subId);
+                UCChapters uCChapters = new UCChapters(pnl_container, subId,isAdmin);
                 cMain.loadUC(pnl_container, uCChapters);
             }
             else
@@ -101,7 +103,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCChapters uCChapters = new UCChapters(pnl_container, subId);
+            UCChapters uCChapters = new UCChapters(pnl_container, subId,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCChapters);
         }

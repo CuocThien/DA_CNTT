@@ -46,6 +46,7 @@ namespace DA_CNTT.Class
             sub.Course_Name = subjects.Course_Name;
             sub.Credits = subjects.Credits;
             sub.Course_Code = subjects.Course_Code;
+            sub.Semester = subjects.Semester;
             this.mongo.Update<Subjects>("Subjects", sub._id, sub);
         }
     }

@@ -13,17 +13,19 @@ namespace DA_CNTT
 {
     public partial class UCChaptersAdd : UserControl
     {
+        private string isAdmin;
         private CChapters cChapters = new CChapters();
         private List<string> details = new List<string>();
         private string sub_id;
         private Panel pnl_container;
         private int count;
-        public UCChaptersAdd(string id, Panel pnl_container)
+        public UCChaptersAdd(string id, Panel pnl_container, string isAdmin)
         {
             InitializeComponent();
             sub_id = id;
             this.pnl_container = pnl_container;
             count = 0;
+            this.isAdmin = isAdmin;
         }
 
         private void btn_AddDetail_Click(object sender, EventArgs e)
@@ -58,7 +60,7 @@ namespace DA_CNTT
                 this.txt_ChapterName.Text = "";
 
                 this.Dispose();
-                UCChaptersAdd uCChaptersAdd = new UCChaptersAdd(sub_id, pnl_container);
+                UCChaptersAdd uCChaptersAdd = new UCChaptersAdd(sub_id, pnl_container,isAdmin);
                 cMain.loadUC(pnl_container, uCChaptersAdd);
             }
             else if (count == 0)
@@ -74,7 +76,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCChapters uCChapters = new UCChapters(pnl_container, sub_id);
+            UCChapters uCChapters = new UCChapters(pnl_container, sub_id,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCChapters);
         }

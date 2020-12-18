@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_IntroGroup = new System.Windows.Forms.ToolStripMenuItem();
+            this.pb_Title = new Guna.UI.WinForms.GunaPictureBox();
             this.pnl_Title = new Guna.UI.WinForms.GunaPanel();
             this.pb_logo = new Guna.UI.WinForms.GunaPictureBox();
-            this.pb_Title = new Guna.UI.WinForms.GunaPictureBox();
             this.pnl_Container = new Guna.UI.WinForms.GunaPanel();
-            this.pnl_content = new Guna.UI.WinForms.GunaPanel();
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
+            this.pnl_content = new Guna.UI.WinForms.GunaPanel();
             this.ms_Menu = new System.Windows.Forms.MenuStrip();
             this.btn_Gioithieu = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroG = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,31 +42,34 @@
             this.btn_ctdt = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_inUni = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_Cntt = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_CnttBefore18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Cntt18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_CnttAfter18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Ktdl = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_KtdlBefore18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Ktdl18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_KtdlAfter18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Spcntt = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_SpBefore18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Sp18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_SpAfter18 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_afterUni = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_khmt = new System.Windows.Forms.ToolStripMenuItem();
             this.tRƯỚCK18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.k18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.sAUK18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_IntroGroup = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroProj = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).BeginInit();
             this.pnl_Title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).BeginInit();
             this.pnl_Container.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.ms_Menu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btn_IntroGroup
+            // 
+            this.btn_IntroGroup.Name = "btn_IntroGroup";
+            this.btn_IntroGroup.Size = new System.Drawing.Size(327, 44);
+            this.btn_IntroGroup.Text = "Giới thiệu Nhóm";
+            // 
+            // pb_Title
+            // 
+            this.pb_Title.BaseColor = System.Drawing.Color.White;
+            this.pb_Title.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pb_Title.InitialImage = null;
+            this.pb_Title.Location = new System.Drawing.Point(0, 0);
+            this.pb_Title.Name = "pb_Title";
+            this.pb_Title.Size = new System.Drawing.Size(2092, 200);
+            this.pb_Title.TabIndex = 0;
+            this.pb_Title.TabStop = false;
             // 
             // pnl_Title
             // 
@@ -88,17 +92,6 @@
             this.pb_logo.TabIndex = 1;
             this.pb_logo.TabStop = false;
             // 
-            // pb_Title
-            // 
-            this.pb_Title.BaseColor = System.Drawing.Color.White;
-            this.pb_Title.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pb_Title.InitialImage = null;
-            this.pb_Title.Location = new System.Drawing.Point(0, 0);
-            this.pb_Title.Name = "pb_Title";
-            this.pb_Title.Size = new System.Drawing.Size(2092, 200);
-            this.pb_Title.TabIndex = 0;
-            this.pb_Title.TabStop = false;
-            // 
             // pnl_Container
             // 
             this.pnl_Container.BackColor = System.Drawing.Color.White;
@@ -110,14 +103,6 @@
             this.pnl_Container.Size = new System.Drawing.Size(2374, 1075);
             this.pnl_Container.TabIndex = 1;
             // 
-            // pnl_content
-            // 
-            this.pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_content.Location = new System.Drawing.Point(0, 76);
-            this.pnl_content.Name = "pnl_content";
-            this.pnl_content.Size = new System.Drawing.Size(2374, 999);
-            this.pnl_content.TabIndex = 1;
-            // 
             // pnl_Menu
             // 
             this.pnl_Menu.Controls.Add(this.ms_Menu);
@@ -126,6 +111,14 @@
             this.pnl_Menu.Name = "pnl_Menu";
             this.pnl_Menu.Size = new System.Drawing.Size(2374, 76);
             this.pnl_Menu.TabIndex = 0;
+            // 
+            // pnl_content
+            // 
+            this.pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_content.Location = new System.Drawing.Point(0, 76);
+            this.pnl_content.Name = "pnl_content";
+            this.pnl_content.Size = new System.Drawing.Size(2374, 999);
+            this.pnl_content.TabIndex = 1;
             // 
             // ms_Menu
             // 
@@ -175,8 +168,7 @@
             // 
             this.btn_ctdt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_ctdt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_inUni,
-            this.btn_afterUni});
+            this.btn_inUni});
             this.btn_ctdt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ctdt.Name = "btn_ctdt";
             this.btn_ctdt.Size = new System.Drawing.Size(367, 72);
@@ -186,125 +178,18 @@
             // 
             this.btn_inUni.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_inUni.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_Cntt,
-            this.btn_Ktdl,
-            this.btn_Spcntt});
+            this.btn_Cntt});
             this.btn_inUni.Name = "btn_inUni";
-            this.btn_inUni.Size = new System.Drawing.Size(321, 46);
+            this.btn_inUni.Size = new System.Drawing.Size(262, 46);
             this.btn_inUni.Text = "ĐẠI HỌC";
             // 
             // btn_Cntt
             // 
             this.btn_Cntt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_Cntt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_CnttBefore18,
-            this.btn_Cntt18,
-            this.btn_CnttAfter18});
             this.btn_Cntt.Name = "btn_Cntt";
             this.btn_Cntt.Size = new System.Drawing.Size(463, 46);
             this.btn_Cntt.Text = "CÔNG NGHỆ THÔNG TIN";
-            // 
-            // btn_CnttBefore18
-            // 
-            this.btn_CnttBefore18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_CnttBefore18.Name = "btn_CnttBefore18";
-            this.btn_CnttBefore18.Size = new System.Drawing.Size(293, 46);
-            this.btn_CnttBefore18.Text = "TRƯỚC K18";
-            this.btn_CnttBefore18.Click += new System.EventHandler(this.btn_CnttBefore18_Click);
-            // 
-            // btn_Cntt18
-            // 
-            this.btn_Cntt18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_Cntt18.Name = "btn_Cntt18";
-            this.btn_Cntt18.Size = new System.Drawing.Size(293, 46);
-            this.btn_Cntt18.Text = "K18";
-            // 
-            // btn_CnttAfter18
-            // 
-            this.btn_CnttAfter18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_CnttAfter18.Name = "btn_CnttAfter18";
-            this.btn_CnttAfter18.Size = new System.Drawing.Size(293, 46);
-            this.btn_CnttAfter18.Text = "SAU K18";
-            // 
-            // btn_Ktdl
-            // 
-            this.btn_Ktdl.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_Ktdl.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_KtdlBefore18,
-            this.btn_Ktdl18,
-            this.btn_KtdlAfter18});
-            this.btn_Ktdl.Name = "btn_Ktdl";
-            this.btn_Ktdl.Size = new System.Drawing.Size(463, 46);
-            this.btn_Ktdl.Text = "KỸ THUẬT DỮ LIỆU";
-            // 
-            // btn_KtdlBefore18
-            // 
-            this.btn_KtdlBefore18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_KtdlBefore18.Name = "btn_KtdlBefore18";
-            this.btn_KtdlBefore18.Size = new System.Drawing.Size(293, 46);
-            this.btn_KtdlBefore18.Text = "TRƯỚC K18";
-            // 
-            // btn_Ktdl18
-            // 
-            this.btn_Ktdl18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_Ktdl18.Name = "btn_Ktdl18";
-            this.btn_Ktdl18.Size = new System.Drawing.Size(293, 46);
-            this.btn_Ktdl18.Text = "K18";
-            // 
-            // btn_KtdlAfter18
-            // 
-            this.btn_KtdlAfter18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_KtdlAfter18.Name = "btn_KtdlAfter18";
-            this.btn_KtdlAfter18.Size = new System.Drawing.Size(293, 46);
-            this.btn_KtdlAfter18.Text = "SAU K18";
-            // 
-            // btn_Spcntt
-            // 
-            this.btn_Spcntt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_Spcntt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_SpBefore18,
-            this.btn_Sp18,
-            this.btn_SpAfter18});
-            this.btn_Spcntt.Name = "btn_Spcntt";
-            this.btn_Spcntt.Size = new System.Drawing.Size(463, 46);
-            this.btn_Spcntt.Text = "SƯ PHẠM CNTT";
-            // 
-            // btn_SpBefore18
-            // 
-            this.btn_SpBefore18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_SpBefore18.Name = "btn_SpBefore18";
-            this.btn_SpBefore18.Size = new System.Drawing.Size(293, 46);
-            this.btn_SpBefore18.Text = "TRƯỚC K18";
-            // 
-            // btn_Sp18
-            // 
-            this.btn_Sp18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_Sp18.Name = "btn_Sp18";
-            this.btn_Sp18.Size = new System.Drawing.Size(293, 46);
-            this.btn_Sp18.Text = "K18";
-            // 
-            // btn_SpAfter18
-            // 
-            this.btn_SpAfter18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_SpAfter18.Name = "btn_SpAfter18";
-            this.btn_SpAfter18.Size = new System.Drawing.Size(293, 46);
-            this.btn_SpAfter18.Text = "SAU K18";
-            // 
-            // btn_afterUni
-            // 
-            this.btn_afterUni.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_afterUni.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_khmt});
-            this.btn_afterUni.Name = "btn_afterUni";
-            this.btn_afterUni.Size = new System.Drawing.Size(321, 46);
-            this.btn_afterUni.Text = "SAU ĐẠI HỌC";
-            // 
-            // btn_khmt
-            // 
-            this.btn_khmt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_khmt.Name = "btn_khmt";
-            this.btn_khmt.Size = new System.Drawing.Size(427, 46);
-            this.btn_khmt.Text = "KHOA HỌC MÁY TÍNH";
+            this.btn_Cntt.Click += new System.EventHandler(this.btn_Cntt_Click);
             // 
             // tRƯỚCK18ToolStripMenuItem2
             // 
@@ -324,12 +209,6 @@
             this.sAUK18ToolStripMenuItem2.Size = new System.Drawing.Size(359, 44);
             this.sAUK18ToolStripMenuItem2.Text = "SAU K18";
             // 
-            // btn_IntroGroup
-            // 
-            this.btn_IntroGroup.Name = "btn_IntroGroup";
-            this.btn_IntroGroup.Size = new System.Drawing.Size(327, 44);
-            this.btn_IntroGroup.Text = "Giới thiệu Nhóm";
-            // 
             // btn_IntroProj
             // 
             this.btn_IntroProj.Name = "btn_IntroProj";
@@ -348,9 +227,9 @@
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).EndInit();
             this.pnl_Title.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).EndInit();
             this.pnl_Container.ResumeLayout(false);
             this.pnl_Menu.ResumeLayout(false);
             this.ms_Menu.ResumeLayout(false);
@@ -361,37 +240,24 @@
 
         #endregion
 
-        private Guna.UI.WinForms.GunaPanel pnl_Title;
+        private System.Windows.Forms.ToolStripMenuItem btn_IntroGroup;
         private Guna.UI.WinForms.GunaPictureBox pb_Title;
+        private Guna.UI.WinForms.GunaPanel pnl_Title;
+        private Guna.UI.WinForms.GunaPictureBox pb_logo;
         private Guna.UI.WinForms.GunaPanel pnl_Container;
+        private Guna.UI.WinForms.GunaPanel pnl_content;
         private Guna.UI.WinForms.GunaPanel pnl_Menu;
         private System.Windows.Forms.MenuStrip ms_Menu;
         private System.Windows.Forms.ToolStripMenuItem btn_Gioithieu;
+        private System.Windows.Forms.ToolStripMenuItem btn_IntroG;
+        private System.Windows.Forms.ToolStripMenuItem btn_IntroPro;
         private System.Windows.Forms.ToolStripMenuItem btn_ctdt;
         private System.Windows.Forms.ToolStripMenuItem btn_inUni;
         private System.Windows.Forms.ToolStripMenuItem btn_Cntt;
-        private System.Windows.Forms.ToolStripMenuItem btn_Ktdl;
-        private System.Windows.Forms.ToolStripMenuItem btn_Spcntt;
-        private System.Windows.Forms.ToolStripMenuItem btn_CnttBefore18;
-        private System.Windows.Forms.ToolStripMenuItem btn_Cntt18;
-        private System.Windows.Forms.ToolStripMenuItem btn_CnttAfter18;
-        private System.Windows.Forms.ToolStripMenuItem btn_KtdlBefore18;
-        private System.Windows.Forms.ToolStripMenuItem btn_Ktdl18;
-        private System.Windows.Forms.ToolStripMenuItem btn_KtdlAfter18;
         private System.Windows.Forms.ToolStripMenuItem tRƯỚCK18ToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem k18ToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem sAUK18ToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem btn_SpBefore18;
-        private System.Windows.Forms.ToolStripMenuItem btn_Sp18;
-        private System.Windows.Forms.ToolStripMenuItem btn_SpAfter18;
-        private System.Windows.Forms.ToolStripMenuItem btn_afterUni;
-        private System.Windows.Forms.ToolStripMenuItem btn_khmt;
-        private System.Windows.Forms.ToolStripMenuItem btn_IntroGroup;
         private System.Windows.Forms.ToolStripMenuItem btn_IntroProj;
-        private System.Windows.Forms.ToolStripMenuItem btn_IntroG;
-        private System.Windows.Forms.ToolStripMenuItem btn_IntroPro;
-        private Guna.UI.WinForms.GunaPictureBox pb_logo;
-        private Guna.UI.WinForms.GunaPanel pnl_content;
     }
 }
 

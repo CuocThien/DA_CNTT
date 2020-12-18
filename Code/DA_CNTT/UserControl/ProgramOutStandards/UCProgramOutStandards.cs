@@ -16,11 +16,13 @@ namespace DA_CNTT
     {
         private string subId;
         private string CDRId;
+        private string isAdmin;
         private Panel pnl_contain;
-        public UCProgramOutStandards(Panel pnl_container, string sub_id)
+        public UCProgramOutStandards(Panel pnl_container, string sub_id, string isAdmin)
         {
             InitializeComponent();
             subId = sub_id;
+            this.isAdmin = isAdmin;
             this.dgv_ProgramOutStandards.ColumnHeadersDefaultCellStyle.BackColor = Color.LemonChiffon;
             this.dgv_ProgramOutStandards.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             this.dgv_ProgramOutStandards.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Khaki;
@@ -42,17 +44,29 @@ namespace DA_CNTT
                     this.dgv_ProgramOutStandards.Rows.Add(e.ID_CDR, e.Description_CDR, CDIO);
                 }
             }
+            if(isAdmin=="True")
+            {
+                btn_Add.Visible = true;
+                btn_delete.Visible = true;
+                btn_edit.Visible = true;
+            }
+            else
+            {
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+                btn_Add.Visible = false;
+            }
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            UCProgramOutStandardsAdd uCProgramOutStandardsAdd = new UCProgramOutStandardsAdd(subId, pnl_contain);
+            UCProgramOutStandardsAdd uCProgramOutStandardsAdd = new UCProgramOutStandardsAdd(subId, pnl_contain,isAdmin);
             cMain.loadUC(pnl_contain, uCProgramOutStandardsAdd);
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            UCProgramOutStandardsEdit uCProgramOutStandardsEdit = new UCProgramOutStandardsEdit(subId, CDRId, pnl_contain);
+            UCProgramOutStandardsEdit uCProgramOutStandardsEdit = new UCProgramOutStandardsEdit(subId, CDRId, pnl_contain,isAdmin);
             cMain.loadUC(pnl_contain, uCProgramOutStandardsEdit);
         }
 
@@ -63,7 +77,7 @@ namespace DA_CNTT
             if (result == DialogResult.OK)
                 cPOS.Delete(subId, CDRId);
             this.Dispose();
-            UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_contain, subId);
+            UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_contain, subId,isAdmin);
             cMain.loadUC(pnl_contain, uCProgramOutStandards);
         }
 

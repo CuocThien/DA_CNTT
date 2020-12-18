@@ -22,19 +22,21 @@ namespace DA_CNTT
         private Panel pnl_container;
         private int count_hp;
         private int count_ctdt;
+        private string isAdmin;
 
-        public UCCousrseGoalAdd(string id, Panel pnl_container)
+        public UCCousrseGoalAdd(string id, Panel pnl_container,string isAdmin)
         {
             InitializeComponent();
             sub_id = id;
             this.pnl_container = pnl_container;
             count_hp = 0;
             count_ctdt = 0;
+            this.isAdmin = isAdmin;
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, sub_id);
+            UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, sub_id,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCCourseGoals);
         }
@@ -84,7 +86,7 @@ namespace DA_CNTT
                 MessageBox.Show("Thêm thông tin thành công");
 
                 this.Dispose();
-                UCCousrseGoalAdd uCCousrseGoalAdd = new UCCousrseGoalAdd(sub_id, pnl_container);
+                UCCousrseGoalAdd uCCousrseGoalAdd = new UCCousrseGoalAdd(sub_id, pnl_container,isAdmin);
                 cMain.loadUC(pnl_container, uCCousrseGoalAdd);
             }
             else

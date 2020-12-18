@@ -16,6 +16,7 @@ namespace DA_CNTT
     {
         private string subId;
         private Panel pnl_container;
+        private string isAdmin;
         private CCourseGoals cCourseGoals = new CCourseGoals();
         private string coursegoalId;
         private int count_hp;
@@ -27,9 +28,10 @@ namespace DA_CNTT
         private CourseGoal coursegoal;
         private List<string> CDRs = new List<string>();
         private List<string> CTDTs = new List<string>();
-        public UCCourseGoalsEdit(string subId, string coursegoalId, Panel pnl_container)
+        public UCCourseGoalsEdit(string subId, string coursegoalId, Panel pnl_container,string isAdmin)
         {
             InitializeComponent();
+            this.isAdmin = isAdmin;
             count_hp = 0;
             count_ctdt = 0;
             this.subId = subId;
@@ -136,7 +138,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, subId);
+            UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, subId,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCCourseGoals);
         }
@@ -151,7 +153,7 @@ namespace DA_CNTT
                 coursegoal.ID_CTDT = CTDTs;
                 cCourseGoals.Update(subId, coursegoalId, coursegoal);
                 MessageBox.Show("Sửa thông tin thành công");
-                UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, subId);
+                UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_container, subId,isAdmin);
                 cMain.loadUC(pnl_container, uCCourseGoals);
             }
             else

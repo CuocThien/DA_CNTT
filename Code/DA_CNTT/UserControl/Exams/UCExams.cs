@@ -17,10 +17,12 @@ namespace DA_CNTT
         private string subId;
         private string examId;
         private Panel pnl_contain;
-        public UCExams(Panel pnl_container, string sub_id)
+        private string isAdmin;
+        public UCExams(Panel pnl_container, string sub_id,string isAdmin)
         {
             InitializeComponent();
             subId = sub_id;
+            this.isAdmin = isAdmin;
             this.dgv_Exams.ColumnHeadersDefaultCellStyle.BackColor = Color.LemonChiffon;
             this.dgv_Exams.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             this.dgv_Exams.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Khaki;
@@ -42,11 +44,23 @@ namespace DA_CNTT
                     this.dgv_Exams.Rows.Add(e.ID_Test,e.Exercise,e.Date,e.Tool,CDR,e.Percentage);
                 }
             }
+            if (isAdmin == "True")
+            {
+                btn_Add.Visible = true;
+                btn_delete.Visible = true;
+                btn_edit.Visible = true;
+            }
+            else
+            {
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+                btn_Add.Visible = false;
+            }
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            UCExamsAdd uCExamsAdd = new UCExamsAdd(subId, pnl_contain);
+            UCExamsAdd uCExamsAdd = new UCExamsAdd(subId, pnl_contain,isAdmin);
             cMain.loadUC(pnl_contain, uCExamsAdd);
         }
 
@@ -60,7 +74,7 @@ namespace DA_CNTT
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            UCExamsEdit uCExamsEdit = new UCExamsEdit(subId, examId, pnl_contain);
+            UCExamsEdit uCExamsEdit = new UCExamsEdit(subId, examId, pnl_contain,isAdmin);
             cMain.loadUC(pnl_contain, uCExamsEdit);
         }
 
@@ -71,7 +85,7 @@ namespace DA_CNTT
             if (result == DialogResult.OK)
                 cExam.Delete(subId, examId);
             this.Dispose();
-            UCExams uCExams = new UCExams(pnl_contain, subId);
+            UCExams uCExams = new UCExams(pnl_contain, subId,isAdmin);
             cMain.loadUC(pnl_contain, uCExams);
         }
     }

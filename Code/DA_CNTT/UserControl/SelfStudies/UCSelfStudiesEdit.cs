@@ -14,6 +14,7 @@ namespace DA_CNTT
 {
     public partial class UCSelfStudiesEdit : UserControl
     {
+        private string isAdmin;
         private CSelfStudy cSelfStudy = new CSelfStudy();
         private List<string> chapters = new List<string>();
         private List<string> requests = new List<string>();
@@ -32,9 +33,10 @@ namespace DA_CNTT
         private int max_detail;
         List<Details> details = new List<Details>();
         private Details detail = new Details();
-        public UCSelfStudiesEdit(string subId, string selfStudyId, Panel pnl_container)
+        public UCSelfStudiesEdit(string subId, string selfStudyId, Panel pnl_container,string isAdmin)
         {
             InitializeComponent();
+            this.isAdmin = isAdmin;
             countRequests = 0;
             countDetail = 0;
             countChapters = 0;
@@ -195,7 +197,7 @@ namespace DA_CNTT
                 cSelfStudy.Update(sub_id, selfstudyId, selfStudy);
                 MessageBox.Show("Sửa thông tin thành công");
                 this.Dispose();
-                UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container, sub_id);
+                UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container, sub_id,isAdmin);
                 cMain.loadUC(pnl_container, uCSelfStudies);
             }
             else
@@ -205,7 +207,7 @@ namespace DA_CNTT
         private void btn_Back_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container, sub_id);
+            UCSelfStudies uCSelfStudies = new UCSelfStudies(pnl_container, sub_id,isAdmin);
             cMain.loadUC(pnl_container, uCSelfStudies);
         }
     }

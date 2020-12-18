@@ -15,6 +15,7 @@ namespace DA_CNTT
     public partial class UCExamsEdit : UserControl
     {
         private string subId;
+        private string isAdmin;
         private Panel pnl_container;
         private CExam cExam = new CExam();
         private string examId;
@@ -23,10 +24,11 @@ namespace DA_CNTT
         private int max;
         private Exam exam;
         private List<string> CDRs = new List<string>();
-        public UCExamsEdit(string subId, string examId, Panel pnl_container)
+        public UCExamsEdit(string subId, string examId, Panel pnl_container,string isAdmin)
         {
             InitializeComponent();
             count = 0;
+            this.isAdmin = isAdmin;
             this.subId = subId;
             this.examId = examId;
             this.pnl_container = pnl_container;
@@ -48,7 +50,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCExams uCExams = new UCExams(pnl_container, subId);
+            UCExams uCExams = new UCExams(pnl_container, subId,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCExams);
         }
@@ -103,7 +105,7 @@ namespace DA_CNTT
                 exam.Percentage = this.txt_percentage.Text;
                 cExam.Update(subId, examId, exam);
                 MessageBox.Show("Sửa thông tin thành công");
-                UCExams uCExams = new UCExams(pnl_container,subId);
+                UCExams uCExams = new UCExams(pnl_container,subId,isAdmin);
                 cMain.loadUC(pnl_container, uCExams);
             }
             else

@@ -14,23 +14,25 @@ namespace DA_CNTT
 {
     public partial class UCProgramOutStandardsAdd : UserControl
     {
+        private string isAdmin;
         private CProgramOutStandards cProgramOutStandards = new CProgramOutStandards();
         private List<string> CDIOs = new List<string>();
         private string sub_id;
         private Panel pnl_container;
         private OutCome outcome = new OutCome();
         private int count;
-        public UCProgramOutStandardsAdd(string id, Panel pnl_container)
+        public UCProgramOutStandardsAdd(string id, Panel pnl_container, string isAdmin)
         {
             InitializeComponent();
             sub_id = id;
             this.pnl_container = pnl_container;
             count = 0;
+            this.isAdmin = isAdmin;
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container, sub_id);
+            UCProgramOutStandards uCProgramOutStandards = new UCProgramOutStandards(pnl_container, sub_id,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCProgramOutStandards);
         }
@@ -63,7 +65,7 @@ namespace DA_CNTT
                 MessageBox.Show("Thành Công");
 
                 this.Dispose();
-                UCProgramOutStandardsAdd uCProgramOutStandardsAdd = new UCProgramOutStandardsAdd(sub_id, pnl_container);
+                UCProgramOutStandardsAdd uCProgramOutStandardsAdd = new UCProgramOutStandardsAdd(sub_id, pnl_container,isAdmin);
                 cMain.loadUC(pnl_container, uCProgramOutStandardsAdd);
             }
             else

@@ -14,10 +14,11 @@ namespace DA_CNTT
 {
     public partial class UCCourseGoals : UserControl
     {
+        private string isAdmin;
         private string subId;
         private string courseGoalId;
         private Panel pnl_contain;
-        public UCCourseGoals(Panel pnl_container, string sub_id)
+        public UCCourseGoals(Panel pnl_container, string sub_id,string isAdmin)
         {
             InitializeComponent();
             subId = sub_id;
@@ -28,6 +29,7 @@ namespace DA_CNTT
             var controller = new MainController();
             var load = controller.loadCourseGoals(sub_id);
             this.pnl_contain = pnl_container;
+            this.isAdmin = isAdmin;
             if (!(load is null))
             {
                 var coursegoals = controller.loadCourseGoals(sub_id).Course_Goal;
@@ -48,6 +50,18 @@ namespace DA_CNTT
                     this.dgv_CourseGoals.Rows.Add(c.ID_Goal, c.Description_Goal, CDR,CTDT);
                 }
             }
+            if (isAdmin == "True")
+            {
+                btn_Add.Visible = true;
+                btn_delete.Visible = true;
+                btn_edit.Visible = true;
+            }
+            else
+            {
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+                btn_Add.Visible = false;
+            }
         }
 
         private void UCCourseGoals_Load(object sender, EventArgs e)
@@ -65,7 +79,7 @@ namespace DA_CNTT
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            UCCousrseGoalAdd uCCousrseGoalAdd = new UCCousrseGoalAdd(subId, pnl_contain);
+            UCCousrseGoalAdd uCCousrseGoalAdd = new UCCousrseGoalAdd(subId, pnl_contain,isAdmin);
             cMain.loadUC(pnl_container, uCCousrseGoalAdd);
         }
 
@@ -76,13 +90,13 @@ namespace DA_CNTT
             if (result == DialogResult.OK)
                 cCourseGoals.Delete(subId, courseGoalId);
             this.Dispose();
-            UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_contain, subId);
+            UCCourseGoals uCCourseGoals = new UCCourseGoals(pnl_contain, subId,isAdmin);
             cMain.loadUC(pnl_contain, uCCourseGoals);
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            UCCourseGoalsEdit uCCourseGoalsEdit = new UCCourseGoalsEdit(subId, courseGoalId, pnl_contain);
+            UCCourseGoalsEdit uCCourseGoalsEdit = new UCCourseGoalsEdit(subId, courseGoalId, pnl_contain,isAdmin);
             cMain.loadUC(pnl_contain, uCCourseGoalsEdit);
         }
     }

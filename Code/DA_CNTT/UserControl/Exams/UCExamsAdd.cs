@@ -20,10 +20,12 @@ namespace DA_CNTT
         private Panel pnl_container;
         private Exam exam = new Exam();
         private int count;
-        public UCExamsAdd(string id, Panel pnl_container)
+        private string isAdmin;
+        public UCExamsAdd(string id, Panel pnl_container,string isAdmin)
         {
             InitializeComponent();
             sub_id = id;
+            this.isAdmin = isAdmin;
             this.pnl_container = pnl_container;
             count = 0;
         }
@@ -45,7 +47,7 @@ namespace DA_CNTT
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UCExams uCExams = new UCExams(pnl_container, sub_id);
+            UCExams uCExams = new UCExams(pnl_container, sub_id,isAdmin);
             this.Dispose();
             cMain.loadUC(pnl_container, uCExams);
         }
@@ -69,7 +71,7 @@ namespace DA_CNTT
                 MessageBox.Show("Thành Công");
 
                 this.Dispose();
-                UCExamsAdd uCExamsAdd = new UCExamsAdd(sub_id, pnl_container);
+                UCExamsAdd uCExamsAdd = new UCExamsAdd(sub_id, pnl_container,isAdmin);
                 cMain.loadUC(pnl_container, uCExamsAdd);
             }
             else

@@ -16,7 +16,7 @@ namespace DA_CNTT.Models
         public List<string> Description { get; set; }
 
         [JsonProperty("Goal")]
-        public List<Goal> Goal { get; set; }
+        public List<string> Goal { get; set; }
 
         [JsonProperty("Test")]
         public List<Test> Test { get; set; }
@@ -34,14 +34,6 @@ namespace DA_CNTT.Models
         public List<string> Scientific_Ethics { get; set; }
 
 
-    }
-    public class Goal
-    {
-        [JsonProperty("ID")]
-        public string ID { get; set; }
-
-        [JsonProperty("CDR")]
-        public List<string> CDR { get; set; }
     }
     public class Test
     {

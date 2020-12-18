@@ -40,6 +40,8 @@
             this.btn_Back = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.txt_Credits = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.txt_Semester = new Guna.UI.WinForms.GunaTextBox();
             this.SuspendLayout();
             // 
             // txt_SubjectName
@@ -257,16 +259,48 @@
             this.txt_Credits.TabIndex = 16;
             this.txt_Credits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.ForeColor = System.Drawing.Color.Magenta;
+            this.gunaLabel5.Location = new System.Drawing.Point(57, 769);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(152, 50);
+            this.gunaLabel5.TabIndex = 12;
+            this.gunaLabel5.Text = "Học kỳ:";
+            // 
+            // txt_Semester
+            // 
+            this.txt_Semester.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Semester.BaseColor = System.Drawing.Color.White;
+            this.txt_Semester.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txt_Semester.BorderSize = 3;
+            this.txt_Semester.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Semester.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_Semester.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txt_Semester.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_Semester.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Semester.Location = new System.Drawing.Point(66, 861);
+            this.txt_Semester.Name = "txt_Semester";
+            this.txt_Semester.PasswordChar = '\0';
+            this.txt_Semester.Radius = 15;
+            this.txt_Semester.Size = new System.Drawing.Size(799, 83);
+            this.txt_Semester.TabIndex = 14;
+            this.txt_Semester.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // UCSubjectsAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txt_Semester);
             this.Controls.Add(this.txt_SubjectName);
             this.Controls.Add(this.txt_Credits);
             this.Controls.Add(this.txt_SubjectID);
             this.Controls.Add(this.lbl_count);
             this.Controls.Add(this.gunaLabel3);
+            this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel1);
@@ -295,5 +329,7 @@
         private Guna.UI.WinForms.GunaButton btn_Back;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaTextBox txt_Credits;
+        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaTextBox txt_Semester;
     }
 }
