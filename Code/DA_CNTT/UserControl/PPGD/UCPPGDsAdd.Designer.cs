@@ -49,11 +49,12 @@
             this.txt_Detail.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_Detail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Detail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Detail.Location = new System.Drawing.Point(962, 401);
+            this.txt_Detail.Location = new System.Drawing.Point(481, 209);
+            this.txt_Detail.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Detail.Name = "txt_Detail";
             this.txt_Detail.PasswordChar = '\0';
             this.txt_Detail.Radius = 15;
-            this.txt_Detail.Size = new System.Drawing.Size(982, 83);
+            this.txt_Detail.Size = new System.Drawing.Size(491, 43);
             this.txt_Detail.TabIndex = 14;
             this.txt_Detail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -68,11 +69,12 @@
             this.txt_PPGDID.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_PPGDID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_PPGDID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PPGDID.Location = new System.Drawing.Point(66, 401);
+            this.txt_PPGDID.Location = new System.Drawing.Point(33, 209);
+            this.txt_PPGDID.Margin = new System.Windows.Forms.Padding(2);
             this.txt_PPGDID.Name = "txt_PPGDID";
             this.txt_PPGDID.PasswordChar = '\0';
             this.txt_PPGDID.Radius = 15;
-            this.txt_PPGDID.Size = new System.Drawing.Size(799, 83);
+            this.txt_PPGDID.Size = new System.Drawing.Size(400, 43);
             this.txt_PPGDID.TabIndex = 15;
             this.txt_PPGDID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -81,9 +83,10 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel3.Location = new System.Drawing.Point(953, 318);
+            this.gunaLabel3.Location = new System.Drawing.Point(476, 165);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(157, 50);
+            this.gunaLabel3.Size = new System.Drawing.Size(79, 25);
             this.gunaLabel3.TabIndex = 10;
             this.gunaLabel3.Text = "Chi tiết:";
             // 
@@ -92,9 +95,10 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel1.Location = new System.Drawing.Point(57, 318);
+            this.gunaLabel1.Location = new System.Drawing.Point(28, 165);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(206, 50);
+            this.gunaLabel1.Size = new System.Drawing.Size(107, 25);
             this.gunaLabel1.TabIndex = 12;
             this.gunaLabel1.Text = "Mã PPGD: ";
             // 
@@ -103,8 +107,9 @@
             this.btn_AddDetail.AnimationHoverSpeed = 0.07F;
             this.btn_AddDetail.AnimationSpeed = 0.03F;
             this.btn_AddDetail.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddDetail.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_AddDetail.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_AddDetail.BackgroundImage = global::DA_CNTT.Properties.Resources.iconfinder_Add_File_67254361;
+            this.btn_AddDetail.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_AddDetail.BorderColor = System.Drawing.Color.Transparent;
             this.btn_AddDetail.BorderSize = 3;
             this.btn_AddDetail.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_AddDetail.FocusedColor = System.Drawing.Color.Empty;
@@ -112,17 +117,17 @@
             this.btn_AddDetail.ForeColor = System.Drawing.Color.Magenta;
             this.btn_AddDetail.Image = null;
             this.btn_AddDetail.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_AddDetail.Location = new System.Drawing.Point(1860, 400);
+            this.btn_AddDetail.Location = new System.Drawing.Point(930, 208);
+            this.btn_AddDetail.Margin = new System.Windows.Forms.Padding(2);
             this.btn_AddDetail.Name = "btn_AddDetail";
-            this.btn_AddDetail.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_AddDetail.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_AddDetail.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_AddDetail.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_AddDetail.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_AddDetail.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_AddDetail.OnHoverImage = null;
             this.btn_AddDetail.OnPressedColor = System.Drawing.Color.Black;
             this.btn_AddDetail.Radius = 10;
-            this.btn_AddDetail.Size = new System.Drawing.Size(84, 84);
+            this.btn_AddDetail.Size = new System.Drawing.Size(42, 44);
             this.btn_AddDetail.TabIndex = 8;
-            this.btn_AddDetail.Text = "+";
             this.btn_AddDetail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_AddDetail.Click += new System.EventHandler(this.btn_AddDetail_Click);
             // 
@@ -131,8 +136,9 @@
             this.btn_Add.AnimationHoverSpeed = 0.07F;
             this.btn_Add.AnimationSpeed = 0.03F;
             this.btn_Add.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Add.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Add.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Add.BackgroundImage = global::DA_CNTT.Properties.Resources.addl;
+            this.btn_Add.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Add.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Add.BorderSize = 3;
             this.btn_Add.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Add.FocusedColor = System.Drawing.Color.Empty;
@@ -140,17 +146,17 @@
             this.btn_Add.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Add.Image = null;
             this.btn_Add.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add.Location = new System.Drawing.Point(1614, 861);
+            this.btn_Add.Location = new System.Drawing.Point(807, 448);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Add.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Add.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Add.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Add.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Add.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Add.OnHoverImage = null;
             this.btn_Add.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Add.Radius = 10;
-            this.btn_Add.Size = new System.Drawing.Size(330, 84);
+            this.btn_Add.Size = new System.Drawing.Size(149, 46);
             this.btn_Add.TabIndex = 9;
-            this.btn_Add.Text = "THÊM";
             this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
@@ -159,8 +165,9 @@
             this.btn_Back.AnimationHoverSpeed = 0.07F;
             this.btn_Back.AnimationSpeed = 0.03F;
             this.btn_Back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Back.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Back.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Back.BackgroundImage = global::DA_CNTT.Properties.Resources.back;
+            this.btn_Back.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Back.BorderSize = 3;
             this.btn_Back.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Back.FocusedColor = System.Drawing.Color.Empty;
@@ -168,17 +175,17 @@
             this.btn_Back.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Back.Image = null;
             this.btn_Back.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Back.Location = new System.Drawing.Point(66, 54);
+            this.btn_Back.Location = new System.Drawing.Point(33, 28);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Back.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Back.OnHoverImage = null;
             this.btn_Back.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Back.Radius = 10;
-            this.btn_Back.Size = new System.Drawing.Size(330, 84);
+            this.btn_Back.Size = new System.Drawing.Size(68, 66);
             this.btn_Back.TabIndex = 7;
-            this.btn_Back.Text = "Quay lại";
             this.btn_Back.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
@@ -187,15 +194,16 @@
             this.lbl_count.AutoSize = true;
             this.lbl_count.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_count.ForeColor = System.Drawing.Color.Magenta;
-            this.lbl_count.Location = new System.Drawing.Point(1116, 318);
+            this.lbl_count.Location = new System.Drawing.Point(558, 165);
+            this.lbl_count.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_count.Name = "lbl_count";
-            this.lbl_count.Size = new System.Drawing.Size(43, 50);
+            this.lbl_count.Size = new System.Drawing.Size(23, 25);
             this.lbl_count.TabIndex = 10;
             this.lbl_count.Text = "0";
             // 
-            // UCPPGDAdd
+            // UCPPGDsAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.txt_PPGDID);
@@ -206,8 +214,9 @@
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.txt_Detail);
-            this.Name = "UCPPGDAdd";
-            this.Size = new System.Drawing.Size(2000, 999);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "UCPPGDsAdd";
+            this.Size = new System.Drawing.Size(1000, 519);
             this.ResumeLayout(false);
             this.PerformLayout();
 

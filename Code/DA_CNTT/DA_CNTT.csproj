@@ -119,6 +119,11 @@
   <ItemGroup>
     <Compile Include="Class\CProgramOutStandards.cs" />
     <Compile Include="Class\CUsers.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\DetailedOutline\UCDetailedOutlineAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -302,12 +307,6 @@
     <Compile Include="UserControl\Main\UCCnttBefore18.Designer.cs">
       <DependentUpon>UCCnttBefore18.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Main\UCIntroPro.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Main\UCIntroPro.Designer.cs">
-      <DependentUpon>UCIntroPro.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\Main\UCIntroGroup.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -394,21 +393,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UserControl\Main\UCCnttBefore18.resx">
       <DependentUpon>UCCnttBefore18.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Main\UCIntroGroup.resx">
       <DependentUpon>UCIntroGroup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Main\UCIntroPro.resx">
-      <DependentUpon>UCIntroPro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -430,6 +422,54 @@
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
     <Content Include="img\cntt.png" />
     <Content Include="img\spkt.png" />
+    <Content Include="Resources\258-512.ico" />
+    <Content Include="Resources\258-512.png" />
+    <Content Include="Resources\addp.png" />
+    <Content Include="Resources\detail.png" />
+    <Content Include="Resources\DSC_0338_BW.jpg" />
+    <Content Include="Resources\dssv.png" />
+    <Content Include="Resources\edit2.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\iconfinder-icon.png" />
+    <Content Include="Resources\iconfinder_Add_File_6725436 %281%29.png" />
+    <Content Include="Resources\iconfinder_Document_add_2202269.png" />
+    <Content Include="Resources\iconfinder_script-programming-coding-add-on_3209461.png" />
+    <Content Include="Resources\icons8_cancel.ico" />
+    <Content Include="Resources\icons8_cancel_48.png" />
+    <Content Include="Resources\icons8_search.ico" />
+    <Content Include="Resources\icons8_search_32.png" />
+    <Content Include="Resources\IMG_20191226_203622.jpg" />
+    <Content Include="Resources\login1.png" />
+    <Content Include="Resources\Sign-LogOff-icon.ico" />
+    <Content Include="Resources\Sign-Shutdown-icon-1.ico" />
+    <Content Include="Resources\Sign-Shutdown-icon-1.png" />
+    <None Include="Resources\iconfinder_edit-3_25612601.png" />
+    <None Include="Resources\iconfinder_edit-3_2561260.png" />
+    <None Include="Resources\iconfinder_edit-3_2561260 %281%29.png" />
+    <None Include="Resources\iconfinder_document-add_216178.png" />
+    <None Include="Resources\iconfinder_Streamline-22_185042.png" />
+    <None Include="Resources\back1.png" />
+    <None Include="Resources\next1.png" />
+    <None Include="Resources\next128.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\previous.png" />
+    <None Include="Resources\previous.webp" />
+    <None Include="Resources\sua.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\iconfinder_Add_File_67254361.png" />
+    <None Include="Resources\iconfinder_Add_File_6725436.png" />
+    <None Include="Resources\addl1.png" />
+    <None Include="Resources\addl.png" />
+    <None Include="Resources\IMG_20191226_203924.jpg" />
+    <None Include="Resources\_DSC0019_BW.jpg" />
+    <None Include="Resources\home2.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\home1.jpg" />
+    <None Include="Resources\home.jpg" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\login.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

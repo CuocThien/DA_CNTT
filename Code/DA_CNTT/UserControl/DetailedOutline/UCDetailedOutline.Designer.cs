@@ -57,8 +57,9 @@
             this.pnl_Control.Controls.Add(this.btn_edit);
             this.pnl_Control.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Control.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Control.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_Control.Name = "pnl_Control";
-            this.pnl_Control.Size = new System.Drawing.Size(2000, 153);
+            this.pnl_Control.Size = new System.Drawing.Size(1032, 80);
             this.pnl_Control.TabIndex = 0;
             // 
             // btn_delete
@@ -66,8 +67,9 @@
             this.btn_delete.AnimationHoverSpeed = 0.07F;
             this.btn_delete.AnimationSpeed = 0.03F;
             this.btn_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_delete.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_delete.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_delete.BackgroundImage = global::DA_CNTT.Properties.Resources.delete;
+            this.btn_delete.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_delete.BorderColor = System.Drawing.Color.Transparent;
             this.btn_delete.BorderSize = 3;
             this.btn_delete.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_delete.Enabled = false;
@@ -76,17 +78,17 @@
             this.btn_delete.ForeColor = System.Drawing.Color.Magenta;
             this.btn_delete.Image = null;
             this.btn_delete.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_delete.Location = new System.Drawing.Point(1572, 35);
+            this.btn_delete.Location = new System.Drawing.Point(786, 18);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_delete.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_delete.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_delete.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_delete.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_delete.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_delete.OnHoverImage = null;
             this.btn_delete.OnPressedColor = System.Drawing.Color.Black;
             this.btn_delete.Radius = 10;
-            this.btn_delete.Size = new System.Drawing.Size(330, 84);
+            this.btn_delete.Size = new System.Drawing.Size(138, 44);
             this.btn_delete.TabIndex = 3;
-            this.btn_delete.Text = "XÓA";
             this.btn_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
@@ -95,8 +97,9 @@
             this.btn_Add.AnimationHoverSpeed = 0.07F;
             this.btn_Add.AnimationSpeed = 0.03F;
             this.btn_Add.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Add.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Add.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Add.BackgroundImage = global::DA_CNTT.Properties.Resources.addl1;
+            this.btn_Add.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Add.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Add.BorderSize = 3;
             this.btn_Add.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Add.FocusedColor = System.Drawing.Color.Empty;
@@ -104,17 +107,17 @@
             this.btn_Add.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Add.Image = null;
             this.btn_Add.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add.Location = new System.Drawing.Point(275, 35);
+            this.btn_Add.Location = new System.Drawing.Point(138, 18);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Add.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Add.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Add.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Add.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Add.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Add.OnHoverImage = null;
             this.btn_Add.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Add.Radius = 10;
-            this.btn_Add.Size = new System.Drawing.Size(330, 84);
+            this.btn_Add.Size = new System.Drawing.Size(149, 44);
             this.btn_Add.TabIndex = 2;
-            this.btn_Add.Text = "THÊM";
             this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
@@ -123,8 +126,9 @@
             this.btn_edit.AnimationHoverSpeed = 0.07F;
             this.btn_edit.AnimationSpeed = 0.03F;
             this.btn_edit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_edit.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_edit.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_edit.BackgroundImage = global::DA_CNTT.Properties.Resources.sua;
+            this.btn_edit.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_edit.BorderColor = System.Drawing.Color.Transparent;
             this.btn_edit.BorderSize = 3;
             this.btn_edit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_edit.Enabled = false;
@@ -133,26 +137,27 @@
             this.btn_edit.ForeColor = System.Drawing.Color.Magenta;
             this.btn_edit.Image = null;
             this.btn_edit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_edit.Location = new System.Drawing.Point(895, 35);
+            this.btn_edit.Location = new System.Drawing.Point(448, 18);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_edit.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_edit.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_edit.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_edit.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_edit.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_edit.OnHoverImage = null;
             this.btn_edit.OnPressedColor = System.Drawing.Color.Black;
             this.btn_edit.Radius = 10;
-            this.btn_edit.Size = new System.Drawing.Size(330, 84);
+            this.btn_edit.Size = new System.Drawing.Size(146, 44);
             this.btn_edit.TabIndex = 1;
-            this.btn_edit.Text = "SỬA";
             this.btn_edit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // pnl_content
             // 
             this.pnl_content.Controls.Add(this.dgv_DetailedOutline);
-            this.pnl_content.Location = new System.Drawing.Point(3, 159);
+            this.pnl_content.Location = new System.Drawing.Point(2, 83);
+            this.pnl_content.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_content.Name = "pnl_content";
-            this.pnl_content.Size = new System.Drawing.Size(1997, 840);
+            this.pnl_content.Size = new System.Drawing.Size(998, 437);
             this.pnl_content.TabIndex = 1;
             // 
             // dgv_DetailedOutline
@@ -191,6 +196,7 @@
             this.dgv_DetailedOutline.EnableHeadersVisualStyles = false;
             this.dgv_DetailedOutline.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_DetailedOutline.Location = new System.Drawing.Point(0, 0);
+            this.dgv_DetailedOutline.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_DetailedOutline.Name = "dgv_DetailedOutline";
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Info;
@@ -204,7 +210,7 @@
             this.dgv_DetailedOutline.RowHeadersWidth = 82;
             this.dgv_DetailedOutline.RowTemplate.Height = 33;
             this.dgv_DetailedOutline.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_DetailedOutline.Size = new System.Drawing.Size(1997, 840);
+            this.dgv_DetailedOutline.Size = new System.Drawing.Size(998, 437);
             this.dgv_DetailedOutline.TabIndex = 1;
             this.dgv_DetailedOutline.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgv_DetailedOutline.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -266,18 +272,20 @@
             this.pnl_container.Controls.Add(this.pnl_content);
             this.pnl_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_container.Location = new System.Drawing.Point(0, 0);
+            this.pnl_container.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_container.Name = "pnl_container";
-            this.pnl_container.Size = new System.Drawing.Size(2000, 999);
+            this.pnl_container.Size = new System.Drawing.Size(1032, 588);
             this.pnl_container.TabIndex = 3;
             // 
             // UCDetailedOutline
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnl_container);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCDetailedOutline";
-            this.Size = new System.Drawing.Size(2000, 999);
+            this.Size = new System.Drawing.Size(1032, 588);
             this.pnl_Control.ResumeLayout(false);
             this.pnl_content.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DetailedOutline)).EndInit();

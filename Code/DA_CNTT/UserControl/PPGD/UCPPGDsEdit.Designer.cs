@@ -51,11 +51,12 @@
             this.txt_PPGDID.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_PPGDID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_PPGDID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PPGDID.Location = new System.Drawing.Point(66, 401);
+            this.txt_PPGDID.Location = new System.Drawing.Point(33, 209);
+            this.txt_PPGDID.Margin = new System.Windows.Forms.Padding(2);
             this.txt_PPGDID.Name = "txt_PPGDID";
             this.txt_PPGDID.PasswordChar = '\0';
             this.txt_PPGDID.Radius = 15;
-            this.txt_PPGDID.Size = new System.Drawing.Size(799, 83);
+            this.txt_PPGDID.Size = new System.Drawing.Size(400, 43);
             this.txt_PPGDID.TabIndex = 23;
             this.txt_PPGDID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -64,9 +65,10 @@
             this.lbl_count.AutoSize = true;
             this.lbl_count.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_count.ForeColor = System.Drawing.Color.Magenta;
-            this.lbl_count.Location = new System.Drawing.Point(1116, 318);
+            this.lbl_count.Location = new System.Drawing.Point(558, 165);
+            this.lbl_count.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_count.Name = "lbl_count";
-            this.lbl_count.Size = new System.Drawing.Size(43, 50);
+            this.lbl_count.Size = new System.Drawing.Size(23, 25);
             this.lbl_count.TabIndex = 19;
             this.lbl_count.Text = "1";
             // 
@@ -75,9 +77,10 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel3.Location = new System.Drawing.Point(953, 318);
+            this.gunaLabel3.Location = new System.Drawing.Point(476, 165);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(157, 50);
+            this.gunaLabel3.Size = new System.Drawing.Size(79, 25);
             this.gunaLabel3.TabIndex = 20;
             this.gunaLabel3.Text = "Chi tiết:";
             // 
@@ -86,9 +89,10 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel1.Location = new System.Drawing.Point(57, 318);
+            this.gunaLabel1.Location = new System.Drawing.Point(28, 165);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(206, 50);
+            this.gunaLabel1.Size = new System.Drawing.Size(107, 25);
             this.gunaLabel1.TabIndex = 21;
             this.gunaLabel1.Text = "Mã PPGD: ";
             // 
@@ -97,8 +101,9 @@
             this.btn_Edit.AnimationHoverSpeed = 0.07F;
             this.btn_Edit.AnimationSpeed = 0.03F;
             this.btn_Edit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Edit.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Edit.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Edit.BackgroundImage = global::DA_CNTT.Properties.Resources.sua;
+            this.btn_Edit.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Edit.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Edit.BorderSize = 3;
             this.btn_Edit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Edit.FocusedColor = System.Drawing.Color.Empty;
@@ -106,17 +111,17 @@
             this.btn_Edit.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Edit.Image = null;
             this.btn_Edit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Edit.Location = new System.Drawing.Point(1614, 861);
+            this.btn_Edit.Location = new System.Drawing.Point(807, 448);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Edit.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Edit.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Edit.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Edit.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Edit.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Edit.OnHoverImage = null;
             this.btn_Edit.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Edit.Radius = 10;
-            this.btn_Edit.Size = new System.Drawing.Size(330, 84);
+            this.btn_Edit.Size = new System.Drawing.Size(142, 45);
             this.btn_Edit.TabIndex = 18;
-            this.btn_Edit.Text = "SỬA";
             this.btn_Edit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
@@ -125,8 +130,9 @@
             this.btn_Back.AnimationHoverSpeed = 0.07F;
             this.btn_Back.AnimationSpeed = 0.03F;
             this.btn_Back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Back.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Back.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Back.BackgroundImage = global::DA_CNTT.Properties.Resources.back;
+            this.btn_Back.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Back.BorderSize = 3;
             this.btn_Back.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Back.FocusedColor = System.Drawing.Color.Empty;
@@ -134,17 +140,17 @@
             this.btn_Back.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Back.Image = null;
             this.btn_Back.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Back.Location = new System.Drawing.Point(66, 54);
+            this.btn_Back.Location = new System.Drawing.Point(33, 28);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Back.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Back.OnHoverImage = null;
             this.btn_Back.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Back.Radius = 10;
-            this.btn_Back.Size = new System.Drawing.Size(330, 84);
+            this.btn_Back.Size = new System.Drawing.Size(68, 68);
             this.btn_Back.TabIndex = 16;
-            this.btn_Back.Text = "Quay lại";
             this.btn_Back.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
@@ -159,11 +165,12 @@
             this.txt_Detail.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_Detail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Detail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Detail.Location = new System.Drawing.Point(962, 401);
+            this.txt_Detail.Location = new System.Drawing.Point(481, 209);
+            this.txt_Detail.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Detail.Name = "txt_Detail";
             this.txt_Detail.PasswordChar = '\0';
             this.txt_Detail.Radius = 15;
-            this.txt_Detail.Size = new System.Drawing.Size(982, 83);
+            this.txt_Detail.Size = new System.Drawing.Size(491, 43);
             this.txt_Detail.TabIndex = 22;
             this.txt_Detail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -172,8 +179,9 @@
             this.btn_hpnext.AnimationHoverSpeed = 0.07F;
             this.btn_hpnext.AnimationSpeed = 0.03F;
             this.btn_hpnext.BackColor = System.Drawing.Color.Transparent;
-            this.btn_hpnext.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_hpnext.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_hpnext.BackgroundImage = global::DA_CNTT.Properties.Resources.next1;
+            this.btn_hpnext.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_hpnext.BorderColor = System.Drawing.Color.Transparent;
             this.btn_hpnext.BorderSize = 3;
             this.btn_hpnext.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_hpnext.FocusedColor = System.Drawing.Color.Empty;
@@ -181,17 +189,17 @@
             this.btn_hpnext.ForeColor = System.Drawing.Color.Magenta;
             this.btn_hpnext.Image = null;
             this.btn_hpnext.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_hpnext.Location = new System.Drawing.Point(1690, 523);
+            this.btn_hpnext.Location = new System.Drawing.Point(923, 208);
+            this.btn_hpnext.Margin = new System.Windows.Forms.Padding(2);
             this.btn_hpnext.Name = "btn_hpnext";
-            this.btn_hpnext.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_hpnext.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_hpnext.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_hpnext.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_hpnext.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_hpnext.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_hpnext.OnHoverImage = null;
             this.btn_hpnext.OnPressedColor = System.Drawing.Color.Black;
             this.btn_hpnext.Radius = 10;
-            this.btn_hpnext.Size = new System.Drawing.Size(147, 84);
+            this.btn_hpnext.Size = new System.Drawing.Size(49, 44);
             this.btn_hpnext.TabIndex = 31;
-            this.btn_hpnext.Text = ">>";
             this.btn_hpnext.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_hpnext.Click += new System.EventHandler(this.btn_hpnext_Click);
             // 
@@ -200,8 +208,9 @@
             this.btn_hpprevious.AnimationHoverSpeed = 0.07F;
             this.btn_hpprevious.AnimationSpeed = 0.03F;
             this.btn_hpprevious.BackColor = System.Drawing.Color.Transparent;
-            this.btn_hpprevious.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_hpprevious.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_hpprevious.BackgroundImage = global::DA_CNTT.Properties.Resources.back1;
+            this.btn_hpprevious.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_hpprevious.BorderColor = System.Drawing.Color.Transparent;
             this.btn_hpprevious.BorderSize = 3;
             this.btn_hpprevious.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_hpprevious.FocusedColor = System.Drawing.Color.Empty;
@@ -209,17 +218,17 @@
             this.btn_hpprevious.ForeColor = System.Drawing.Color.Magenta;
             this.btn_hpprevious.Image = null;
             this.btn_hpprevious.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_hpprevious.Location = new System.Drawing.Point(1038, 523);
+            this.btn_hpprevious.Location = new System.Drawing.Point(481, 208);
+            this.btn_hpprevious.Margin = new System.Windows.Forms.Padding(2);
             this.btn_hpprevious.Name = "btn_hpprevious";
-            this.btn_hpprevious.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_hpprevious.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_hpprevious.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_hpprevious.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_hpprevious.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_hpprevious.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_hpprevious.OnHoverImage = null;
             this.btn_hpprevious.OnPressedColor = System.Drawing.Color.Black;
             this.btn_hpprevious.Radius = 10;
-            this.btn_hpprevious.Size = new System.Drawing.Size(147, 84);
+            this.btn_hpprevious.Size = new System.Drawing.Size(50, 44);
             this.btn_hpprevious.TabIndex = 32;
-            this.btn_hpprevious.Text = "<<";
             this.btn_hpprevious.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_hpprevious.Click += new System.EventHandler(this.btn_hpprevious_Click);
             // 
@@ -237,7 +246,8 @@
             this.btn_editDetail.ForeColor = System.Drawing.Color.Magenta;
             this.btn_editDetail.Image = null;
             this.btn_editDetail.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_editDetail.Location = new System.Drawing.Point(1298, 523);
+            this.btn_editDetail.Location = new System.Drawing.Point(649, 272);
+            this.btn_editDetail.Margin = new System.Windows.Forms.Padding(2);
             this.btn_editDetail.Name = "btn_editDetail";
             this.btn_editDetail.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_editDetail.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -245,7 +255,7 @@
             this.btn_editDetail.OnHoverImage = null;
             this.btn_editDetail.OnPressedColor = System.Drawing.Color.Black;
             this.btn_editDetail.Radius = 10;
-            this.btn_editDetail.Size = new System.Drawing.Size(292, 84);
+            this.btn_editDetail.Size = new System.Drawing.Size(146, 44);
             this.btn_editDetail.TabIndex = 30;
             this.btn_editDetail.Text = "SỬA CHI TIẾT";
             this.btn_editDetail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -253,7 +263,7 @@
             // 
             // UCPPGDsEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btn_hpnext);
@@ -266,8 +276,9 @@
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.txt_Detail);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCPPGDsEdit";
-            this.Size = new System.Drawing.Size(2000, 999);
+            this.Size = new System.Drawing.Size(1000, 519);
             this.ResumeLayout(false);
             this.PerformLayout();
 

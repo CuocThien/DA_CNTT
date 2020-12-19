@@ -37,6 +37,7 @@ namespace DA_CNTT
             this.txt_SubjectName.Text = subs.Course_Name;
             this.txt_Credits.Text = subs.Credits;
             this.txt_Prerequisite.Text = subs.Prerequisite[0];
+            this.txt_Semester.Text = subs.Semester;
             Prerequisite = subs.Prerequisite;
             max = subs.Prerequisite.Count();
             if (max != 0)

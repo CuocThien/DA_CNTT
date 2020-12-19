@@ -57,11 +57,12 @@
             this.txt_date.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_date.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_date.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_date.Location = new System.Drawing.Point(66, 729);
+            this.txt_date.Location = new System.Drawing.Point(33, 379);
+            this.txt_date.Margin = new System.Windows.Forms.Padding(2);
             this.txt_date.Name = "txt_date";
             this.txt_date.PasswordChar = '\0';
             this.txt_date.Radius = 15;
-            this.txt_date.Size = new System.Drawing.Size(799, 83);
+            this.txt_date.Size = new System.Drawing.Size(400, 43);
             this.txt_date.TabIndex = 13;
             this.txt_date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -76,11 +77,12 @@
             this.txt_Description.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_Description.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Description.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Description.Location = new System.Drawing.Point(66, 522);
+            this.txt_Description.Location = new System.Drawing.Point(33, 271);
+            this.txt_Description.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Description.Name = "txt_Description";
             this.txt_Description.PasswordChar = '\0';
             this.txt_Description.Radius = 15;
-            this.txt_Description.Size = new System.Drawing.Size(799, 83);
+            this.txt_Description.Size = new System.Drawing.Size(400, 43);
             this.txt_Description.TabIndex = 14;
             this.txt_Description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -95,11 +97,12 @@
             this.txt_ExamID.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_ExamID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_ExamID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ExamID.Location = new System.Drawing.Point(66, 290);
+            this.txt_ExamID.Location = new System.Drawing.Point(33, 151);
+            this.txt_ExamID.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ExamID.Name = "txt_ExamID";
             this.txt_ExamID.PasswordChar = '\0';
             this.txt_ExamID.Radius = 15;
-            this.txt_ExamID.Size = new System.Drawing.Size(799, 83);
+            this.txt_ExamID.Size = new System.Drawing.Size(400, 43);
             this.txt_ExamID.TabIndex = 15;
             this.txt_ExamID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -108,9 +111,10 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel3.Location = new System.Drawing.Point(57, 439);
+            this.gunaLabel3.Location = new System.Drawing.Point(28, 228);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(134, 50);
+            this.gunaLabel3.Size = new System.Drawing.Size(69, 25);
             this.gunaLabel3.TabIndex = 10;
             this.gunaLabel3.Text = "Mô tả:";
             // 
@@ -119,9 +123,10 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel2.Location = new System.Drawing.Point(57, 646);
+            this.gunaLabel2.Location = new System.Drawing.Point(28, 336);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(370, 50);
+            this.gunaLabel2.Size = new System.Drawing.Size(188, 25);
             this.gunaLabel2.TabIndex = 11;
             this.gunaLabel2.Text = "Thời gian thực hiện:";
             // 
@@ -130,9 +135,10 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel1.Location = new System.Drawing.Point(57, 207);
+            this.gunaLabel1.Location = new System.Drawing.Point(28, 108);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(154, 50);
+            this.gunaLabel1.Size = new System.Drawing.Size(78, 25);
             this.gunaLabel1.TabIndex = 12;
             this.gunaLabel1.Text = "Bài tập:";
             // 
@@ -141,8 +147,9 @@
             this.btn_Add.AnimationHoverSpeed = 0.07F;
             this.btn_Add.AnimationSpeed = 0.03F;
             this.btn_Add.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Add.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Add.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Add.BackgroundImage = global::DA_CNTT.Properties.Resources.addl1;
+            this.btn_Add.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Add.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Add.BorderSize = 3;
             this.btn_Add.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Add.FocusedColor = System.Drawing.Color.Empty;
@@ -150,17 +157,17 @@
             this.btn_Add.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Add.Image = null;
             this.btn_Add.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add.Location = new System.Drawing.Point(1614, 861);
+            this.btn_Add.Location = new System.Drawing.Point(807, 448);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Add.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Add.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Add.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Add.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Add.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Add.OnHoverImage = null;
             this.btn_Add.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Add.Radius = 10;
-            this.btn_Add.Size = new System.Drawing.Size(330, 84);
+            this.btn_Add.Size = new System.Drawing.Size(149, 44);
             this.btn_Add.TabIndex = 9;
-            this.btn_Add.Text = "THÊM";
             this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
@@ -169,8 +176,9 @@
             this.btn_Back.AnimationHoverSpeed = 0.07F;
             this.btn_Back.AnimationSpeed = 0.03F;
             this.btn_Back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Back.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Back.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Back.BackgroundImage = global::DA_CNTT.Properties.Resources.back;
+            this.btn_Back.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Back.BorderSize = 3;
             this.btn_Back.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Back.FocusedColor = System.Drawing.Color.Empty;
@@ -178,17 +186,17 @@
             this.btn_Back.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Back.Image = null;
             this.btn_Back.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Back.Location = new System.Drawing.Point(66, 54);
+            this.btn_Back.Location = new System.Drawing.Point(33, 28);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Back.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Back.OnHoverImage = null;
             this.btn_Back.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Back.Radius = 10;
-            this.btn_Back.Size = new System.Drawing.Size(330, 84);
+            this.btn_Back.Size = new System.Drawing.Size(64, 63);
             this.btn_Back.TabIndex = 7;
-            this.btn_Back.Text = "Quay lại";
             this.btn_Back.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
@@ -197,9 +205,10 @@
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel4.Location = new System.Drawing.Point(1061, 207);
+            this.gunaLabel4.Location = new System.Drawing.Point(530, 108);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(289, 50);
+            this.gunaLabel4.Size = new System.Drawing.Size(147, 25);
             this.gunaLabel4.TabIndex = 11;
             this.gunaLabel4.Text = "Cách thực hiện:";
             // 
@@ -214,11 +223,12 @@
             this.txt_tool.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_tool.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_tool.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tool.Location = new System.Drawing.Point(1070, 290);
+            this.txt_tool.Location = new System.Drawing.Point(535, 151);
+            this.txt_tool.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tool.Name = "txt_tool";
             this.txt_tool.PasswordChar = '\0';
             this.txt_tool.Radius = 15;
-            this.txt_tool.Size = new System.Drawing.Size(799, 83);
+            this.txt_tool.Size = new System.Drawing.Size(400, 43);
             this.txt_tool.TabIndex = 13;
             this.txt_tool.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -227,9 +237,10 @@
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel5.Location = new System.Drawing.Point(1061, 439);
+            this.gunaLabel5.Location = new System.Drawing.Point(530, 228);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(431, 50);
+            this.gunaLabel5.Size = new System.Drawing.Size(223, 25);
             this.gunaLabel5.TabIndex = 11;
             this.gunaLabel5.Text = "Chuẩn đầu ra học phần:";
             // 
@@ -244,11 +255,12 @@
             this.txt_CDR.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_CDR.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_CDR.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CDR.Location = new System.Drawing.Point(1070, 522);
+            this.txt_CDR.Location = new System.Drawing.Point(535, 271);
+            this.txt_CDR.Margin = new System.Windows.Forms.Padding(2);
             this.txt_CDR.Name = "txt_CDR";
             this.txt_CDR.PasswordChar = '\0';
             this.txt_CDR.Radius = 15;
-            this.txt_CDR.Size = new System.Drawing.Size(799, 83);
+            this.txt_CDR.Size = new System.Drawing.Size(400, 43);
             this.txt_CDR.TabIndex = 13;
             this.txt_CDR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -257,9 +269,10 @@
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.Color.Magenta;
-            this.gunaLabel6.Location = new System.Drawing.Point(1061, 646);
+            this.gunaLabel6.Location = new System.Drawing.Point(530, 336);
+            this.gunaLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(218, 50);
+            this.gunaLabel6.Size = new System.Drawing.Size(109, 25);
             this.gunaLabel6.TabIndex = 11;
             this.gunaLabel6.Text = "Chiếm tỉ lệ:";
             // 
@@ -274,11 +287,12 @@
             this.txt_percentage.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_percentage.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_percentage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_percentage.Location = new System.Drawing.Point(1070, 729);
+            this.txt_percentage.Location = new System.Drawing.Point(535, 379);
+            this.txt_percentage.Margin = new System.Windows.Forms.Padding(2);
             this.txt_percentage.Name = "txt_percentage";
             this.txt_percentage.PasswordChar = '\0';
             this.txt_percentage.Radius = 15;
-            this.txt_percentage.Size = new System.Drawing.Size(799, 83);
+            this.txt_percentage.Size = new System.Drawing.Size(400, 43);
             this.txt_percentage.TabIndex = 13;
             this.txt_percentage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -287,8 +301,9 @@
             this.btn_AddCDR.AnimationHoverSpeed = 0.07F;
             this.btn_AddCDR.AnimationSpeed = 0.03F;
             this.btn_AddCDR.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddCDR.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_AddCDR.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_AddCDR.BackgroundImage = global::DA_CNTT.Properties.Resources.iconfinder_Add_File_67254361;
+            this.btn_AddCDR.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_AddCDR.BorderColor = System.Drawing.Color.Transparent;
             this.btn_AddCDR.BorderSize = 3;
             this.btn_AddCDR.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_AddCDR.FocusedColor = System.Drawing.Color.Empty;
@@ -296,15 +311,16 @@
             this.btn_AddCDR.ForeColor = System.Drawing.Color.Magenta;
             this.btn_AddCDR.Image = null;
             this.btn_AddCDR.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_AddCDR.Location = new System.Drawing.Point(1875, 521);
+            this.btn_AddCDR.Location = new System.Drawing.Point(938, 271);
+            this.btn_AddCDR.Margin = new System.Windows.Forms.Padding(2);
             this.btn_AddCDR.Name = "btn_AddCDR";
-            this.btn_AddCDR.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_AddCDR.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_AddCDR.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_AddCDR.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_AddCDR.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_AddCDR.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_AddCDR.OnHoverImage = null;
             this.btn_AddCDR.OnPressedColor = System.Drawing.Color.Black;
             this.btn_AddCDR.Radius = 10;
-            this.btn_AddCDR.Size = new System.Drawing.Size(90, 84);
+            this.btn_AddCDR.Size = new System.Drawing.Size(45, 44);
             this.btn_AddCDR.TabIndex = 8;
             this.btn_AddCDR.Text = "+";
             this.btn_AddCDR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -315,15 +331,16 @@
             this.lbl_countHP.AutoSize = true;
             this.lbl_countHP.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_countHP.ForeColor = System.Drawing.Color.Magenta;
-            this.lbl_countHP.Location = new System.Drawing.Point(1480, 439);
+            this.lbl_countHP.Location = new System.Drawing.Point(740, 228);
+            this.lbl_countHP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_countHP.Name = "lbl_countHP";
-            this.lbl_countHP.Size = new System.Drawing.Size(43, 50);
+            this.lbl_countHP.Size = new System.Drawing.Size(23, 25);
             this.lbl_countHP.TabIndex = 10;
             this.lbl_countHP.Text = "0";
             // 
             // UCExamsAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.txt_percentage);
@@ -342,8 +359,9 @@
             this.Controls.Add(this.btn_AddCDR);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_Back);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCExamsAdd";
-            this.Size = new System.Drawing.Size(2000, 999);
+            this.Size = new System.Drawing.Size(1000, 519);
             this.ResumeLayout(false);
             this.PerformLayout();
 

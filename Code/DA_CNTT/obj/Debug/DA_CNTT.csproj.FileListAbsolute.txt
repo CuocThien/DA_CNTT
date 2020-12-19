@@ -155,7 +155,6 @@ D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCManageSubj
 D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.Properties.Resources.resources
 D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCCnttBefore18.resources
 D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCcontrol.UCIntroGroup.resources
-D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCIntroPro.resources
 D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.csproj.GenerateResource.cache
 D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.csproj.CoreCompileInputs.cache
 D:\vy\study\HK1-20-21\DACNTT\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.csproj.CopyComplete

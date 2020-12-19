@@ -64,9 +64,11 @@ namespace DA_CNTT
                 btn_Add.Visible = true;
                 btn_delete.Visible = true;
                 btn_edit.Visible = true;
-                if(dgv_DetailedOutline.Rows[0].Cells[0].Value.ToString() !="")
+                if (dgv_DetailedOutline.Rows.Count >= 2)
                 {
                     btn_Add.Visible = false;
+                    if (dgv_DetailedOutline.Rows[0].Cells[0].Value.ToString() == "")
+                        btn_Add.Visible = true;
                 }
             }
             else

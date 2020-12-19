@@ -35,10 +35,11 @@
             this.pnl_Container = new Guna.UI.WinForms.GunaPanel();
             this.pnl_content = new Guna.UI.WinForms.GunaPanel();
             this.pnl_Menu = new Guna.UI.WinForms.GunaPanel();
+            this.lbl_SubName = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_name = new Guna.UI.WinForms.GunaLabel();
             this.ms_Menu = new System.Windows.Forms.MenuStrip();
             this.btn_Gioithieu = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroG = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_IntroPro = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_ctdt = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_inUni = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_Cntt = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,8 +47,6 @@
             this.k18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.sAUK18ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_IntroProj = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbl_name = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_SubName = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Title)).BeginInit();
             this.pnl_Title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
@@ -68,8 +67,9 @@
             this.pb_Title.Dock = System.Windows.Forms.DockStyle.Left;
             this.pb_Title.InitialImage = null;
             this.pb_Title.Location = new System.Drawing.Point(0, 0);
+            this.pb_Title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pb_Title.Name = "pb_Title";
-            this.pb_Title.Size = new System.Drawing.Size(2092, 200);
+            this.pb_Title.Size = new System.Drawing.Size(1046, 104);
             this.pb_Title.TabIndex = 0;
             this.pb_Title.TabStop = false;
             // 
@@ -80,17 +80,19 @@
             this.pnl_Title.Controls.Add(this.pb_Title);
             this.pnl_Title.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Title.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Title.Name = "pnl_Title";
-            this.pnl_Title.Size = new System.Drawing.Size(2374, 200);
+            this.pnl_Title.Size = new System.Drawing.Size(685, 104);
             this.pnl_Title.TabIndex = 0;
             // 
             // pb_logo
             // 
             this.pb_logo.BaseColor = System.Drawing.Color.White;
             this.pb_logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pb_logo.Location = new System.Drawing.Point(2092, 0);
+            this.pb_logo.Location = new System.Drawing.Point(1046, 0);
+            this.pb_logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pb_logo.Name = "pb_logo";
-            this.pb_logo.Size = new System.Drawing.Size(282, 200);
+            this.pb_logo.Size = new System.Drawing.Size(0, 104);
             this.pb_logo.TabIndex = 1;
             this.pb_logo.TabStop = false;
             // 
@@ -100,17 +102,20 @@
             this.pnl_Container.Controls.Add(this.pnl_content);
             this.pnl_Container.Controls.Add(this.pnl_Menu);
             this.pnl_Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Container.Location = new System.Drawing.Point(0, 200);
+            this.pnl_Container.Location = new System.Drawing.Point(0, 104);
+            this.pnl_Container.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Container.Name = "pnl_Container";
-            this.pnl_Container.Size = new System.Drawing.Size(2374, 1075);
+            this.pnl_Container.Size = new System.Drawing.Size(685, 285);
             this.pnl_Container.TabIndex = 1;
             // 
             // pnl_content
             // 
+            this.pnl_content.BackgroundImage = global::DA_CNTT.Properties.Resources.home;
             this.pnl_content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_content.Location = new System.Drawing.Point(0, 76);
+            this.pnl_content.Location = new System.Drawing.Point(0, 40);
+            this.pnl_content.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_content.Name = "pnl_content";
-            this.pnl_content.Size = new System.Drawing.Size(2374, 999);
+            this.pnl_content.Size = new System.Drawing.Size(685, 245);
             this.pnl_content.TabIndex = 1;
             // 
             // pnl_Menu
@@ -120,9 +125,35 @@
             this.pnl_Menu.Controls.Add(this.ms_Menu);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Size = new System.Drawing.Size(2374, 76);
+            this.pnl_Menu.Size = new System.Drawing.Size(685, 40);
             this.pnl_Menu.TabIndex = 0;
+            // 
+            // lbl_SubName
+            // 
+            this.lbl_SubName.AutoSize = true;
+            this.lbl_SubName.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lbl_SubName.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SubName.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_SubName.Location = new System.Drawing.Point(490, 7);
+            this.lbl_SubName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_SubName.Name = "lbl_SubName";
+            this.lbl_SubName.Size = new System.Drawing.Size(67, 25);
+            this.lbl_SubName.TabIndex = 46;
+            this.lbl_SubName.Text = "           ";
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lbl_name.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.ForeColor = System.Drawing.Color.Magenta;
+            this.lbl_name.Location = new System.Drawing.Point(864, 7);
+            this.lbl_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(0, 25);
+            this.lbl_name.TabIndex = 45;
             // 
             // ms_Menu
             // 
@@ -136,7 +167,8 @@
             this.btn_ctdt});
             this.ms_Menu.Location = new System.Drawing.Point(0, 0);
             this.ms_Menu.Name = "ms_Menu";
-            this.ms_Menu.Size = new System.Drawing.Size(2374, 76);
+            this.ms_Menu.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.ms_Menu.Size = new System.Drawing.Size(685, 40);
             this.ms_Menu.TabIndex = 0;
             this.ms_Menu.Text = "menuStrip1";
             // 
@@ -144,29 +176,20 @@
             // 
             this.btn_Gioithieu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_Gioithieu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_IntroG,
-            this.btn_IntroPro});
+            this.btn_IntroG});
             this.btn_Gioithieu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Gioithieu.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btn_Gioithieu.Name = "btn_Gioithieu";
-            this.btn_Gioithieu.Size = new System.Drawing.Size(176, 72);
+            this.btn_Gioithieu.Size = new System.Drawing.Size(93, 38);
             this.btn_Gioithieu.Text = "GIỚI THIỆU";
             // 
             // btn_IntroG
             // 
             this.btn_IntroG.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_IntroG.Name = "btn_IntroG";
-            this.btn_IntroG.Size = new System.Drawing.Size(385, 46);
+            this.btn_IntroG.Size = new System.Drawing.Size(199, 24);
             this.btn_IntroG.Text = "GIỚI THIỆU NHÓM";
             this.btn_IntroG.Click += new System.EventHandler(this.btn_IntroG_Click);
-            // 
-            // btn_IntroPro
-            // 
-            this.btn_IntroPro.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btn_IntroPro.Name = "btn_IntroPro";
-            this.btn_IntroPro.Size = new System.Drawing.Size(385, 46);
-            this.btn_IntroPro.Text = "GIỚI THIỆU ĐỀ TÀI";
-            this.btn_IntroPro.Click += new System.EventHandler(this.btn_IntroPro_Click);
             // 
             // btn_ctdt
             // 
@@ -175,7 +198,7 @@
             this.btn_inUni});
             this.btn_ctdt.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ctdt.Name = "btn_ctdt";
-            this.btn_ctdt.Size = new System.Drawing.Size(367, 72);
+            this.btn_ctdt.Size = new System.Drawing.Size(194, 38);
             this.btn_ctdt.Text = "CHƯƠNG TRÌNH ĐÀO TẠO";
             // 
             // btn_inUni
@@ -184,14 +207,14 @@
             this.btn_inUni.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_Cntt});
             this.btn_inUni.Name = "btn_inUni";
-            this.btn_inUni.Size = new System.Drawing.Size(262, 46);
+            this.btn_inUni.Size = new System.Drawing.Size(135, 24);
             this.btn_inUni.Text = "ĐẠI HỌC";
             // 
             // btn_Cntt
             // 
             this.btn_Cntt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btn_Cntt.Name = "btn_Cntt";
-            this.btn_Cntt.Size = new System.Drawing.Size(463, 46);
+            this.btn_Cntt.Size = new System.Drawing.Size(242, 24);
             this.btn_Cntt.Text = "CÔNG NGHỆ THÔNG TIN";
             this.btn_Cntt.Click += new System.EventHandler(this.btn_Cntt_Click);
             // 
@@ -219,37 +242,15 @@
             this.btn_IntroProj.Size = new System.Drawing.Size(327, 44);
             this.btn_IntroProj.Text = "Giới thiệu Đề tài";
             // 
-            // lbl_name
-            // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_name.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.ForeColor = System.Drawing.Color.Magenta;
-            this.lbl_name.Location = new System.Drawing.Point(1728, 13);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(0, 50);
-            this.lbl_name.TabIndex = 45;
-            // 
-            // lbl_SubName
-            // 
-            this.lbl_SubName.AutoSize = true;
-            this.lbl_SubName.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_SubName.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SubName.ForeColor = System.Drawing.Color.Magenta;
-            this.lbl_SubName.Location = new System.Drawing.Point(979, 13);
-            this.lbl_SubName.Name = "lbl_SubName";
-            this.lbl_SubName.Size = new System.Drawing.Size(132, 50);
-            this.lbl_SubName.TabIndex = 46;
-            this.lbl_SubName.Text = "           ";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2374, 1275);
+            this.ClientSize = new System.Drawing.Size(685, 389);
             this.Controls.Add(this.pnl_Container);
             this.Controls.Add(this.pnl_Title);
             this.MainMenuStrip = this.ms_Menu;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -278,7 +279,6 @@
         private System.Windows.Forms.MenuStrip ms_Menu;
         private System.Windows.Forms.ToolStripMenuItem btn_Gioithieu;
         private System.Windows.Forms.ToolStripMenuItem btn_IntroG;
-        private System.Windows.Forms.ToolStripMenuItem btn_IntroPro;
         private System.Windows.Forms.ToolStripMenuItem btn_ctdt;
         private System.Windows.Forms.ToolStripMenuItem btn_inUni;
         private System.Windows.Forms.ToolStripMenuItem btn_Cntt;

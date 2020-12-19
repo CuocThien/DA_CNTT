@@ -22,7 +22,7 @@ namespace DA_CNTT
             this.isAdmin = isAdmin;
             InitializeComponent();
             this.lbl_name.Text = name;
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -37,12 +37,6 @@ namespace DA_CNTT
         {
             UCIntroGroup ucIntroG = new UCIntroGroup();
             cMain.loadUC(this.pnl_content, ucIntroG);
-        }
-
-        private void btn_IntroPro_Click(object sender, EventArgs e)
-        {
-            UCIntroPro uCIntroPro = new UCIntroPro();
-            cMain.loadUC(this.pnl_content, uCIntroPro);
         }
 
         private void btn_Cntt_Click(object sender, EventArgs e)

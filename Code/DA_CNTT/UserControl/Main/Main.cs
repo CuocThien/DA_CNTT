@@ -39,10 +39,5 @@ namespace DA_CNTT
                 MessageBox.Show("Đăng nhập thất bại!");
             }    
         }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

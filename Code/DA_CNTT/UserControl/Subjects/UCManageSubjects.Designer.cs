@@ -60,8 +60,9 @@
             this.pnl_Menu.Controls.Add(this.gunaLabel1);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Size = new System.Drawing.Size(374, 999);
+            this.pnl_Menu.Size = new System.Drawing.Size(187, 519);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_ppgd
@@ -78,7 +79,8 @@
             this.btn_ppgd.ForeColor = System.Drawing.Color.Magenta;
             this.btn_ppgd.Image = null;
             this.btn_ppgd.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_ppgd.Location = new System.Drawing.Point(25, 902);
+            this.btn_ppgd.Location = new System.Drawing.Point(12, 469);
+            this.btn_ppgd.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ppgd.Name = "btn_ppgd";
             this.btn_ppgd.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_ppgd.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -86,7 +88,7 @@
             this.btn_ppgd.OnHoverImage = null;
             this.btn_ppgd.OnPressedColor = System.Drawing.Color.Black;
             this.btn_ppgd.Radius = 10;
-            this.btn_ppgd.Size = new System.Drawing.Size(330, 84);
+            this.btn_ppgd.Size = new System.Drawing.Size(165, 44);
             this.btn_ppgd.TabIndex = 0;
             this.btn_ppgd.Text = "PPGD";
             this.btn_ppgd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -106,7 +108,8 @@
             this.btn_SelfStudies.ForeColor = System.Drawing.Color.Magenta;
             this.btn_SelfStudies.Image = null;
             this.btn_SelfStudies.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_SelfStudies.Location = new System.Drawing.Point(25, 797);
+            this.btn_SelfStudies.Location = new System.Drawing.Point(12, 414);
+            this.btn_SelfStudies.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SelfStudies.Name = "btn_SelfStudies";
             this.btn_SelfStudies.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_SelfStudies.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -114,7 +117,7 @@
             this.btn_SelfStudies.OnHoverImage = null;
             this.btn_SelfStudies.OnPressedColor = System.Drawing.Color.Black;
             this.btn_SelfStudies.Radius = 10;
-            this.btn_SelfStudies.Size = new System.Drawing.Size(330, 84);
+            this.btn_SelfStudies.Size = new System.Drawing.Size(165, 44);
             this.btn_SelfStudies.TabIndex = 0;
             this.btn_SelfStudies.Text = "TỰ HỌC";
             this.btn_SelfStudies.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -134,7 +137,8 @@
             this.btn_exams.ForeColor = System.Drawing.Color.Magenta;
             this.btn_exams.Image = null;
             this.btn_exams.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_exams.Location = new System.Drawing.Point(25, 694);
+            this.btn_exams.Location = new System.Drawing.Point(12, 361);
+            this.btn_exams.Margin = new System.Windows.Forms.Padding(2);
             this.btn_exams.Name = "btn_exams";
             this.btn_exams.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_exams.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -142,7 +146,7 @@
             this.btn_exams.OnHoverImage = null;
             this.btn_exams.OnPressedColor = System.Drawing.Color.Black;
             this.btn_exams.Radius = 10;
-            this.btn_exams.Size = new System.Drawing.Size(330, 84);
+            this.btn_exams.Size = new System.Drawing.Size(165, 44);
             this.btn_exams.TabIndex = 0;
             this.btn_exams.Text = "BÀI TẬP";
             this.btn_exams.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -162,7 +166,8 @@
             this.btn_CDR.ForeColor = System.Drawing.Color.Magenta;
             this.btn_CDR.Image = null;
             this.btn_CDR.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_CDR.Location = new System.Drawing.Point(25, 488);
+            this.btn_CDR.Location = new System.Drawing.Point(12, 254);
+            this.btn_CDR.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CDR.Name = "btn_CDR";
             this.btn_CDR.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_CDR.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -170,7 +175,7 @@
             this.btn_CDR.OnHoverImage = null;
             this.btn_CDR.OnPressedColor = System.Drawing.Color.Black;
             this.btn_CDR.Radius = 10;
-            this.btn_CDR.Size = new System.Drawing.Size(330, 84);
+            this.btn_CDR.Size = new System.Drawing.Size(165, 44);
             this.btn_CDR.TabIndex = 0;
             this.btn_CDR.Text = "CHUẨN ĐẦU RA";
             this.btn_CDR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -190,7 +195,8 @@
             this.btn_detailedOutline.ForeColor = System.Drawing.Color.Magenta;
             this.btn_detailedOutline.Image = null;
             this.btn_detailedOutline.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_detailedOutline.Location = new System.Drawing.Point(25, 267);
+            this.btn_detailedOutline.Location = new System.Drawing.Point(12, 139);
+            this.btn_detailedOutline.Margin = new System.Windows.Forms.Padding(2);
             this.btn_detailedOutline.Name = "btn_detailedOutline";
             this.btn_detailedOutline.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_detailedOutline.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -198,7 +204,7 @@
             this.btn_detailedOutline.OnHoverImage = null;
             this.btn_detailedOutline.OnPressedColor = System.Drawing.Color.Black;
             this.btn_detailedOutline.Radius = 10;
-            this.btn_detailedOutline.Size = new System.Drawing.Size(330, 84);
+            this.btn_detailedOutline.Size = new System.Drawing.Size(165, 44);
             this.btn_detailedOutline.TabIndex = 0;
             this.btn_detailedOutline.Text = "MÔ TẢ";
             this.btn_detailedOutline.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -218,7 +224,8 @@
             this.btn_CourseGoals.ForeColor = System.Drawing.Color.Magenta;
             this.btn_CourseGoals.Image = null;
             this.btn_CourseGoals.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_CourseGoals.Location = new System.Drawing.Point(25, 376);
+            this.btn_CourseGoals.Location = new System.Drawing.Point(12, 196);
+            this.btn_CourseGoals.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CourseGoals.Name = "btn_CourseGoals";
             this.btn_CourseGoals.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_CourseGoals.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -226,7 +233,7 @@
             this.btn_CourseGoals.OnHoverImage = null;
             this.btn_CourseGoals.OnPressedColor = System.Drawing.Color.Black;
             this.btn_CourseGoals.Radius = 10;
-            this.btn_CourseGoals.Size = new System.Drawing.Size(330, 84);
+            this.btn_CourseGoals.Size = new System.Drawing.Size(165, 44);
             this.btn_CourseGoals.TabIndex = 0;
             this.btn_CourseGoals.Text = "MỤC TIÊU";
             this.btn_CourseGoals.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -237,8 +244,9 @@
             this.btn_Back.AnimationHoverSpeed = 0.07F;
             this.btn_Back.AnimationSpeed = 0.03F;
             this.btn_Back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Back.BaseColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_Back.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_Back.BackgroundImage = global::DA_CNTT.Properties.Resources.back;
+            this.btn_Back.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Back.BorderSize = 3;
             this.btn_Back.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Back.FocusedColor = System.Drawing.Color.Empty;
@@ -246,17 +254,17 @@
             this.btn_Back.ForeColor = System.Drawing.Color.Navy;
             this.btn_Back.Image = null;
             this.btn_Back.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Back.Location = new System.Drawing.Point(0, 0);
+            this.btn_Back.Location = new System.Drawing.Point(57, -5);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_Back.OnHoverForeColor = System.Drawing.Color.DeepPink;
+            this.btn_Back.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_Back.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btn_Back.OnHoverImage = null;
             this.btn_Back.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Back.Radius = 10;
-            this.btn_Back.Size = new System.Drawing.Size(150, 73);
+            this.btn_Back.Size = new System.Drawing.Size(64, 61);
             this.btn_Back.TabIndex = 0;
-            this.btn_Back.Text = "<<";
             this.btn_Back.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
@@ -274,7 +282,8 @@
             this.btn_edit.ForeColor = System.Drawing.Color.Navy;
             this.btn_edit.Image = null;
             this.btn_edit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_edit.Location = new System.Drawing.Point(25, 94);
+            this.btn_edit.Location = new System.Drawing.Point(12, 56);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_edit.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -282,7 +291,7 @@
             this.btn_edit.OnHoverImage = null;
             this.btn_edit.OnPressedColor = System.Drawing.Color.Black;
             this.btn_edit.Radius = 10;
-            this.btn_edit.Size = new System.Drawing.Size(330, 64);
+            this.btn_edit.Size = new System.Drawing.Size(165, 33);
             this.btn_edit.TabIndex = 0;
             this.btn_edit.Text = "SỬA MÔN HỌC";
             this.btn_edit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -302,7 +311,8 @@
             this.btn_delete.ForeColor = System.Drawing.Color.Navy;
             this.btn_delete.Image = null;
             this.btn_delete.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_delete.Location = new System.Drawing.Point(25, 164);
+            this.btn_delete.Location = new System.Drawing.Point(12, 94);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_delete.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -310,7 +320,7 @@
             this.btn_delete.OnHoverImage = null;
             this.btn_delete.OnPressedColor = System.Drawing.Color.Black;
             this.btn_delete.Radius = 10;
-            this.btn_delete.Size = new System.Drawing.Size(330, 68);
+            this.btn_delete.Size = new System.Drawing.Size(165, 35);
             this.btn_delete.TabIndex = 0;
             this.btn_delete.Text = "XÓA MÔN HỌC";
             this.btn_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -330,7 +340,8 @@
             this.btn_Chapter.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Chapter.Image = null;
             this.btn_Chapter.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Chapter.Location = new System.Drawing.Point(25, 592);
+            this.btn_Chapter.Location = new System.Drawing.Point(12, 308);
+            this.btn_Chapter.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Chapter.Name = "btn_Chapter";
             this.btn_Chapter.OnHoverBaseColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_Chapter.OnHoverBorderColor = System.Drawing.Color.DarkOrange;
@@ -338,7 +349,7 @@
             this.btn_Chapter.OnHoverImage = null;
             this.btn_Chapter.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Chapter.Radius = 10;
-            this.btn_Chapter.Size = new System.Drawing.Size(330, 84);
+            this.btn_Chapter.Size = new System.Drawing.Size(165, 44);
             this.btn_Chapter.TabIndex = 0;
             this.btn_Chapter.Text = "CHƯƠNG";
             this.btn_Chapter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -349,29 +360,32 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Red;
-            this.gunaLabel1.Location = new System.Drawing.Point(-36, 219);
+            this.gunaLabel1.Location = new System.Drawing.Point(-17, 122);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(475, 45);
+            this.gunaLabel1.Size = new System.Drawing.Size(220, 21);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "-----------------------------------";
             // 
             // pnl_container
             // 
             this.pnl_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_container.Location = new System.Drawing.Point(374, 0);
+            this.pnl_container.Location = new System.Drawing.Point(187, 0);
+            this.pnl_container.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_container.Name = "pnl_container";
-            this.pnl_container.Size = new System.Drawing.Size(2000, 999);
+            this.pnl_container.Size = new System.Drawing.Size(1000, 519);
             this.pnl_container.TabIndex = 1;
             // 
             // UCManageSubjects
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnl_container);
             this.Controls.Add(this.pnl_Menu);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCManageSubjects";
-            this.Size = new System.Drawing.Size(2374, 999);
+            this.Size = new System.Drawing.Size(1187, 519);
             this.pnl_Menu.ResumeLayout(false);
             this.pnl_Menu.PerformLayout();
             this.ResumeLayout(false);
