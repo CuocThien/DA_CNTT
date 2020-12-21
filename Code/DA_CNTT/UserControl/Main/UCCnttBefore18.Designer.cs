@@ -54,9 +54,9 @@
             this.pnl_Control.Controls.Add(this.txt_Search);
             this.pnl_Control.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Control.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Control.Margin = new System.Windows.Forms.Padding(2);
+            this.pnl_Control.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_Control.Name = "pnl_Control";
-            this.pnl_Control.Size = new System.Drawing.Size(1439, 58);
+            this.pnl_Control.Size = new System.Drawing.Size(2600, 125);
             this.pnl_Control.TabIndex = 2;
             // 
             // btn_Add
@@ -74,8 +74,8 @@
             this.btn_Add.ForeColor = System.Drawing.Color.Magenta;
             this.btn_Add.Image = null;
             this.btn_Add.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add.Location = new System.Drawing.Point(958, 7);
-            this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Add.Location = new System.Drawing.Point(1916, 13);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btn_Add.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -83,7 +83,7 @@
             this.btn_Add.OnHoverImage = null;
             this.btn_Add.OnPressedColor = System.Drawing.Color.Black;
             this.btn_Add.Radius = 10;
-            this.btn_Add.Size = new System.Drawing.Size(148, 43);
+            this.btn_Add.Size = new System.Drawing.Size(296, 83);
             this.btn_Add.TabIndex = 5;
             this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
@@ -99,12 +99,12 @@
             this.txt_Search.FocusedBorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.txt_Search.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Search.Location = new System.Drawing.Point(266, 7);
-            this.txt_Search.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Search.Location = new System.Drawing.Point(532, 13);
+            this.txt_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Search.Name = "txt_Search";
             this.txt_Search.PasswordChar = '\0';
             this.txt_Search.Radius = 15;
-            this.txt_Search.Size = new System.Drawing.Size(644, 43);
+            this.txt_Search.Size = new System.Drawing.Size(1288, 102);
             this.txt_Search.TabIndex = 0;
             this.txt_Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_Search.TextChanged += new System.EventHandler(this.txt_Search_TextChanged_1);
@@ -113,10 +113,10 @@
             // 
             this.pnl_Content.Controls.Add(this.dgv_Content);
             this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_Content.Location = new System.Drawing.Point(0, 62);
-            this.pnl_Content.Margin = new System.Windows.Forms.Padding(2);
+            this.pnl_Content.Location = new System.Drawing.Point(0, 123);
+            this.pnl_Content.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_Content.Name = "pnl_Content";
-            this.pnl_Content.Size = new System.Drawing.Size(1439, 544);
+            this.pnl_Content.Size = new System.Drawing.Size(2600, 1042);
             this.pnl_Content.TabIndex = 3;
             // 
             // dgv_Content
@@ -155,7 +155,7 @@
             this.dgv_Content.EnableHeadersVisualStyles = false;
             this.dgv_Content.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Content.Location = new System.Drawing.Point(0, 0);
-            this.dgv_Content.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_Content.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_Content.Name = "dgv_Content";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Info;
@@ -169,7 +169,7 @@
             this.dgv_Content.RowHeadersWidth = 82;
             this.dgv_Content.RowTemplate.Height = 33;
             this.dgv_Content.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Content.Size = new System.Drawing.Size(1439, 544);
+            this.dgv_Content.Size = new System.Drawing.Size(2600, 1042);
             this.dgv_Content.TabIndex = 1;
             this.dgv_Content.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgv_Content.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -229,20 +229,20 @@
             this.pnl_container.Controls.Add(this.pnl_Content);
             this.pnl_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_container.Location = new System.Drawing.Point(0, 0);
-            this.pnl_container.Margin = new System.Windows.Forms.Padding(2);
+            this.pnl_container.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_container.Name = "pnl_container";
-            this.pnl_container.Size = new System.Drawing.Size(1439, 606);
+            this.pnl_container.Size = new System.Drawing.Size(2600, 1165);
             this.pnl_container.TabIndex = 4;
             // 
             // UCCnttBefore18
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnl_container);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCCnttBefore18";
-            this.Size = new System.Drawing.Size(1439, 606);
+            this.Size = new System.Drawing.Size(2600, 1165);
             this.pnl_Control.ResumeLayout(false);
             this.pnl_Content.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Content)).EndInit();

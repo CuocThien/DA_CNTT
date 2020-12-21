@@ -49,8 +49,10 @@ namespace DA_CNTT
             this.dgv_Content.Rows.Clear();
             foreach (var s in subs)
             {
-                this.dgv_Content.Rows.Add(s.Course_Code, s.Course_Name, s.Credits);
+                this.dgv_Content.Rows.Add(s.Course_Code, s.Course_Name, s.Credits,s.Semester);
             }
+
+            this.dgv_Content.Sort(dgv_Content.Columns[3], System.ComponentModel.ListSortDirection.Ascending);
         }
 
         private void dgv_Content_CellClick(object sender, DataGridViewCellEventArgs e)

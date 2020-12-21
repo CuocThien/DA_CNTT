@@ -75,7 +75,6 @@ C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCMa
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.Properties.Resources.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCCnttBefore18.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCcontrol.UCIntroGroup.resources
-C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.UCIntroPro.resources
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.csproj.GenerateResource.cache
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.csproj.CoreCompileInputs.cache
 C:\Users\Cuoc Thien\Desktop\NCT\ĐA1\DA_CNTT\Code\DA_CNTT\obj\Debug\DA_CNTT.csproj.CopyComplete

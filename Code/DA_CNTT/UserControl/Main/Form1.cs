@@ -44,5 +44,12 @@ namespace DA_CNTT
             UCCnttBefore18 uCCnttBefore18 = new UCCnttBefore18(isAdmin, lbl_SubName);
             cMain.loadUC(this.pnl_content, uCCnttBefore18);
         }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Main main = new Main();
+            main.Show();
+        }
     }
 }

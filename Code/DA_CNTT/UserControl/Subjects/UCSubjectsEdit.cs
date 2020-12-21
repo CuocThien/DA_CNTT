@@ -33,12 +33,22 @@ namespace DA_CNTT
             this.pnl_container = pnl_container;
             count = 0;
             subs = cSubject.findAll().Where(i => i.Course_Code == sub_id).SingleOrDefault();
+
+            Prerequisite = subs.Prerequisite;
             this.txt_SubjectID.Text = subs.Course_Code;
             this.txt_SubjectName.Text = subs.Course_Name;
             this.txt_Credits.Text = subs.Credits;
-            this.txt_Prerequisite.Text = subs.Prerequisite[0];
+            if (Prerequisite.Count > 0)
+                this.txt_Prerequisite.Text = Prerequisite[0];
+            else
+            {
+                this.txt_Prerequisite.Text = "";
+                this.txt_Prerequisite.Enabled = false;
+                this.btn_EditPrerequisite.Enabled = false;
+                this.btn_nextPrerequisite.Enabled = false;
+                this.btn_PreviousPrerequisite.Enabled = false;
+            }
             this.txt_Semester.Text = subs.Semester;
-            Prerequisite = subs.Prerequisite;
             max = subs.Prerequisite.Count();
             if (max != 0)
                 min = 1;
